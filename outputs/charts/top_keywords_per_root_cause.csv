@@ -1,0 +1,11 @@
+root_cause_label,top_keywords
+Announce / SIP Transmission Error,"not, #, announce, does dut, dut"
+Bit / Marker Configuration Error,"test, case, not, only #, #"
+CLI / Command Execution Failure,"stopping, ptp:, cli:, # failed, failed"
+Capture / ID Handling Error,"-, capture, id, does error, error"
+DUT Configuration Value Error,"not, as, has, configured dut, dut"
+DUT Port / State Mismatch,"not, does, port, message dut, dut"
+Interface / Port Mismatch,"not, transmit, message, port does, does"
+PTP Command / Domain Configuration Error,"ptp, v2bc, v2tc, -1 command:, command:"
+PTP Transmission / PDELAY_RESP Failure,"#, does, not, transmit dut, dut"
+Test Result / Validation Issue,"test, result, may, be or, or"

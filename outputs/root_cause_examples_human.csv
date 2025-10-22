@@ -1,0 +1,11 @@
+cluster,root_cause_label,keywords,example_errors
+0,Interface / Port Mismatch,"does, not, transmit, message, port",DUT does not transmit PDELAY_RESP message on port P1 1/5 with expected parameters | DUT does not transmit PDELAY_RESP_FOLLOWUP message on port P1 1/5 with expected parameters | DUT does not transmit PDELAY_REQ message on port P1 1/5 with expected parameters
+1,Capture / ID Handling Error,"error, -, capture, id, does",with error - Capture id does not exist | with error - Capture id does not exist | with error - Capture id does not exist
+2,CLI / Command Execution Failure,"failed, stopping, ptp:, cli:, #",18:06:38.055 # Result: ABORTED  DUT PTP port P1 is not in FAULTY state. .       # | 17:04:38.174 CLI ERROR: Configuration failed for command: ptp v2tc priority1 128 | 17:04:51.176 CLI ERROR: Configuration failed for command: ptp v2tc priority1 128
+3,Test Result / Validation Issue,"or, test, result, may, be",or test result may be in correct. | or test result may be in correct. | or test result may be in correct.
+4,PTP Transmission / PDELAY_RESP Failure,"dut, #, does, not, transmit",DUT does not transmit PDELAY_RESP message on    # | DUT does not transmit PDELAY_RESP_FOLLOWUP      # | DUT does not transmit PDELAY_REQ message on     #
+5,Bit / Marker Configuration Error,"#, test, case, not, only",Could not GET ftppackets.txt file from FTP server. | Could not GET ftppackets.txt file from FTP      # | Could not GET ftppackets.txt file from FTP server.
+6,DUT Configuration Value Error,"dut, not, as, has, configured",DUT accepts different Domain Number DN2 sent in # | DUT has not configured Domain Number as 0 | DUT has not configured Domain Number as 0       #
+7,DUT Port / State Mismatch,"dut, not, does, port, message",DUT does not transmit DELAY_REQ message on port P1 as DUT has not elected the MASTER based on priority1 | DUT does not transmit DELAY_REQ message on port # | DUT does not transmits Delay_Req message on receiving sync and follow_up message on Port P1
+8,Announce / SIP Transmission Error,"dut, not, #, announce, does",DUT has not sent the SIP BYE Request to TEE. | DUT has not sent the SIP BYE Request to TEE.    # | DUT has not sent the expected TCP SIP packets during the call phase.
+9,PTP Command / Domain Configuration Error,"command:, ptp, v2bc, v2tc, -1",to the remote host. | to the remote host. | to the remote host.
