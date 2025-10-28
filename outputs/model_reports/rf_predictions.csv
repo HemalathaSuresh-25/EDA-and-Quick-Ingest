@@ -1,0 +1,1722 @@
+filename,Actual_Label,Predicted_Label,error_msg
+tc_conf_ipv4_ihg_022_20240724-145807.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_004_20241015-171523.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_ptp-bc_pcg_011_20241015-151659.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_006_20241015-162933.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_dtmf_hvg_010_20241101-131324.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_smg_015_20241021-181458.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_007_20241016-151031.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_ptp-oc_pcg_018_20241105-121026.log,FAIL,FAIL,when the expected PDU is#
+tc_conf_ptp-oc_smg_005_20241021-184605.log,FAIL,FAIL,18:45:40.291 CLI: Stopping PTP: Failed
+tc_conf_ptp-bc_lfg_004_20241015-162852.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_dtmf_hvg_008_20241206-144329.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_beg_006_20241107-175534.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_ptp-oc_pcg_010_20241105-120848.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_mtg_003_20241021-192810.log,FAIL,FAIL,19:26:41.828 CLI: Stopping PTP: Failed
+tc_conf_dtmf_hvg_010_20241204-174325.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-tc_mhg_002_20241014-113207.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241108-111156.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-tc_mtg_003_20241016-194016.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_002_20241202-131450.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_012_20241105-121754.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_mtg_003_20241101-173218.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_013_20241104-124511.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_mfg_018_20241106-170257.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-oc_mfg_018_20241106-172727.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_mfg_020_20241015-165116.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-bc_beg_005_20241015-152951.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_012_20241015-151747.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_006_20240730-142909.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_005_20241030-142255.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-tc_mfg_002_20241014-130306.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_dtmf_pvg_009_20240925-122114.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_018_20241015-171305.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_mfg_008_20241021-185326.log,FAIL,FAIL,19:09:54.129 # TEST CASE ABORTED: This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock
+tc_conf_sctp_pmg_002_20241121-180651.log,ABORT,ABORT,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.
+tc_conf_ptp-oc_pcg_004_20241107-085558.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-tc_mfg_005_20241014-133320.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5 with expected parameters
+tc_conf_sctp_asg_002_20241127-182423.log,ABORT,ABORT,"chunk to the SCTP peer at TEE,          #"
+tc_conf_ptp-bc_mtg_011_20241016-143011.log,ABORT,ABORT,This test case is only applicable for two step clock and unicast mode
+tc_conf_ptp-bc_smg_003_20241016-145739.log,ABORT,ABORT,DUT Port P1  is not in Master state
+tc_conf_ptp-oc_mhg_008_20241030-141853.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_mtg_012_20241104-133642.log,ABORT,ABORT,DUT does not transmit DELAY_RESP message on port P1 1/5
+tc_conf_dtmf_dtg_002_20240925-121803.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_002_20241015-145353.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241128-100246.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_010_20241016-143014.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_sctp_pmg_001_20241120-123445.log,FAIL,FAIL,Path Management function of DUT(SoftSwitch/SBC) #
+tc_conf_ptp-bc_mfg_010_20241014-153619.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_004_20241015-183748.log,FAIL,FAIL,DUT transmits PDELAY REQ messages with two step #
+tc_conf_ptp-bc_smg_002_20241015-174414.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241017-133033.log,ABORT,ABORT,Testcase Stopped By User
+tc_conf_ptp-tc_pcg_001_20241014-112544.log,FAIL,FAIL,for command: ptp v2tc primary-domain 256
+tc_conf_ptp-bc_mhg_023_20241016-144606.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_beg_004_20241104-131017.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241105-173913.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_tcp_hvg_003_20241009-125001.log,FAIL,FAIL,DUT has not sent the expected TCP SIP packets   #
+tc_conf_dtmf_hvg_009_20241106-113112.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_pcg_014_20241021-180152.log,FAIL,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ptp-oc_mtg_014_20241021-175057.log,FAIL,FAIL,17:49:19.210 CLI: Stopping PTP: Failed
+tc_conf_ptp-tc_mtg_006_20241017-172914.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_dtmf_hvg_009_20241122-124432.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_017_20241104-155140.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-tc_mfg_001_20241014-122449.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_ptp-oc_mfg_018_20241107-134444.log,FAIL,FAIL,DUT does not transmits Signalling ANNOUNCE request message on Port P1.
+tc_conf_ptp-tc_mtg_006_20241014-143957.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_dtmf_pvg_005_20241106-131904.log,FAIL,FAIL,"RTP events payload does not have valid  values (Event Field,E bit,R bit, Volume  Field and Duration Field)."
+tc_conf_ptp-oc_pcg_011_20241012-164358.log,FAIL,FAIL,DUT has not configured with priority1 value as 0#
+tc_conf_ptp-oc_beg_002_20241012-182045.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_013_20241021-124952.log,ABORT,ABORT,This test case is only applicable for Two Step Clock and unicast mode with  Non Slave Only Ordinary Clock
+tc_conf_ptp-oc_pcg_012_20241105-132240.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_023_20241013-173747.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-tc_pcg_001_20241016-191242.log,FAIL,FAIL,for command: ptp v2tc primary-domain -1
+tc_conf_ptp-tc_mtg_001_20241015-134038.log,ABORT,ABORT,Initialization of DUT for TestSetup 2 is failed
+tc_conf_sctp_dfg_001_20241121-144708.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.
+tc_conf_dtmf_pvg_005_20241112-184454.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_hvg_010_20241118-132934.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mhg_003_20241104-131920.log,FAIL,FAIL,DUT accepts different Domain Number DN2 sent in previous messages and transmits DELAY_REQ message on port P1
+tc_conf_dtmf_pvg_007_20241206-141844.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_024_20241013-182709.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_sctp_dfg_001_20241202-162528.log,ABORT,ABORT,User registration could not be completed at DUT  for the user User1.
+tc_conf_sctp_dfg_001_20241121-150533.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.
+tc_conf_dtmf_hvg_010_20241030-170347.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-tc_mfg_004_20241017-151208.log,ABORT,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_sctp_asg_002_20241127-174601.log,ABORT,ABORT,chunk for the SCTP  #
+tc_conf_ptp-oc_pcg_011_20241105-144741.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_008_20241014-150940.log,ABORT,ABORT,This test case is only applicable for One Step Clock
+tc_conf_dtmf_dtg_002_20241205-201126.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241107-133756.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_pvg_005_20241111-104404.log,ABORT,ABORT,Could not configure user details on DUT.        #
+tc_conf_dtmf_hvg_009_20241106-130759.log,FAIL,FAIL,Marker bit is set as True for segments other    #
+tc_conf_ptp-tc_mtg_004_20241015-135659.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_ptp-oc_smg_003_20241105-114320.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_001_20241014-135541.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_004_20241013-185410.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_dtmf_hvg_010_20241105-171801.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-tc_pcg_001_20241015-185919.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_ptp-oc_smg_005_20241105-121420.log,ABORT,ABORT,This test case is only applicable for Non Slave Only Ordinary Clock
+tc_conf_ptp-bc_mhg_019_20241016-151904.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_udp_hvg_003_20240930-164318.log,FAIL,FAIL,DUT has not sent the SIP packets with expected  #
+tc_conf_ptp-tc_pcg_001_20241016-190440.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_003_20241015-174756.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_008_20241015-164047.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_005_20241104-141821.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock
+tc_conf_rtp_hvg_001_20240906-122144.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ipv6-host_S1-G1_001_20241128-234417.log,FAIL,FAIL,for command: switchport access vlan 1
+tc_conf_ptp-oc_smg_007_20241105-121457.log,FAIL,FAIL,DUT's port (slave only ordinary clock) in SLAVE #
+tc_conf_ptp-oc_mfg_018_20241107-152859.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_pcg_012_20241013-173249.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_005_20241016-192006.log,ABORT,ABORT,DUT does not transmit PDELAY_REQ message on port P1 1/5
+tc_conf_ptp-bc_mhg_016_20241014-154657.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_smg_021_20241104-163158.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241122-120452.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mfg_004_20241101-171459.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_013_20241016-142452.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_ptp-tc_mfg_003_20241014-133313.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-oc_mfg_018_20241105-172713.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mhg_004_20241104-155415.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_020_20241015-152219.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_pcg_011_20241105-132431.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_dtg_002_20240925-104532.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_hvg_013_20241111-123853.log,PASS,PASS,No Error
+tc_conf_udp_hvg_003_20240930-131605.log,ABORT,ABORT,Could not dial the user extension 101 from Analog-Phone.
+tc_conf_ptp-bc_mhg_025_20241016-144612.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-bc_pcg_019_20241015-162611.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-bc_mhg_003_20241014-154800.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_004_20241104-155415.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_002_20241016-150209.log,ABORT,ABORT,DUT Port P1  is not in Master state
+tc_conf_dtmf_hvg_009_20241107-124724.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_pvg_009_20240925-124014.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_015_20241013-175922.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on port P1 1/5 with expected parameters
+tc_conf_ptp-bc_pcg_012_20241013-184706.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_013_20241021-181216.log,FAIL,FAIL,18:10:34.439 CLI: Stopping PTP: Failed
+tc_conf_dtmf_hvg_003_20241120-172903.log,ABORT,ABORT,Could not configure the user details on DUT.    #
+tc_conf_ptp-oc_mfg_018_20241107-152859.log,FAIL,FAIL,DUT does not transmits Signalling ANNOUNCE request message on Port P1.
+tc_conf_ptp-oc_mtg_009_20241021-172615.log,FAIL,FAIL,DUT does not transmit PdelayReq message for every Pdelay request interval
+tc_conf_sctp_pmg_001_20241121-172523.log,PASS,PASS,No Error
+tc_conf_sctp_hvg_001_20241202-172759.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_015_20241107-085314.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_010_20241105-120848.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20240925-130418.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_009_20241205-200708.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241106-105756.log,FAIL,FAIL,"Marker bit is set as ""True"" for segments other than first segment."
+tc_conf_ptp-oc_smg_008_20241021-130331.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_011_20241015-184829.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_ptp-oc_pcg_012_20241105-125617.log,FAIL,FAIL,DUT has not configured with priority2 value as 0#
+tc_conf_ptp-bc_mfg_013_20241014-154917.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_ipv4_ihg_022_20240725-074247.log,ABORT,ABORT,"Script Error - can't read ""tee_ip_address_1"": no such variable"
+tc_conf_dtmf_dtg_002_20241205-194238.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_010_20241021-185733.log,PASS,PASS,No Error
+tc_conf_udp_hvg_003_20240927-100118.log,FAIL,FAIL,DUT has not sent the SIP packets with expected UDP header fields in registration phase.
+tc_conf_ptp-bc_pcg_011_20241015-173829.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mfg_004_20241014-133316.log,ABORT,ABORT,This test case is only applicable for Transport type UDP/IPv4
+tc_conf_dtmf_hvg_012_20241205-135931.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ptp-bc_mfg_012_20241016-150851.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_ptp-oc_beg_004_20241105-114250.log,ABORT,ABORT,This test case is only applicable for Non Slave Only Ordinary Clock
+tc_conf_dtmf_pvg_005_20241121-184912.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_beg_006_20241108-102505.log,FAIL,FAIL,DUT is not elected as a Slave when clock type   #
+tc_conf_ptp-bc_mfg_012_20241013-174714.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_003_20241021-184019.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_017_20241021-151223.log,ABORT,ABORT,"Script Error - invalid command name ""ptp::callback_cli_ptp_set_local_priority"""
+tc_conf_ptp-oc_smg_019_20241012-180534.log,ABORT,ABORT,DUT PTP port P1 is not in FAULTY state.         #
+tc_conf_ptp-bc_pcg_014_20241015-162300.log,FAIL,FAIL,for command: ptp v2bc announce-interval 32
+tc_conf_dtmf_pvg_006_20241205-141838.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_011_20241105-114753.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_mhg_003_20241105-115156.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-bc_mhg_003_20241013-175704.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_002_20241104-154352.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241107-153731.log,FAIL,FAIL,DUT has sent the UDP/IPv4 Delay request when    #
+tc_conf_ptp-bc_pcg_018_20241015-162525.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_007_20241015-175839.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_001_20241014-123621.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_014_20241015-164509.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241127-081627.log,ABORT,ABORT,User registration could not be completed at DUT  for the user User1.
+tc_conf_dtmf_dtg_002_20241029-155323.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ptp-bc_mtg_019_20241016-142751.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-bc_pcg_014_20241015-174034.log,FAIL,FAIL,for command: ptp v2bc announce-interval 0.5
+tc_conf_dtmf_hvg_008_20241106-104525.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_v6bgp4_mbgp_001_20241016-141845.log,FAIL,FAIL,for command: switchport access vlan 1
+tc_conf_dtmf_hvg_013_20240730-153826.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20241028-164748.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_001_20241013-173758.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_001_20241202-131723.log,PASS,PASS,No Error
+tc_conf_ipv6-host_S1-G1_001_20241129-001124.log,ABORT,ABORT,Could not configure NUT for Testsetup 1
+tc_conf_ptp-bc_beg_009_20250108-140148.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_hvg_009_20241113-173937.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-tc_pcg_003_20241014-112635.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_008_20240906-141419.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241018-154837.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_007_20241013-185932.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-bc_beg_002_20241115-123700.log,ABORT,ABORT,Script Error - char map list unbalanced
+tc_conf_dtmf_hvg_013_20241206-131549.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_015_20241104-150611.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_016_20241021-183808.log,ABORT,ABORT,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock
+tc_conf_dtmf_hvg_008_20241205-122354.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mtg_001_20241105-115930.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_010_20241204-172213.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_hvg_001_20241120-152509.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_pcg_011_20241105-133027.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_015_20241013-183929.log,FAIL,FAIL,DUT Port P1 in SLAVE state does not move to     #
+tc_conf_ptp-tc_mfg_002_20241017-180427.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-oc_mfg_016_20241104-155137.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_dtmf_hvg_009_20241203-160114.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_smg_016_20241030-142326.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_v6bgp4_mbgp_001_20241016-153805.log,ABORT,ABORT,Unable to establish a Passive TCP connection on #
+tc_conf_ptp-oc_mfg_003_20241101-171420.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_012_20241021-175905.log,FAIL,FAIL,DUT has not configured with  priority2 value  as 0
+tc_conf_dtmf_hvg_009_20241112-190704.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_mhg_017_20241013-175606.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1  or Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-bc_mtg_006_20241015-160424.log,PASS,PASS,No Error
+tc_conf_sctp_asg_001_20241128-112557.log,ABORT,ABORT,SCTP DATA Chunk (SIP INVITE request) is not     #
+tc_conf_ptp-bc_mtg_018_20241016-144304.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_hvg_009_20241106-112743.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_pvg_008_20241112-123156.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_007_20240926-190824.log,ABORT,ABORT,tshark is not installed at remote server.
+tc_conf_ptp-oc_pcg_001_20241101-174220.log,FAIL,FAIL,DUT allows to enable PTP on more than one port  #
+tc_conf_ptp-oc_smg_020_20241101-180240.log,ABORT,ABORT,DUT PTP port P1 is not in FAULTY state. .       #
+tc_conf_ptp-oc_mfg_018_20241105-174733.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-tc_mtg_003_20241014-112248.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_012_20240911-191556.log,ABORT,ABORT,User registration could not be completed at DUT.#
+tc_conf_rtp_hvg_013_20240906-144104.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_017_20241107-125357.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_smg_005_20241107-085656.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_udp_hvg_002_20241004-185217.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_003_20241105-115156.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241118-125502.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241203-162047.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_hvg_009_20241106-121624.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-tc_mhg_007_20241016-192840.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_rtp_hvg_017_20240906-142124.log,ABORT,ABORT,Testcase Stopped By User
+tc_conf_ptp-tc_mhg_006_20241016-154310.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241118-125647.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_009_20241030-160848.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241016-153708.log,FAIL,ABORT,DUT does not transmit PDELAY_REQ message on port P1 1/5
+tc_conf_ptp-bc_mtg_009_20241016-145018.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_dtmf_dtg_002_20241029-114418.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_008_20241021-121535.log,FAIL,FAIL,when the expected PDU is#
+tc_conf_ptp-oc_smg_015_20241105-121941.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_011_20241029-174310.log,ABORT,ABORT,User registration could not be completed at DUT.#
+tc_conf_sctp_dfg_001_20241127-103443.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_019_20241016-151810.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_smg_012_20241012-180008.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_005_20241012-182932.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241107-154334.log,FAIL,FAIL,DUT does not transmits Signalling ANNOUNCE      #
+tc_conf_ptp-oc_mhg_010_20241012-184023.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_008_20241104-121054.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_010_20241016-145842.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_udp_hvg_002_20241004-183411.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_003_20241021-191204.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_016_20241104-144718.log,ABORT,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_ptp-bc_pcg_015_20241015-174201.log,FAIL,FAIL,DUT does not transmit SYNC message on port P1 1/5
+tc_conf_ptp-oc_mfg_017_20241105-155619.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_pcg_014_20241021-180152.log,FAIL,FAIL,18:01:06.708 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_mfg_005_20241107-085044.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-tc_pcg_005_20241014-140100.log,ABORT,ABORT,This test case is only applicable for One Step Transparent Clock
+tc_conf_sctp_pmg_001_20241120-124751.log,FAIL,FAIL,Path Management function of DUT(SoftSwitch/SBC) #
+tc_conf_sctp_asg_002_20241127-182423.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_002_20241105-114717.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock
+tc_conf_ptp-bc_smg_020_20241013-172842.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_sctp_hvg_003_20241127-182400.log,FAIL,FAIL,packets:            0    Truncated packets:         0
+tc_conf_dtmf_hvg_012_20240730-134608.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_008_20241017-152623.log,FAIL,FAIL,DUT does not forward SYNC message on port P2 1/6#
+tc_conf_ptp-oc_mfg_017_20241107-125357.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_tcp_hvg_002_20241009-115927.log,FAIL,FAIL,DUT has not sent the expected TCP SIP packets  during the call phase.
+tc_conf_ptp-tc_mfg_005_20241017-125702.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_sctp_pmg_001_20241120-130800.log,ABORT,ABORT,"Script Error - can't read ""tcp_env(Register_support)"": no such variable"
+tc_conf_ptp-bc_mfg_011_20241015-175646.log,ABORT,ABORT,This test case is only applicable for transport type IEEE 802.3
+tc_conf_ptp-oc_mfg_018_20241107-154904.log,FAIL,FAIL,DUT does not transmits Signalling ANNOUNCE      #
+tc_conf_ptp-oc_smg_006_20241012-181307.log,ABORT,ABORT,This test case is only applicable for Slave Only Ordinary Clock
+tc_conf_rtp_hvg_009_20241105-100507.log,ABORT,ABORT,Could not add route to direct SIP call on DUT.
+tc_conf_ptp-oc_mtg_018_20241105-183757.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_pcg_007_20241015-172444.log,ABORT,ABORT,This test case is only applicable for One Step Clock
+tc_conf_sctp_dfg_001_20241128-102908.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.
+tc_conf_ptp-tc_pcg_001_20241017-125354.log,ABORT,ABORT,Script Error - extra characters after close-quote
+tc_conf_ptp-oc_mfg_018_20241107-123728.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_dtg_001_20240925-104244.log,ABORT,ABORT,Could not initialize the TEE-Linux.
+tc_conf_ptp-bc_mtg_001_20241016-143101.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ptp-bc_mtg_017_20241016-144203.log,ABORT,ABORT,DUT does not transmit DELAY_REQ message on port P1 1/5
+tc_conf_ptp-bc_pcg_011_20241013-173203.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241121-182953.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ipv4_ihg_022_20240725-104110.log,FAIL,ABORT,Could not GET ftppackets.txt file from FTP      #
+tc_conf_dtmf_hvg_010_20241118-133141.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_pcg_014_20241101-174825.log,FAIL,FAIL,for command: ptp v2bc announce-interval 32
+tc_conf_ptp-oc_mhg_007_20241012-183711.log,PASS,PASS,No Error
+tc_conf_sctp_hvg_003_20241127-174733.log,ABORT,ABORT,Chunk      #
+tc_conf_ptp-bc_mhg_016_20241015-180728.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_mtg_007_20241012-183040.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_004_20241101-172138.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241121-171939.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-tc_mfg_002_20241015-183841.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on port P1 1/5 with expected parameters
+tc_conf_ptp-bc_smg_017_20241013-184109.log,ABORT,ABORT,DUT PTP port P1 is not in FAULTY state.
+tc_conf_dtmf_hvg_009_20241106-110656.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_smg_021_20241021-184811.log,FAIL,FAIL,18:28:53.984 # TEST CASE ABORTED : DUT PTP port P1 is not in FAULTY state.
+tc_conf_ptp-bc_beg_002_20241010-170809.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_dtmf_hvg_008_20241203-160019.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241106-104444.log,PASS,PASS,No Error
+tc_conf_udp_hvg_002_20241004-183018.log,PASS,PASS,No Error
+tc_conf_ipv4_ihg_022_20240725-104110.log,FAIL,ABORT,.
+tc_conf_dtmf_hvg_009_20241106-112651.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_hvg_010_20241209-203401.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_sctp_tdg_001_20241121-170924.log,ABORT,ABORT,"DUT has not sent DATA Chunk (SIP INVITE request) to SCTP peer at TEE, when the peer has buffer to receive."
+tc_conf_ptp-bc_mtg_011_20241015-145606.log,ABORT,ABORT,This test case is only applicable for two step clock and unicast mode
+tc_conf_ptp-bc_pcg_021_20241016-150205.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_mfg_002_20241101-171340.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_001_20241014-152910.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_013_20241205-142237.log,ABORT,ABORT,Testcase Stopped By User
+tc_conf_sctp_pmg_001_20241121-133031.log,FAIL,FAIL,Path Management function of DUT(SoftSwitch/SBC) #
+tc_conf_ptp-bc_mfg_008_20241013-174007.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_013_20241021-180149.log,ABORT,ABORT,This test case is only applicable for Slave Only Ordinary Clock
+tc_conf_ipv4_ihg_022_20240724-151057.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_013_20241012-175726.log,ABORT,ABORT,This test case is only applicable for Slave Only Ordinary Clock
+tc_conf_ptp-oc_pcg_005_20241101-174352.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241021-191935.log,ABORT,ABORT,"Script Error - can't read ""::ptp_delay_req_interval"": no such variable"
+tc_conf_ptp-bc_beg_001_20250108-113505.log,ABORT,ABORT,Opening of session with TEE is failed
+tc_conf_ipv4_ifg_005_20240729-125538.log,FAIL,FAIL,to the remote host.
+tc_conf_dtmf_pvg_005_20241112-153138.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_dtg_002_20241104-120929.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_010_20241016-194516.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_001_20241030-141829.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_beg_002_20241105-114654.log,ABORT,ABORT,This test case is only applicable for Non Slave Only Ordinary Clock
+tc_conf_ptp-bc_mtg_014_20241013-170447.log,ABORT,ABORT,Initialization of DUT for TestSetup 2 is failed
+tc_conf_ptp-bc_mtg_014_20241013-170447.log,FAIL,FAIL,for command: ptp v2tc priority1 128
+tc_conf_ptp-oc_mtg_004_20241021-132343.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_001_20241126-144036.log,ABORT,ABORT,Could not initialize the TEE-Linux.             #
+tc_conf_ptp-bc_mhg_002_20241015-180926.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_006_20241107-084934.log,FAIL,FAIL,DUT is not elected as a Slave when clock type is T-TSC
+tc_conf_ptp-bc_mhg_009_20241015-164202.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_001_20241014-111835.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_004_20241015-180750.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241112-102646.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_sctp_asg_001_20241127-182532.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_014_20241206-135818.log,PASS,PASS,No Error
+tc_conf_sip_dtg_001_20250902-174917.log,ABORT,ABORT,Could not dial 101 from DUT.                    #
+tc_conf_ptp-oc_mfg_008_20241012-181519.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_004_20241015-185446.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_dtmf_dtg_002_20240730-155735.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-bc_mhg_002_20241015-164822.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_004_20241101-174348.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_dtmf_pvg_009_20241205-194901.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241108-150058.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_010_20241104-104604.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-tc_mhg_006_20241016-194936.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_001_20250108-120948.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ptp-tc_mhg_005_20241014-144653.log,ABORT,ABORT,This testcase is only applicable only End to End Transparent clock
+tc_conf_ptp-oc_pcg_008_20241012-164234.log,ABORT,ABORT,This test case is only applicable for One Step Clock
+tc_conf_ptp-oc_mtg_002_20241104-132947.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241106-130943.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_dtg_002_20241029-155323.log,ABORT,ABORT,User registration could not be completed at DUT.#
+tc_conf_dtmf_pvg_008_20240801-121807.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_hvg_011_20241205-195608.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20240926-194056.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_beg_003_20250108-192227.log,PASS,PASS,No Error
+tc_conf_ipv4_ifg_005_20240729-124910.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_006_20241021-132509.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_001_20241120-150006.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_rtp_hvg_009_20240911-170720.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_008_20241015-180044.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20240926-191721.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_018_20241012-175649.log,ABORT,ABORT,"Script Error - can't read ""::ptp_delay_req_interval"": no such variable"
+tc_conf_dtmf_hvg_008_20241206-144204.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_mhg_026_20241013-182719.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-tc_mhg_004_20241014-123844.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_ptp-oc_smg_009_20241104-162319.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_017_20240925-125457.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ptp-oc_mtg_009_20241104-160742.log,FAIL,FAIL,DUT does not transmit PdelayReq message for every Pdelay request interval
+tc_conf_ptp-tc_pcg_002_20241016-192207.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_dtmf_pvg_005_20241121-185034.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_hvg_012_20241205-135957.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ipv4_ihg_022_20240725-104208.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241101-153030.log,ABORT,ABORT,Initialization of DUT for TestSetup 1 is failed
+tc_conf_ptp-oc_mtg_011_20241012-175227.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_009_20241030-152802.log,ABORT,ABORT,Could not establish the call with the user 101. #
+tc_conf_dtmf_hvg_010_20241118-130642.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241128-105028.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE    #
+tc_conf_dtmf_hvg_009_20241106-152547.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_rtp_hvg_012_20240911-191556.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_dtmf_hvg_010_20240926-200650.log,PASS,PASS,No Error
+tc_conf_udp_hvg_003_20241001-175132.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241108-145944.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_udp_hvg_003_20240930-133653.log,FAIL,FAIL,DUT has not sent the SIP packets with expected UDP  header fields in call establishment phase.
+tc_conf_dtmf_hvg_010_20241105-145708.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-bc_mhg_009_20241016-151140.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_018_20241105-121026.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_010_20241118-133141.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_mtg_021_20241015-145256.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-bc_mfg_020_20241016-151813.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_beg_001_20241028-170107.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_008_20241205-134725.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_019_20241030-142336.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_smg_013_20241104-150510.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_006_20241012-164154.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_009_20241030-142214.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_beg_006_20241101-171251.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_hvg_010_20241101-172344.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_013_20241205-142311.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241204-170338.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-bc_smg_019_20241013-184224.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_017_20241021-125138.log,FAIL,FAIL,DUT does not transmit DELAY _REQ message with periodicity >=0 and <= twice min. Delay Request Interval
+tc_conf_ptp-bc_mhg_013_20241013-175351.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_011_20241113-111821.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_005_20241104-134122.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241121-190343.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mfg_017_20241106-142704.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_pvg_008_20240801-121807.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_hvg_010_20241113-175922.log,PASS,PASS,No Error
+tc_conf_tcp_hvg_003_20241015-155442.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_002_20241030-141424.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-bc_mfg_022_20241015-165129.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ipv4_ihg_022_20240724-101828.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_011_20241122-130823.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241107-153516.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mfg_018_20241106-111404.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_pcg_012_20241105-125617.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_mtg_001_20241021-192409.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_003_20241017-175309.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_sip_dtg_003_20240913-162052.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ptp-bc_mfg_012_20241013-174714.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_010_20241012-164734.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_006_20241015-163832.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_001_20241014-132147.log,PASS,PASS,No Error
+tc_conf_ipv4_ihg_022_20240727-142629.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241204-121406.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_hvg_010_20241101-174500.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241128-105321.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241104-140850.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_011_20241021-194228.log,FAIL,FAIL,13:28:12.979 # TEST CASE PASSED :DUT ignores delay request message received on the port from which it was issued and does not transmit delay response message on port P1
+tc_conf_ptp-bc_mfg_009_20241015-152624.log,FAIL,FAIL,DUT does not transmit SYNC message on port P1 1/5 with expected parameters
+tc_conf_dtmf_hvg_010_20241106-123842.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mhg_009_20241105-115628.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_mtg_016_20241021-175457.log,FAIL,FAIL,17:53:28.011 CLI: Stopping PTP: Failed
+tc_conf_dtmf_hvg_005_20241121-132447.log,ABORT,ABORT,The following interfaces are not available : ens33 eth1
+tc_conf_ptp-tc_mtg_004_20241016-153506.log,ABORT,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_ptp-oc_mfg_012_20241104-131515.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_013_20241021-131412.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5 with expected parameters
+tc_conf_ptp-bc_smg_004_20241016-145721.log,ABORT,ABORT,DUT's Port P1 is not in Listening state
+tc_conf_ptp-bc_mhg_024_20241013-171300.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_smg_018_20241021-182249.log,FAIL,FAIL,DUT Port P1 in MASTER state does not move to    #
+tc_conf_ptp-oc_smg_013_20241107-085719.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_mfg_018_20241105-180447.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_hvg_014_20240730-132025.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_008_20241205-211618.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_010_20241105-114750.log,ABORT,ABORT,This test case is only applicable for two step clock configured for transport type IEEE 802.3 with Non Slave Only Ordinary Clock
+tc_conf_sctp_dfg_001_20241121-175138.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241112-150641.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-bc_smg_006_20241015-160733.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241114-144903.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_pcg_018_20241012-180922.log,FAIL,FAIL,when the expected PDU is#
+tc_conf_dtmf_hvg_008_20241209-205721.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_hvg_010_20241126-144108.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_pcg_002_20241015-155752.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_006_20241104-160513.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20240730-150740.log,ABORT,ABORT,Could not send SIP REGISTER request to the DUT.
+tc_conf_ptp-oc_beg_001_20241012-163809.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_001_20241015-171335.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_001_20241126-144036.log,ABORT,ABORT,Could not initialize the TEE-Linux.
+tc_conf_ptp-oc_smg_018_20241012-180448.log,FAIL,FAIL,DUT Port P1 in MASTER state does not move to    #
+tc_conf_ptp-oc_mfg_018_20241106-111030.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_beg_001_20241010-153228.log,FAIL,FAIL,DUT does not transmit DELAY_REQ message on port P1 as DUT has not elected the MASTER based on priority1
+tc_conf_dtmf_pvg_005_20241112-175118.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mhg_008_20241012-183833.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_009_20241016-194607.log,ABORT,ABORT,This test case is only applicable for End to End Transparent Clock
+tc_conf_ptp-tc_mfg_001_20241014-134521.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on port P1 1/5 with expected parameters
+tc_conf_ptp-oc_smg_006_20241105-110304.log,FAIL,FAIL,12:13:03.007 # TEST CASE PASSED :DUT does not transmit any PTP message on port P1 when port P1 is in DISABLED state.
+tc_conf_dtmf_hvg_010_20240926-200622.log,ABORT,ABORT,Could not enable SIP at the DUT.                #
+tc_conf_ptp-bc_beg_002_20241015-175146.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_001_20241015-155209.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241112-170952.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_sctp_dfg_001_20241128-112848.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_004_20241013-171503.log,PASS,PASS,No Error
+tc_conf_v6bgp4_mbgp_001_20241016-154306.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_003_20241013-185653.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241016-193422.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_010_20241015-171650.log,ABORT,ABORT,DUT does not transmit DELAY_RESP message on port P1 1/5
+tc_conf_ptp-tc_mhg_001_20241014-135541.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241205-122909.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_008_20241113-105833.log,PASS,PASS,No Error
+tc_conf_sip_dtg_008_20250902-180153.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241030-141507.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_beg_006_20241107-175534.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_beg_002_20241105-114223.log,ABORT,ABORT,This test case is only applicable for Non Slave Only Ordinary Clock
+tc_conf_ptp-tc_mtg_001_20241015-133350.log,ABORT,ABORT,DUT does not transmit pdelay request message on port 0/0
+tc_conf_dtmf_hvg_003_20241120-130940.log,ABORT,ABORT,Could not initialize the TEE-Linux.             #
+tc_conf_dtmf_pvg_006_20241206-142554.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_011_20241113-111422.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_001_20250108-113330.log,ABORT,ABORT,Initialization of DUT for TestSetup 1 is failed #
+tc_conf_ptp-bc_smg_013_20241013-172313.log,PASS,PASS,No Error
+tc_conf_udp_hvg_003_20240927-095808.log,FAIL,FAIL,DUT has not sent the SIP packets with expected  #
+tc_conf_ptp-bc_pcg_018_20241013-185027.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241101-154303.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_003_20241016-145739.log,ABORT,ABORT,DUT Port P1 is not in Master state              #
+tc_conf_ptp-oc_beg_001_20241101-150820.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-bc_smg_011_20241015-172825.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_007_20241013-174914.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_008_20241013-172111.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_008_20241013-185441.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_007_20241107-085247.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-bc_smg_023_20241015-152312.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_hvg_010_20241113-113119.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mhg_005_20241104-142812.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_006_20241015-192142.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-oc_mfg_004_20241021-132000.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-bc_mhg_011_20241014-154359.log,PASS,PASS,No Error
+tc_conf_sctp_tdg_001_20241121-155813.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241105-151647.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_011_20241014-153655.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_016_20241101-174026.log,ABORT,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_ptp-oc_mfg_017_20241106-142827.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-tc_mtg_007_20241014-112540.log,ABORT,ABORT,This test case is only applicable for One Step clock
+tc_conf_sctp_pmg_002_20241121-172427.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_010_20241021-173443.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_007_20241206-131104.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241113-113525.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-bc_pcg_001_20241013-182341.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20241029-173504.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ptp-oc_beg_001_20241104-125321.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_021_20241015-181149.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_pvg_007_20240801-131703.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_dtg_002_20241205-133944.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_011_20241105-132830.log,FAIL,FAIL,DUT has not configured with  priority1 value  as 0
+tc_conf_ptp-oc_smg_015_20241012-180156.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241106-153340.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mtg_011_20241104-133604.log,PASS,PASS,No Error
+tc_func_tcp_tfg_001_20240722-114343.log,ABORT,FAIL,Could not receive Ping reply from H2.
+tc_conf_ptp-oc_pcg_010_20241021-124514.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_021_20241015-170928.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_sctp_pmg_002_20241121-125928.log,ABORT,ABORT,DUT has not sent SCTP DATA chunk (SIP INVITE    #
+tc_conf_ptp-oc_pcg_018_20241101-174735.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_012_20241122-150125.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_018_20241014-145907.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_hvg_010_20240926-200216.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_012_20240906-155729.log,ABORT,ABORT,Testcase Stopped By User
+tc_conf_dtmf_pvg_006_20241122-144858.log,ABORT,ABORT,User registration could not be completed at DUT.#
+tc_conf_ptp-tc_mfg_004_20241017-180654.log,ABORT,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_ptp-bc_pcg_004_20241015-155839.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_ptp-tc_mhg_006_20241014-144656.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_002_20241016-153354.log,ABORT,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_ptp-oc_mfg_018_20241108-100530.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-bc_mhg_007_20241014-153955.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mfg_001_20241014-131938.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on port P1 1/5 with expected parameters
+tc_conf_ptp-bc_mtg_014_20241016-142522.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_ptp-oc_mtg_003_20241104-133022.log,PASS,PASS,No Error
+tc_conf_ipv4_ihg_022_20240725-104351.log,FAIL,FAIL,to the remote host.
+tc_conf_ptp-oc_mfg_018_20241105-174936.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_hvg_010_20241204-175711.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-bc_mtg_012_20241014-150133.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241205-121636.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241121-174258.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_hvg_008_20241206-144329.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_pcg_001_20241021-174250.log,ABORT,ABORT,"Script Error - can't read ""tee_test_port_ip2"": no such variable"
+tc_conf_ptp-oc_mfg_018_20241106-110826.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-tc_mfg_001_20241016-121450.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on port P1 1/5 with expected parameters
+tc_conf_ptp-bc_beg_004_20241015-152904.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241204-173112.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_hvg_012_20240730-124847.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_dtmf_hvg_008_20241206-144034.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_udp_hvg_003_20240930-164318.log,FAIL,FAIL,DUT has not sent the SIP packets with expected UDP  header fields in call establishment phase.
+tc_conf_dtmf_pvg_008_20241029-174935.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_002_20241202-131755.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_009_20240926-181403.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_015_20241021-190743.log,FAIL,FAIL,19:07:17.682 CLI: Stopping PTP: Failed
+tc_conf_dtmf_hvg_010_20241112-102646.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mfg_007_20241021-190946.log,ABORT,ABORT,This test case is only applicable for two step clock configured for transport type UDP/IPv4
+tc_conf_ptp-oc_mfg_018_20241107-123034.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_pvg_005_20241106-142030.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mfg_018_20241108-145810.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_dtmf_hvg_014_20240926-190322.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_003_20241016-150548.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_v6bgp4_mbgp_001_20241016-141951.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_008_20241209-205527.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mfg_007_20241030-141641.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-bc_mtg_015_20241013-182105.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_004_20241101-171059.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241107-153847.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_009_20240911-131420.log,ABORT,ABORT,sipp is not installed at remote server.
+tc_conf_ptp-bc_mfg_001_20250108-192156.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-bc_mfg_012_20241016-150851.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_dtmf_hvg_008_20241205-113749.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-tc_mhg_007_20241015-192322.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_sctp_tdg_001_20241202-131854.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241121-174946.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE    #
+tc_conf_dtmf_pvg_008_20241112-123156.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241104-154305.log,PASS,PASS,No Error
+tc_conf_ipv4_ihg_022_20240725-104110.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_011_20241013-174625.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_005_20241015-152533.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-oc_mtg_005_20241030-141934.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_dtmf_hvg_003_20241120-143419.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_pcg_002_20241021-173949.log,FAIL,FAIL,12:47:40.685 # TEST CASE FAILED :DUT allows to enable PTP on more than one port
+tc_conf_ptp-bc_mhg_004_20241013-175616.log,PASS,PASS,No Error
+tc_conf_sip_tsg_003_20240925-130144.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_017_20241014-145752.log,FAIL,FAIL,DUT does not transmit DELAY _REQ message with periodicity >=0 and <= twice min. Delay Request Interval
+tc_conf_dtmf_hvg_010_20240730-165023.log,ABORT,ABORT,Could not configure SIP IP Trunks at the DUT.
+tc_conf_ptp-bc_lfg_004_20241016-150333.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_sctp_hvg_003_20241127-174733.log,ABORT,ABORT,Chunk packet sent by the DUT at TEE.
+tc_conf_ptp-tc_mtg_004_20241015-183403.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_010_20241012-181634.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241121-173424.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_mtg_007_20241013-171705.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_021_20241105-122311.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_005_20241015-161740.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_006_20241015-172456.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_011_20241015-180403.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_004_20241105-115314.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_mhg_002_20241104-142511.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_006_20240730-132619.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_007_20241021-193617.log,FAIL,FAIL,19:34:33.508 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_mtg_007_20241104-160626.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_007_20241015-175032.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP_FOLLOWUP message on port P1 1/5 with expected parameters
+tc_conf_dtmf_hvg_009_20241112-185007.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_mtg_014_20241013-170615.log,ABORT,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_ptp-oc_mfg_018_20241105-173526.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_hvg_008_20241105-184007.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_dtg_002_20241029-173641.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_dtmf_dtg_002_20241113-105338.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241106-141517.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_sctp_dfg_001_20241127-081821.log,ABORT,ABORT,User registration could not be completed at DUT #
+tc_conf_ptp-oc_mtg_010_20241101-173741.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_002_20241104-145018.log,FAIL,FAIL,DUT has not configured Domain Number as 0       #
+tc_conf_sctp_pmg_001_20241121-172523.log,PASS,PASS,No Error
+tc_conf_v6bgp4_mbgp_001_20241016-153941.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_002_20241127-184843.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_018_20241101-174735.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241111-104057.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mhg_009_20241104-132439.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_015_20241015-145001.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_009_20241029-172734.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ptp-oc_pcg_002_20241101-174316.log,FAIL,FAIL,DUT has not configured Domain Number as 0
+tc_conf_dtmf_hvg_009_20241112-130215.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_pvg_005_20241118-131433.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mfg_018_20241105-170850.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_udp_hvg_002_20241022-150601.log,ABORT,ABORT,Could not start the SIP User Agent Server on TEE.
+tc_conf_ptp-tc_mhg_002_20241018-125754.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-tc_mhg_002_20241014-123700.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241203-162047.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_smg_015_20241021-181458.log,FAIL,FAIL,18:13:43.635 Stopping PTP: Failed
+tc_conf_ptp-bc_mtg_003_20241014-150433.log,PASS,PASS,No Error
+tc_conf_sctp_asg_003_20241202-170515.log,ABORT,ABORT,the initialization process and moved    *
+tc_conf_sctp_hvg_003_20241127-174733.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_003_20241021-132906.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_008_20241016-144948.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_ptp-oc_mfg_018_20241106-194451.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_smg_013_20241105-121842.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_017_20241107-190457.log,ABORT,ABORT,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.
+tc_conf_ptp-oc_mfg_018_20241106-110432.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_mtg_004_20241013-182913.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_007_20240906-141318.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_014_20241104-134539.log,FAIL,FAIL,for command: ptp v2bc announce-interval 0.5
+tc_conf_ptp-oc_pcg_015_20241021-130415.log,FAIL,FAIL,DUT transmits SYNC message with Sync Interval set as -2
+tc_conf_ptp-bc_mtg_016_20241013-170512.log,ABORT,ABORT,Initialization of DUT for TestSetup 2 is failed
+tc_conf_ptp-oc_beg_003_20241104-130925.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241017-161607.log,FAIL,FAIL,for command: ptp v2tc primary-domain 256
+tc_conf_dtmf_dtg_002_20241028-114503.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ptp-bc_mtg_002_20241016-144649.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ptp-oc_mtg_017_20241104-144759.log,FAIL,FAIL,DUT does not transmit DELAY _REQ message with periodicity >=0 and <= twice min. Delay Request Interval
+tc_conf_ptp-bc_mhg_005_20241015-153334.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_011_20241021-194228.log,FAIL,FAIL,13:28:12.979 # TEST CASE PASSED :DUT ignores delay request message received on the port from which it was issued and does not transmit delay response message on port P1
+tc_conf_ptp-tc_mhg_002_20241017-135304.log,FAIL,FAIL,DUT does not forward FOLLOW-UP message on port  #
+tc_conf_ptp-oc_smg_020_20241030-152700.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-bc_smg_007_20241013-183423.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_014_20241016-142522.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ptp-tc_mhg_002_20241018-131114.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-tc_pcg_003_20241017-134846.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_015_20241015-153156.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-bc_mfg_025_20241108-132143.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_pvg_008_20240730-143941.log,PASS,PASS,No Error
+tc_conf_udp_hvg_003_20241004-190409.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241204-180423.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_003_20241104-155322.log,FAIL,FAIL,DUT accepts different Domain Number DN2 sent in previous messages and transmits DELAY_REQ message on port P1
+tc_conf_ptp-tc_mhg_002_20241018-125754.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_ptp-oc_beg_001_20241010-175325.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_004_20240925-130332.log,ABORT,ABORT,Could not establish the SIP call.
+tc_conf_ptp-oc_pcg_001_20241105-120630.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-bc_mhg_003_20241014-154800.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20240925-121803.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_014_20241015-162300.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_008_20241015-172644.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_012_20241015-171608.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_007_20241101-173546.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241112-103514.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mtg_001_20241012-182645.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241021-121000.log,ABORT,ABORT,Initialization of DUT for TestSetup 1 is failed #
+tc_conf_ptp-oc_beg_001_20241012-181428.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_012_20241111-123506.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_005_20241014-153034.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_dtmf_hvg_008_20241121-171939.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mfg_018_20241105-173526.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_sctp_pmg_002_20241121-180846.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_007_20241101-172400.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_013_20241015-151838.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_v6bgp4_mbgp_001_20241016-141951.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_pcg_018_20241104-161642.log,FAIL,FAIL,when the expected PDU is#
+tc_conf_ptp-oc_mtg_010_20241021-174438.log,FAIL,FAIL,17:27:42.559 # TEST CASE FAILED :DUT does not transmit PdelayReq message for every Pdelay request interval
+tc_conf_dtmf_pvg_005_20241118-131754.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mhg_012_20241101-172850.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_017_20241107-190951.log,FAIL,FAIL,DUT does not transmit delay request message on  #
+tc_conf_dtmf_hvg_009_20240801-150242.log,ABORT,ABORT,Could not configure user details on DUT.
+tc_conf_ptp-bc_mtg_014_20241015-171008.log,ABORT,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_ptp-oc_mfg_018_20241106-172727.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_mtg_013_20241013-170434.log,ABORT,ABORT,Initialization of DUT for TestSetup 2 is failed
+tc_conf_sctp_pmg_001_20241121-145504.log,PASS,PASS,No Error
+tc_func_tcp_tfg_001_20240722-122430.log,ABORT,ABORT,Could not GET ftppackets.txt file from FTP server.
+tc_conf_ptp-tc_mfg_006_20241014-135457.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP_FOLLOWUP      #
+tc_conf_ptp-tc_mtg_002_20241014-122705.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241021-121000.log,ABORT,ABORT,Initialization of DUT for TestSetup 1 is failed
+tc_conf_dtmf_hvg_010_20241030-120848.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_005_20241015-183441.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_ptp-tc_mtg_004_20241015-183403.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241111-102733.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20241224-160528.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ptp-oc_mfg_018_20241107-154334.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_smg_008_20241021-183143.log,FAIL,ABORT,13:08:47.332 # TEST CASE ABORTED: This test case is only applicable for Slave Only Ordinary Clock
+tc_conf_dtmf_pvg_005_20241206-184446.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_021_20241013-185125.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_dtmf_pvg_005_20241209-210412.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_v6bgp4_mbgp_001_20241016-142647.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_mhg_001_20241104-142417.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_002_20241018-121545.log,FAIL,FAIL,DUT does not transmit Announce message on port P2 1/6
+tc_conf_ptp-tc_mfg_001_20241013-160007.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_ptp-oc_mfg_018_20241108-151613.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-oc_smg_009_20241105-121553.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-tc_mhg_001_20241014-111835.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_011_20241015-163520.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_pcg_005_20241105-120800.log,ABORT,ABORT,This test case is only applicable for Multicast Mode with Non Slave only ordinary clock
+tc_conf_dtmf_hvg_012_20240730-124153.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_dtmf_pvg_008_20241205-195842.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_015_20241104-145715.log,FAIL,FAIL,DUT transmits SYNC message with Sync Interval set as -2
+tc_conf_ptp-oc_mtg_005_20241104-160441.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_007_20241104-162235.log,ABORT,ABORT,This test case is only applicable for Slave Only Ordinary Clock
+tc_conf_ptp-oc_mfg_018_20241106-111404.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_beg_002_20241107-084918.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_udp_hvg_002_20241004-183647.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_001_20241017-172603.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_001_20241015-133800.log,ABORT,ABORT,DUT does not transmit pdelay request message on #
+tc_conf_ptp-bc_mhg_006_20241014-153908.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241104-105956.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mtg_018_20241108-110852.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_ptp-oc_mhg_011_20241104-143406.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_007_20241205-140832.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_006_20241107-175534.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_smg_004_20241013-172944.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_005_20241014-131037.log,ABORT,ABORT,This test case is only applicable for One Step Transparent Clock
+tc_conf_ptp-oc_mfg_013_20241021-190343.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241121-182518.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-bc_pcg_019_20241016-150159.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_hvg_008_20241121-172240.log,ABORT,ABORT,The following interfaces are not available : ens33 eth1
+tc_conf_dtmf_dtg_002_20241029-114418.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_001_20241120-130946.log,ABORT,ABORT,The following interfaces are not available : ens33 eth1
+tc_conf_sctp_tdg_001_20241128-101648.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_006_20241014-124054.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241118-131042.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_020_20241021-130155.log,ABORT,ABORT,DUT PTP port P1 is not in FAULTY state.
+tc_conf_dtmf_hvg_010_20241104-120340.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_001_20241104-161140.log,FAIL,FAIL,DUT allows to enable PTP on more than one port  #
+tc_conf_ptp-bc_mfg_009_20241016-150438.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_ptp-tc_mtg_001_20241017-151709.log,ABORT,ABORT,DUT does not transmit pdelay request message on port 0/0
+tc_conf_ptp-bc_beg_007_20250108-210832.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_smg_006_20241105-111801.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_smg_017_20241012-180359.log,FAIL,FAIL,DUT Port P1 in SLAVE state does not move to     #
+tc_conf_dtmf_hvg_008_20241121-172823.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_hvg_014_20241206-125001.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_005_20241021-131601.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock
+tc_conf_ptp-bc_mfg_006_20241013-185425.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-oc_mfg_018_20241105-173526.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-tc_pcg_001_20241016-192129.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_ptp-bc_smg_006_20241015-150430.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_010_20241104-143315.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_001_20241013-162346.log,PASS,PASS,No Error
+tc_conf_ipv4_ihg_022_20240725-082958.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241105-145238.log,ABORT,ABORT,Could not configure user details on DUT.        #
+tc_conf_sctp_dfg_001_20241128-103719.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE    #
+tc_conf_ptp-oc_mfg_018_20241108-150843.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_dtmf_hvg_009_20241118-131242.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_014_20241029-184637.log,ABORT,ABORT,User registration could not be completed at DUT.#
+tc_conf_ptp-oc_smg_019_20241021-182511.log,FAIL,FAIL,13:01:16.416 # TEST CASE FAILED :DUT Port P1 in MASTER state does not move to FAULTY state when a fault is detected.
+tc_conf_ptp-oc_mfg_018_20241107-155206.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_sctp_dfg_001_20241128-095527.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE    #
+tc_conf_dtmf_pvg_005_20241112-153138.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-bc_mfg_008_20241015-175110.log,ABORT,ABORT,This test case is only applicable for transport type IEEE 802.3
+tc_conf_ptp-bc_beg_004_20241013-174310.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_002_20241127-110043.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241017-133122.log,FAIL,ABORT,DUT does not transmit PDELAY_REQ message on port P1 1/5
+tc_conf_ptp-tc_mfg_001_20241014-143603.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_ptp-bc_mtg_017_20241013-182212.log,FAIL,FAIL,DUT does not transmit DELAY _REQ message with   #
+tc_conf_ptp-oc_pcg_013_20241105-120558.log,FAIL,FAIL,DUT transmits Announce message on port P1 1/5   #
+tc_conf_ptp-oc_smg_003_20241104-165227.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_mhg_007_20241105-115527.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_002_20241015-183701.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_v6bgp4_mbgp_001_20241016-153941.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_001_20240906-135110.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_002_20241030-141350.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_dtmf_hvg_011_20241205-134431.log,PASS,PASS,No Error
+tc_func_tcp_tfg_001_20240722-113936.log,ABORT,FAIL,Could not receive Ping reply from H2.           #
+tc_conf_ptp-bc_mhg_010_20241015-153748.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_011_20241014-154359.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_012_20240730-140941.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_022_20241014-155126.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_dtmf_hvg_010_20241105-181531.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_beg_004_20241021-155137.log,FAIL,FAIL,19:14:00.518 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_mfg_018_20241107-153847.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mhg_009_20241012-183937.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_010_20241104-133526.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_024_20241015-181213.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_dtmf_pvg_005_20241205-121857.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_beg_006_20241015-163445.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_hvg_008_20241105-184156.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_beg_006_20241107-175534.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_beg_001_20241014-152910.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_009_20241014-135319.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_020_20241014-152815.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_hvg_011_20241122-131317.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241112-191008.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-tc_mhg_011_20241017-124951.log,ABORT,ABORT,This test case is only applicable for Two Step End to End Clock
+tc_conf_ptp-tc_pcg_001_20241017-123621.log,ABORT,ABORT,Script Error - extra characters after close-quote
+tc_conf_dtmf_hvg_008_20241205-121103.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_007_20240926-190859.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_009_20241017-135050.log,ABORT,ABORT,This test case is only applicable for End to End Transparent Clock
+tc_conf_ptp-tc_pcg_001_20241018-110437.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_dtmf_dtg_002_20241210-165956.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_001_20241015-184108.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_003_20241015-185317.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-bc_mfg_001_20241015-174647.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_011_20241015-151659.log,FAIL,FAIL,for command: ptp v2bc priority1 256
+tc_conf_dtmf_hvg_010_20241118-132934.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_hvg_010_20241118-133046.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_sctp_pmg_002_20241121-124553.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_002_20241104-161234.log,FAIL,FAIL,DUT has not configured Domain Number as 0
+tc_conf_ptp-oc_mfg_011_20241021-185938.log,FAIL,FAIL,18:58:17.363 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_mtg_011_20241012-164819.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_013_20241015-162236.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_mfg_015_20241105-115022.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_ptp-tc_mfg_002_20241014-133309.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-tc_mhg_008_20241015-190714.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_dtmf_hvg_010_20241118-125502.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241122-104526.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_beg_001_20241018-183757.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241106-104847.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_smg_001_20241105-121127.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_pcg_013_20241104-161137.log,ABORT,ABORT,This test case is only applicable for Slave Only Ordinary Clock
+tc_conf_dtmf_hvg_009_20241106-112350.log,FAIL,FAIL,Marker bit is set as True for segments other    #
+tc_conf_dtmf_hvg_008_20241122-120917.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_sip_dtg_003_20250610-173702.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241112-190210.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_009_20241205-130101.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241118-132853.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_pvg_006_20241210-170857.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_004_20241014-153351.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241105-190746.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-oc_mfg_018_20241106-194029.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_dtg_002_20241029-173504.log,ABORT,ABORT,User registration could not be completed at DUT.#
+tc_conf_ptp-bc_pcg_013_20241013-184752.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_pvg_005_20241112-150641.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_sctp_dfg_001_20241128-104044.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE    #
+tc_conf_sctp_asg_003_20241120-111511.log,ABORT,ABORT,DUT has not sent the INIT Chunk to TEE          #
+tc_conf_ptp-oc_mfg_010_20241021-185733.log,FAIL,FAIL,18:56:01.538 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_mfg_018_20241105-155952.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_dtmf_pvg_008_20240925-124519.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_011_20241105-132431.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_mtg_007_20241021-193617.log,PASS,PASS,No Error
+tc_conf_sctp_tdg_001_20241127-193215.log,PASS,PASS,No Error
+tc_conf_udp_hvg_002_20241022-152240.log,FAIL,FAIL,to establish and end the call. INVITE 180 200 ACK
+tc_conf_ptp-oc_pcg_016_20241105-121124.log,ABORT,ABORT,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock
+tc_conf_ptp-tc_pcg_001_20241014-144044.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_008_20241021-131058.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_003_20241015-183706.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_017_20241015-155532.log,FAIL,FAIL,DUT does not transmit DELAY _REQ message with   #
+tc_conf_ptp-tc_mfg_001_20241016-143439.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_dtmf_pvg_009_20241210-170426.log,PASS,PASS,No Error
+tc_conf_ipv6-host_S1-G1_001_20241128-234729.log,FAIL,FAIL,for command: switchport access vlan 1
+tc_conf_ptp-oc_mtg_018_20241108-110852.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ptp-oc_mtg_010_20241021-174438.log,FAIL,FAIL,12:14:00.835 # Result: FAILED  DUT does not transmit PdelayReq message for     #
+tc_conf_ptp-oc_mhg_012_20241021-132657.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241112-191112.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_smg_010_20241021-125456.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_010_20241104-134319.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241106-111030.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_hvg_008_20241118-125647.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_001_20241120-130835.log,ABORT,ABORT,"Script Error - can't read ""tcp_env(Register_support)"": no such variable"
+tc_conf_ptp-oc_pcg_009_20241012-164239.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241101-174500.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20241122-130722.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_017_20241107-124605.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-tc_mhg_006_20241017-153550.log,FAIL,FAIL,DUT does not send data frame on port P2 0/1
+tc_conf_sctp_asg_003_20241128-102327.log,ABORT,ABORT,DUT has not sent the INIT Chunk to TEE interface T1.
+tc_conf_ptp-oc_mfg_018_20241106-170202.log,ABORT,ABORT,Testcase Stopped By User
+tc_conf_ptp-oc_mfg_018_20241107-174715.log,FAIL,FAIL,DUT does not transmits Signalling ANNOUNCE      #
+tc_conf_ptp-bc_mtg_021_20241015-171328.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_pcg_010_20241104-145305.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_006_20241017-181345.log,FAIL,FAIL,DUT does not send data frame on port P2 0/1
+tc_conf_ptp-bc_beg_008_20241015-175545.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_mtg_016_20241104-144718.log,ABORT,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_dtmf_hvg_014_20241122-145537.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20241023-165135.log,PASS,PASS,No Error
+tc_conf_sip_hvg_001_20250902-180038.log,FAIL,FAIL,DUT has not sent REGISTER request with expected #
+tc_conf_ptp-oc_pcg_014_20241021-180152.log,FAIL,FAIL,12:54:14.236 CLI ERROR: Configuration failed for command: ptp v2bc announce-interval 0.5
+tc_conf_ptp-oc_mfg_018_20241108-145944.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_pvg_005_20241106-150348.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mtg_014_20241021-175057.log,FAIL,FAIL,17:49:44.682 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_mtg_019_20241108-102832.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mfg_018_20241106-110432.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mfg_018_20241108-150345.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-bc_mtg_018_20241013-170903.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_pvg_008_20241113-110828.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_008_20241015-172450.log,ABORT,ABORT,This test case is only applicable for One Step Clock
+tc_conf_ptp-oc_mhg_007_20241012-183711.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241112-171413.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mfg_003_20241104-141814.log,ABORT,ABORT,This test case is only applicable for two step clock configured for transport type UDP/IPv4 with Non Slave Only Ordinary Clock
+tc_conf_ptp-oc_beg_001_20241030-141327.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-bc_pcg_014_20241013-184814.log,FAIL,FAIL,for command: ptp v2bc announce-interval 0.5
+tc_conf_dtmf_hvg_010_20241113-185544.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_013_20241014-151340.log,PASS,PASS,No Error
+tc_conf_ipv4_ihg_022_20240725-103203.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241101-171839.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_mhg_002_20241107-085229.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_mfg_017_20241106-142704.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mfg_013_20241104-155028.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5 with expected parameters
+tc_conf_ptp-oc_mfg_006_20241104-131227.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-oc_mhg_008_20241104-155709.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_011_20241107-085105.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_mfg_018_20241108-145944.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_ipv4_ihg_022_20240724-152108.log,ABORT,ABORT,"Script Error - can't read ""ipv4_env(LINUX_IP)"": no such element in array"
+tc_conf_dtmf_pvg_008_20240801-120208.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mfg_018_20241106-170502.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_pcg_001_20241105-120630.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_010_20241204-175455.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-tc_mhg_008_20241015-190714.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-bc_beg_010_20241015-153114.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-tc_pcg_001_20241017-161324.log,ABORT,ABORT,Script Error - extra characters after close-quote
+tc_conf_dtmf_hvg_009_20241126-160251.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20241205-205102.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241107-174246.log,FAIL,FAIL,Marker bit is set as True for segments other    #
+tc_conf_ptp-bc_beg_002_20241015-152720.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_003_20241017-173051.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_002_20241104-141810.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock
+tc_conf_ptp-tc_mhg_002_20241018-125116.log,FAIL,FAIL,DUT does not transmit Announce message on port P2 1/6
+tc_conf_ptp-bc_smg_005_20241013-172853.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_012_20241105-144820.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_004_20241101-171459.log,PASS,PASS,No Error
+tc_conf_ipv6-host_S1-G2_04a_20241003-202300.log,ABORT,ABORT,"Script Error - invalid command name ""res_init"""
+tc_conf_ptp-oc_pcg_012_20241105-145033.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241106-105923.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_pvg_005_20241112-131050.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_sctp_dfg_001_20241202-165759.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_006_20241014-130920.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_004_20241101-173257.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241111-103637.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_hvg_014_20241206-125001.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_009_20240912-111825.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_001_20241111-125245.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_mtg_009_20241013-183226.log,PASS,PASS,No Error
+tc_conf_sctp_hvg_002_20241128-143210.log,ABORT,ABORT,"Chunk {T1,D1}>             |                              |   #"
+tc_conf_ptp-tc_mhg_011_20241017-134358.log,ABORT,ABORT,This test case is only applicable for Two Step End to End Clock
+tc_conf_ptp-oc_smg_012_20241104-150414.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241014-133001.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_003_20241120-130908.log,ABORT,ABORT,The following interfaces are not available : ens33 eth1
+tc_conf_ptp-bc_mfg_020_20241013-180019.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_pvg_007_20241112-104821.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241105-115101.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_mtg_016_20241021-125101.log,ABORT,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_ptp-bc_smg_010_20241016-145312.log,ABORT,ABORT,DUT Port P1 is not in LISTENING state.
+tc_conf_sip_uag_003_20241016-165530.log,FAIL,FAIL,DUT has not sent either 180 Ringing or 183      #
+tc_conf_ptp-bc_pcg_018_20241014-152725.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241104-130741.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241028-164856.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_015_20241105-115846.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_010_20241013-173130.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_010_20241016-150752.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_sctp_hvg_002_20241128-113153.log,ABORT,ABORT,Could not start the packet capture at TEE-Linux.#
+tc_conf_ptp-oc_pcg_014_20241105-121116.log,ABORT,ABORT,This test case is only applicable for Non Slave Only Ordinary Clock
+tc_func_tcp_tfg_001_20240722-120158.log,ABORT,ABORT,Could not GET ftppackets.txt file from FTP      #
+tc_conf_ptp-oc_mhg_001_20241021-132011.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_012_20240730-140127.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-bc_mtg_017_20241013-182212.log,FAIL,FAIL,DUT does not transmit DELAY _REQ message with periodicity >=0 and <= twice min. Delay Request Interval
+tc_conf_ptp-bc_mtg_008_20241015-150155.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_008_20241101-173625.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_004_20241101-171059.log,PASS,PASS,No Error
+tc_conf_sctp_asg_003_20241202-165925.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_018_20241105-183934.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_smg_009_20241021-182930.log,FAIL,FAIL,18:31:59.265 CLI: Stopping PTP: Failed
+tc_conf_sctp_dfg_001_20241128-095832.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.
+tc_conf_ptp-oc_mhg_011_20241021-194228.log,FAIL,FAIL,13:28:12.979 # TEST CASE PASSED :DUT ignores delay request message received on the port from which it was issued and does not transmit delay response message on port P1
+tc_conf_ptp-oc_mtg_011_20241021-174643.log,FAIL,FAIL,17:44:54.683 CLI: Stopping PTP: Failed
+tc_conf_ptp-tc_mtg_006_20241016-192043.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_ptp-bc_smg_020_20241014-151930.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_mhg_004_20241012-183458.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241205-114604.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241017-152225.log,FAIL,ABORT,DUT does not transmit PDELAY_REQ message on port P1 1/5
+tc_conf_ipv6-host_S1-G1_001_20241129-160414.log,ABORT,ABORT,Could not configure NUT for Testsetup 1
+tc_conf_ipv4_gbg_005_20240725-075558.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_021_20241104-140014.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_007_20241021-133240.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_012_20241122-150623.log,PASS,PASS,No Error
+tc_conf_tcp_hvg_003_20241009-124809.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_014_20241111-123947.log,ABORT,ABORT,"Script Error - expected integer but got """""
+tc_conf_ptp-bc_mtg_001_20241015-160105.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_002_20241018-110520.log,FAIL,FAIL,DUT does not transmit Announce message on port P2 1/6
+tc_conf_ptp-tc_pcg_001_20241018-154837.log,FAIL,FAIL,for command: ptp v2tc primary-domain 256
+tc_conf_ptp-tc_mtg_006_20241017-152134.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_ptp-oc_smg_017_20241021-182025.log,FAIL,FAIL,18:18:58.309 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_mtg_005_20241021-193217.log,FAIL,FAIL,(already running?)
+tc_conf_ptp-oc_smg_017_20241104-150821.log,FAIL,FAIL,DUT Port P1 in SLAVE state does not move to     #
+tc_conf_ptp-tc_mtg_006_20241014-122946.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_dtmf_hvg_011_20241122-132528.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_008_20241017-152623.log,FAIL,FAIL,DUT does not forward SYNC message on port P2 1/6
+tc_conf_ptp-tc_mtg_004_20241014-143838.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_012_20241105-145033.log,FAIL,FAIL,for command: ptp v2bc priority2 256
+tc_conf_ptp-bc_pcg_012_20241013-173249.log,FAIL,FAIL,for command: ptp v2bc priority2 256
+tc_conf_dtmf_hvg_009_20241112-125038.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241209-205527.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_sctp_dfg_001_20241128-112848.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_017_20241107-175022.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_pvg_007_20241122-145103.log,PASS,PASS,No Error
+tc_conf_sctp_tdg_001_20241121-143114.log,ABORT,ABORT,DUT has not sent DATA Chunk (SIP INVITE         #
+tc_conf_ptp-bc_mtg_002_20241015-160150.log,PASS,PASS,No Error
+tc_conf_ipv4_ihg_022_20240725-074541.log,ABORT,ABORT,"Script Error - invalid command name ""gloabl"""
+tc_conf_ptp-oc_beg_006_20241108-102505.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-tc_mtg_007_20241017-134758.log,ABORT,ABORT,This test case is only applicable for One Step clock
+tc_conf_ptp-oc_mfg_018_20241106-111404.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_hvg_010_20241030-162442.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_udp_hvg_002_20241022-151711.log,FAIL,FAIL,DUT has not sent the SIP packets with expected UDP  header fields in call establishment phase.
+tc_conf_ptp-oc_mfg_001_20241101-171254.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241209-204036.log,ABORT,ABORT,Could not add route to direct SIP call on DUT.
+tc_conf_ptp-oc_pcg_006_20241021-124356.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_017_20241012-180916.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_dtmf_hvg_009_20241113-184535.log,PASS,PASS,No Error
+tc_conf_udp_hvg_003_20241001-175132.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_018_20241107-085343.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_dtmf_hvg_010_20241113-112729.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-tc_mhg_002_20241017-173511.log,FAIL,FAIL,DUT does not forward FOLLOW-UP message on port P2 0/1
+tc_conf_dtmf_dtg_002_20240925-143526.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_001_20241016-143101.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_dtmf_dtg_002_20241205-125845.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241018-154837.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_006_20241013-171632.log,PASS,PASS,No Error
+tc_conf_ipv4_gbg_005_20240724-175012.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_011_20240925-130717.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_007_20241014-150715.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_002_20241014-112213.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241105-190446.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-tc_mhg_005_20241017-130001.log,ABORT,ABORT,This testcase is only applicable only End to End Transparent clock
+tc_conf_ptp-oc_mfg_016_20241101-171801.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_ptp-tc_mfg_006_20241016-154054.log,ABORT,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_ptp-oc_mhg_005_20241104-132055.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_009_20241105-120845.log,ABORT,ABORT,This test case is only applicable for Two Step Clock with Non Slave only ordinary clock
+tc_conf_ptp-oc_mfg_014_20241104-131631.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP_FOLLOWUP      #
+tc_conf_ptp-bc_mtg_004_20241014-150509.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_006_20241014-122946.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_ptp-oc_mhg_004_20241105-115314.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_012_20241113-112417.log,ABORT,ABORT,User registration could not be completed at DUT.#
+tc_conf_ptp-oc_mtg_017_20241104-161023.log,FAIL,FAIL,DUT does not transmit DELAY _REQ message with   #
+tc_conf_ptp-bc_mfg_016_20241015-154456.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-bc_mhg_004_20241014-154708.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_009_20241105-100950.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_002_20241013-182808.log,PASS,PASS,No Error
+tc_conf_sctp_asg_003_20241128-143514.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241108-122734.log,FAIL,FAIL,DUT does not transmit DELAY_REQ message on port P1 as DUT has not elected the MASTER based on priority1
+tc_conf_sctp_hvg_003_20241127-182400.log,ABORT,ABORT,Chunk      #
+tc_conf_ptp-oc_mfg_018_20241107-123728.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_smg_015_20241104-150611.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_006_20241017-153550.log,FAIL,FAIL,DUT does not send data frame on port P2 0/1     #
+tc_conf_dtmf_hvg_010_20241126-155431.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_hvg_010_20241203-160814.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_hvg_010_20240730-161812.log,ABORT,ABORT,User registration could not be completed at TEE.#
+tc_conf_ptp-oc_beg_005_20241021-191618.log,FAIL,FAIL,"15:12:10.085 # TEST CASE ABORTED: Script Error - can't read ""::ptp_oc_type"": no such variable"
+tc_conf_ptp-oc_mfg_007_20241104-131231.log,ABORT,ABORT,This test case is only applicable for two step clock configured for transport type UDP/IPv4
+tc_conf_sctp_hvg_002_20241128-113153.log,ABORT,ABORT,"Chunk {T1,D1}>             |                              |   #"
+tc_conf_ptp-tc_mhg_007_20241015-192322.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-oc_pcg_013_20241104-144918.log,ABORT,ABORT,This test case is only applicable for Slave Only Ordinary Clock
+tc_conf_ptp-oc_smg_018_20241012-180448.log,FAIL,FAIL,DUT Port P1 in MASTER state does not move to FAULTY state when a fault is detected.
+tc_conf_ipv4_ihg_022_20240725-104208.log,FAIL,ABORT,Could not GET ftppackets.txt file from FTP      #
+tc_conf_ptp-oc_beg_002_20241012-182045.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_009_20241104-143222.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241106-180834.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_beg_006_20241015-175532.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_mtg_018_20241101-173539.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_mfg_018_20241106-105849.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_mtg_010_20241013-182625.log,ABORT,ABORT,DUT does not transmit DELAY_RESP message on     #
+tc_conf_ptp-bc_lfg_003_20241014-153012.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_func_tcp_tfg_001_20240722-122539.log,ABORT,ABORT,Could not GET ftppackets.txt file from FTP      #
+tc_conf_sip_dtg_001_20250902-174917.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_001_20241014-133401.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_019_20241015-152424.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_pcg_018_20241104-161642.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241111-102733.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_011_20241012-164819.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241105-131042.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_pvg_009_20240925-124601.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241017-160835.log,FAIL,FAIL,for command: ptp v2tc primary-domain -1
+tc_conf_ptp-bc_beg_002_20241010-175117.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241106-131904.log,FAIL,FAIL,RTP events payload does not have valid values   #
+tc_conf_ptp-bc_pcg_010_20241014-152232.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_002_20241015-171425.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_008_20241107-085513.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_udp_hvg_002_20241022-154313.log,FAIL,FAIL,DUT has not sent the SIP packets with expected  #
+tc_conf_ptp-oc_mfg_018_20241105-180447.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mfg_018_20241106-111030.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-oc_mtg_018_20241108-100619.log,ABORT,ABORT,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.
+tc_conf_ptp-bc_pcg_004_20241015-145446.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_ptp-oc_mfg_005_20241101-171546.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_008_20241122-130913.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_013_20241015-181014.log,ABORT,ABORT,This test case is only applicable for transport type IEEE 802.3
+tc_conf_ptp-tc_mhg_007_20241014-140056.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-bc_beg_005_20241015-163346.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_017_20241107-085540.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-bc_mtg_012_20241016-142941.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_sctp_asg_003_20241120-105532.log,ABORT,ABORT,"Script Error - can't read ""sctp_env(Register_support)"": no such element in array"
+tc_conf_ptp-bc_mhg_020_20241015-152323.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_pcg_018_20241030-142231.log,ABORT,ABORT,instead #
+tc_conf_ptp-bc_mhg_004_20241016-151455.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_017_20241107-124247.log,ABORT,ABORT,Testcase Stopped By User
+tc_conf_ptp-oc_mfg_018_20241105-170850.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mhg_004_20241021-133028.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_010_20241015-160000.log,ABORT,ABORT,DUT does not transmit DELAY_RESP message on     #
+tc_conf_ptp-bc_beg_004_20241014-184235.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_dtmf_pvg_009_20240801-133814.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_007_20241015-172539.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_002_20241121-172232.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241112-120922.log,FAIL,FAIL,Marker bit is set as True for segments other    #
+tc_conf_ptp-tc_mfg_005_20241014-135420.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_dtmf_hvg_010_20241113-113119.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_pvg_005_20241205-114634.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_004_20241014-152037.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_007_20241015-163917.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_003_20241104-130925.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_013_20241015-180449.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_021_20241021-184811.log,FAIL,FAIL,18:27:30.045 CLI: Stopping PTP: Failed
+tc_conf_ptp-bc_smg_019_20241013-172812.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241127-081335.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE    #
+tc_conf_sctp_hvg_003_20241127-174733.log,FAIL,FAIL,packets:            0    Truncated packets:         0
+tc_conf_ptp-bc_mtg_007_20241015-172217.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241112-130519.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mhg_009_20241101-172623.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_012_20241205-142832.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_007_20241015-184211.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_ptp-oc_mtg_009_20241105-120242.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_tcp_hvg_003_20241015-155642.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_016_20241016-145520.log,ABORT,ABORT,DUT port P1 is not in Master state.             #
+tc_conf_ptp-bc_mtg_007_20241016-144918.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ptp-oc_pcg_003_20241030-142153.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_dtmf_hvg_009_20241106-121815.log,FAIL,FAIL,"Marker bit is set as ""True"" for segments other than first segment."
+tc_conf_ptp-oc_smg_003_20241107-085649.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_beg_003_20241021-191204.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_001_20241120-124305.log,ABORT,ABORT,User registration could not be completed at DUT #
+tc_conf_ptp-tc_mhg_004_20241017-153332.log,FAIL,ABORT,DUT does not transmit PDELAY_REQ message on port P2 1/6
+tc_conf_ptp-tc_mtg_006_20241014-125816.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_dtmf_pvg_009_20241205-201815.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_006_20241028-160141.log,ABORT,ABORT,"Script Error - can't read ""::ptp_delay_req_interval"": no such variable"
+tc_conf_dtmf_hvg_012_20240730-154052.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mfg_004_20241017-152900.log,ABORT,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_udp_hvg_002_20241022-152411.log,FAIL,FAIL,DUT has not sent the SIP packets with expected  #
+tc_conf_ptp-oc_smg_003_20241105-121201.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_012_20241205-141351.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_007_20241014-113716.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_dtmf_dtg_002_20240926-193607.log,ABORT,ABORT,User registration could not be completed at DUT.#
+tc_conf_ptp-tc_mtg_006_20241014-134946.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_ptp-bc_pcg_011_20241015-173829.log,FAIL,FAIL,for command: ptp v2bc priority1 -1
+tc_conf_ptp-tc_pcg_005_20241015-184216.log,ABORT,ABORT,This test case is only applicable for One Step Transparent Clock
+tc_conf_ptp-tc_mhg_001_20241017-132623.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20241029-173841.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_dtmf_pvg_008_20241029-174743.log,ABORT,ABORT,User registration could not be completed at DUT.#
+tc_conf_sctp_pmg_001_20241120-123954.log,ABORT,ABORT,Dependency packages are not installed at TEE-Linux.
+tc_conf_ptp-oc_beg_001_20241028-174426.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_012_20241104-162525.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_003_20241013-173933.log,ABORT,ABORT,This test case is only applicable for two step clock configured for transport type UDP/IPv4
+tc_conf_dtmf_pvg_005_20241111-121219.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mfg_018_20241106-154533.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_pcg_002_20241021-173949.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-bc_beg_001_20241013-162238.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_ptp-bc_mhg_004_20241014-154708.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_005_20241021-132437.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_001_20250108-113118.log,ABORT,ABORT,Initialization of DUT for TestSetup 1 is failed
+tc_conf_ptp-oc_pcg_012_20241105-144820.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_010_20241016-144533.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_sctp_pmg_002_20241121-161119.log,ABORT,ABORT,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.
+tc_conf_ptp-tc_mhg_005_20241014-123941.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_015_20241104-162711.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_005_20241101-173355.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_008_20241029-174935.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_003_20241105-121201.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-bc_mhg_008_20241013-175038.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_001_20241015-134220.log,ABORT,ABORT,DUT does not transmit pdelay request message on #
+tc_conf_ptp-oc_mtg_012_20241104-160857.log,ABORT,ABORT,DUT does not transmit DELAY_RESP message on port P1 1/5
+tc_conf_ptp-bc_pcg_017_20241016-150126.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_ptp-oc_mfg_001_20241021-191918.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock
+tc_conf_sip_dtg_003_20240925-125900.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20241021-175455.log,ABORT,ABORT,sipp is not installed at remote server.         #
+tc_conf_dtmf_hvg_009_20241121-170737.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_beg_001_20241021-185121.log,FAIL,FAIL,17:23:50.811 .     Error:  opening of session with dut is failed
+tc_conf_sctp_dfg_001_20241127-192414.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_005_20241015-174918.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_005_20241105-115402.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_009_20241121-155630.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_dtmf_hvg_009_20241112-173427.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_udp_hvg_003_20240927-153326.log,FAIL,FAIL,DUT has not sent the SIP packets with expected  #
+tc_conf_ptp-tc_pcg_001_20241016-194308.log,FAIL,FAIL,for command: ptp v2tc primary-domain -1
+tc_conf_ptp-oc_mfg_012_20241012-181758.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241121-173854.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_009_20241104-131311.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_012_20241021-194024.log,FAIL,FAIL,19:43:24.687 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_mfg_017_20241107-190951.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_pcg_018_20241013-173609.log,PASS,PASS,No Error
+tc_conf_sip_uag_002_20240925-130258.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_009_20241021-133504.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_004_20241014-134827.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_014_20241015-150953.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_014_20241015-174034.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_004_20241105-114727.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-oc_pcg_009_20241021-173238.log,FAIL,ABORT,12:15:35.452 # TEST CASE ABORTED: This test case is only applicable for One Step Clock
+tc_conf_rtp_hvg_005_20240906-141012.log,ABORT,ABORT,Could not configure SIP User Agent Client on DUT.
+tc_conf_ptp-bc_beg_010_20241016-150731.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_mfg_018_20241106-110432.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ipv4_ihg_022_20240725-103910.log,ABORT,ABORT,Could not start FTP server at TEE-Linux.
+tc_conf_dtmf_hvg_003_20241120-132212.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_sctp_tdg_001_20241127-105328.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_007_20241122-145103.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_012_20241205-140101.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_dtmf_hvg_009_20240801-145840.log,ABORT,ABORT,User registration could not be completed at TEE.#
+tc_conf_ptp-oc_mhg_001_20241105-115104.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_010_20241105-171645.log,ABORT,ABORT,User registration could not be completed at TEE.
+tc_conf_dtmf_hvg_009_20241209-210012.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_pvg_006_20241122-150851.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_012_20241113-112216.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ipv4_ifg_005_20240729-123351.log,ABORT,ABORT,Could not start FTP server at TEE-Linux.
+tc_conf_ptp-oc_beg_005_20241105-114705.log,ABORT,ABORT,This test case is only applicable for Non Slave Only Ordinary Clock
+tc_conf_ptp-bc_mtg_015_20241013-170500.log,FAIL,FAIL,for command: ptp v2tc priority1 128
+tc_conf_ptp-oc_smg_019_20241104-135901.log,ABORT,ABORT,DUT PTP port P1 is not in FAULTY state.
+tc_conf_ipv4_ifg_005_20240729-130517.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_012_20241015-145530.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241121-145337.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_001_20241014-132147.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241105-174733.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-oc_mfg_008_20241104-154751.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20240730-155338.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_024_20241016-151827.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-bc_smg_019_20241015-173415.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_015_20241014-152638.log,FAIL,FAIL,DUT does not transmit SYNC message on port P1 1/5
+tc_conf_dtmf_hvg_010_20241118-130416.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_pcg_006_20241105-120803.log,PASS,PASS,No Error
+tc_conf_udp_hvg_002_20241022-151447.log,FAIL,FAIL,to establish and end the call. INVITE 180 200 ACK
+tc_conf_dtmf_hvg_009_20241107-124425.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_mtg_012_20241013-171132.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241128-100246.log,PASS,PASS,No Error
+tc_conf_ptp-bc_lfg_003_20241015-162842.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-bc_mtg_008_20241015-150155.log,PASS,PASS,No Error
+tc_conf_dtmf_dtg_002_20240730-150740.log,ABORT,ABORT,Could not send SIP REGISTER request to the DUT. #
+tc_conf_ptp-oc_mfg_018_20241107-133020.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_sip_uag_003_20241016-164202.log,FAIL,FAIL,DUT has not sent either 180 Ringing or 183 Session Progress Response to TEE.
+tc_conf_ptp-bc_pcg_013_20241015-151838.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_beg_001_20241021-185121.log,FAIL,FAIL,17:24:48.620 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_mhg_003_20241101-172018.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_002_20241015-190048.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-oc_mhg_015_20241104-160102.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_017_20241107-124605.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_hvg_010_20241030-162442.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_sctp_pmg_002_20241121-160321.log,ABORT,ABORT,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.
+tc_conf_ptp-oc_smg_012_20241105-121754.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_012_20240730-154052.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241108-111156.log,FAIL,FAIL,DUT does not transmits Signalling ANNOUNCE request message on Port P1.
+tc_conf_rtp_hvg_009_20241030-155937.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_001_20241010-153415.log,ABORT,ABORT,DUT does not transmit DELAY_REQ message on port P1 1/5
+tc_conf_ptp-oc_smg_004_20241104-145926.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241112-165654.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ipv4_ihg_022_20240724-150020.log,PASS,PASS,No Error
+tc_conf_udp_hvg_002_20241022-151122.log,ABORT,ABORT,Could not start the SIP User Agent Server on TEE.
+tc_conf_ptp-oc_mhg_010_20241105-115714.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_sip_hvg_002_20240913-162419.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_024_20241014-150256.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_pcg_008_20241030-142210.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-tc_mtg_003_20241016-153423.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_ptp-oc_smg_018_20241104-150913.log,FAIL,FAIL,DUT Port P1 in MASTER state does not move to FAULTY state when a fault is detected.
+tc_conf_ptp-oc_mfg_001_20241107-085030.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_dtmf_hvg_011_20241104-121446.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_005_20241012-182932.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_005_20241013-183011.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_001_20241014-134207.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_011_20241104-155855.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mfg_002_20241017-152718.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on port P1 1/5 with expected parameters
+tc_conf_dtmf_pvg_009_20240801-133814.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_017_20241014-152721.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_ptp-tc_mhg_002_20241018-121545.log,FAIL,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ptp-bc_mtg_013_20241013-181958.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241202-162445.log,ABORT,ABORT,User registration could not be completed at DUT  for the user User1.
+tc_conf_ptp-oc_mtg_011_20241101-173821.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_001_20241018-151625.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_ptp-bc_beg_001_20241013-162137.log,FAIL,FAIL,for command: ptp v2tc priority1 128
+tc_conf_ptp-oc_pcg_018_20241021-130507.log,FAIL,FAIL,when the expected PDU is#
+tc_conf_ptp-oc_beg_006_20241030-141411.log,ABORT,ABORT,Initialization of TEE failed
+tc_conf_ptp-bc_mfg_009_20241016-150438.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_dtmf_pvg_009_20241205-135633.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_008_20241107-085706.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_mtg_012_20241101-173900.log,ABORT,ABORT,DUT does not transmit DELAY_RESP message on     #
+tc_conf_ptp-tc_mtg_003_20241017-134518.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241121-144050.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE    #
+tc_conf_ptp-oc_beg_006_20241105-114709.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-bc_mfg_013_20241015-154336.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5 with expected parameters
+tc_conf_ptp-oc_smg_013_20241021-125653.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_012_20241012-183155.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241205-122823.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_014_20241021-175057.log,FAIL,FAIL,17:50:43.504 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_smg_010_20241104-135231.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_001_20241105-115104.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mfg_001_20241017-150952.log,ABORT,ABORT,This test case is only applicable for transport type IEEE 802.3
+tc_conf_ptp-oc_smg_021_20241105-122311.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_003_20241015-161902.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_001_20241015-155209.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_003_20241015-135529.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_ptp-bc_pcg_018_20241015-152122.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_012_20241104-150414.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20240730-170905.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241114-170922.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_beg_017_20241016-150512.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_sctp_pmg_001_20241128-100729.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241030-171118.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_hvg_009_20241121-170737.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-tc_mhg_004_20241014-123844.log,FAIL,ABORT,DUT does not transmit PDELAY_REQ message on port P2 1/6
+tc_conf_ptp-oc_mfg_009_20241104-154829.log,FAIL,FAIL,DUT does not transmit SYNC message on port P1   #
+tc_conf_ptp-tc_mtg_005_20241014-132846.log,ABORT,ABORT,This test case is only applicable for Two Step clock
+tc_conf_ptp-oc_pcg_008_20241030-142210.log,ABORT,ABORT,instead #
+tc_conf_ptp-bc_pcg_014_20241013-173357.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_008_20241101-172523.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_008_20241021-130331.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_003_20241021-192810.log,FAIL,FAIL,19:26:54.609 CLI: Stopping PTP: Failed
+tc_conf_udp_hvg_002_20241004-182906.log,FAIL,FAIL,DUT has not sent the SIP packets with expected UDP  header fields in call establishment phase.
+tc_conf_ptp-oc_pcg_018_20241021-183815.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_010_20241016-144533.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_ptp-oc_pcg_012_20241105-144820.log,FAIL,FAIL,for command: ptp v2bc priority2 -1
+tc_conf_sctp_hvg_003_20241127-182400.log,ABORT,ABORT,Chunk packet to TEE.
+tc_conf_rtp_hvg_003_20240925-125405.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_008_20241113-111529.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_017_20241021-175659.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_014_20241014-154527.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mfg_001_20241016-153224.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_dtmf_hvg_012_20240730-123838.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ptp-oc_mtg_007_20241104-160626.log,PASS,PASS,No Error
+tc_func_tcp_tfg_001_20240722-182202.log,ABORT,ABORT,Could not GET ftppackets.txt file from FTP      #
+tc_conf_ptp-oc_mtg_014_20241104-144139.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_006_20241015-192142.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_ptp-oc_mtg_015_20241105-120331.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-bc_beg_007_20241013-174457.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_hvg_009_20241121-171118.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_smg_003_20241104-161942.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241112-130125.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_smg_021_20241021-130850.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_017_20241107-190253.log,ABORT,ABORT,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.
+tc_conf_dtmf_hvg_010_20241104-111749.log,ABORT,ABORT,Could not configure user details on DUT.        #
+tc_conf_ptp-tc_mhg_003_20241014-133528.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241209-205328.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_sip_tsg_003_20240925-130144.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241107-154904.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_pcg_012_20241015-173918.log,FAIL,FAIL,for command: ptp v2bc priority2 256
+tc_conf_dtmf_pvg_005_20241111-110413.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mfg_018_20241106-170502.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mfg_008_20241030-141644.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-bc_mtg_004_20241016-144748.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ptp-oc_mfg_014_20241021-190543.log,FAIL,FAIL,13:14:35.475 # TEST CASE FAILED :DUT does not transmit PDELAY_RESP message on port P1 1/5 with expected parameters
+tc_conf_ptp-tc_mtg_003_20241014-125612.log,PASS,PASS,No Error
+tc_conf_udp_hvg_003_20241001-174039.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241106-112651.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_sctp_dfg_001_20241128-112739.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_014_20241015-164509.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_007_20241105-121457.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-bc_mhg_023_20241015-160044.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_dtmf_hvg_008_20241206-184820.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_009_20241021-133504.log,PASS,PASS,No Error
+tc_conf_sctp_tdg_001_20241127-191656.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_009_20241013-173058.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_001_20250108-214002.log,FAIL,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_dtmf_hvg_010_20241113-175922.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241106-174217.log,FAIL,FAIL,"Marker bit is set as ""True"" for segments other than first segment."
+tc_conf_ptp-oc_mtg_005_20241021-193217.log,FAIL,FAIL,19:30:31.381 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_mfg_011_20241101-171744.log,ABORT,ABORT,This test case is only applicable for transport type IEEE 802.3
+tc_conf_ptp-oc_mtg_009_20241104-133452.log,PASS,PASS,No Error
+tc_conf_sip_dtg_003_20240913-162254.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_005_20241017-132757.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message with  #
+tc_conf_ptp-bc_mfg_012_20241015-153302.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241107-153731.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_pcg_018_20241015-174307.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241107-153355.log,FAIL,FAIL,DUT does not transmits Signalling ANNOUNCE request message on Port P1.
+tc_conf_sctp_pmg_002_20241121-143336.log,ABORT,ABORT,DUT has not sent SCTP DATA chunk (SIP INVITE    #
+tc_conf_ptp-oc_mfg_018_20241106-170502.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-bc_mhg_004_20241013-175616.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_017_20240925-125640.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241021-172407.log,FAIL,FAIL,"15:01:33.723 # TEST CASE ABORTED: Script Error - can't read ""::ptp_oc_type"": no such variable"
+tc_conf_ptp-bc_mtg_016_20241014-145716.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_001_20241105-121127.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_014_20241205-140555.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_003_20250108-134056.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_002_20241012-164434.log,FAIL,FAIL,DUT has not configured Domain Number as 0       #
+tc_conf_dtmf_hvg_010_20241101-173806.log,ABORT,ABORT,Could not configure SIP IP Trunks at the DUT.   #
+tc_conf_ptp-oc_beg_001_20241018-183757.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241021-154044.log,FAIL,FAIL,12:11:54.916 # Result: ABORTED  Initialization of DUT for TestSetup 1 is failed #
+tc_conf_ptp-bc_pcg_014_20241015-174034.log,FAIL,FAIL,for command: ptp v2bc announce-interval 32
+tc_conf_ptp-bc_beg_005_20241014-184108.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ptp-bc_mhg_013_20241015-180449.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_009_20241121-171654.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_smg_009_20241021-130239.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_016_20241012-180911.log,ABORT,ABORT,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock
+tc_conf_ptp-tc_mtg_003_20241014-125612.log,PASS,PASS,No Error
+tc_conf_ipv4_gbg_005_20240725-074834.log,ABORT,ABORT,Testcase Stopped By User
+tc_conf_ptp-bc_smg_019_20241013-172812.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241017-170820.log,ABORT,ABORT,Script Error - extra characters after close-quote
+tc_conf_dtmf_pvg_008_20241029-172603.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_007_20241013-171918.log,ABORT,ABORT,This test case is only applicable for One Step Clock
+tc_conf_ptp-tc_mhg_002_20241017-125901.log,FAIL,FAIL,DUT does not forward SYNC message on port P2 1/6#
+tc_conf_ptp-tc_mhg_011_20241014-122530.log,ABORT,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_sctp_dfg_001_20241202-162528.log,ABORT,ABORT,User registration could not be completed at DUT #
+tc_conf_ptp-bc_mhg_022_20241016-143044.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_dtmf_hvg_010_20240926-115752.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mtg_007_20241104-133337.log,PASS,PASS,No Error
+tc_conf_udp_hvg_002_20241022-151447.log,FAIL,FAIL,DUT has not sent the SIP packets with expected UDP  header fields in call establishment phase.
+tc_conf_ptp-bc_pcg_002_20241013-182423.log,FAIL,FAIL,for command: ptp v2bc domain 256
+tc_conf_ptp-bc_mtg_011_20241015-155954.log,ABORT,ABORT,This test case is only applicable for two step clock and unicast mode
+tc_conf_ptp-tc_mhg_003_20241017-191231.log,ABORT,ABORT,Initialization of DUT for TestSetup 3 is failed
+tc_conf_ptp-tc_pcg_001_20241014-135032.log,FAIL,FAIL,for command: ptp v2tc primary-domain 256
+tc_conf_dtmf_hvg_009_20241112-130352.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_005_20241030-141408.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_smg_001_20241012-181011.log,ABORT,ABORT,This test case is only applicable for Slave Only Ordinary Clock
+tc_conf_dtmf_pvg_005_20241111-104404.log,ABORT,ABORT,Could not configure user details on DUT.
+tc_conf_dtmf_hvg_014_20241205-142353.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241104-111029.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-bc_mtg_005_20241015-172105.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_012_20241105-133147.log,FAIL,FAIL,for command: ptp v2bc priority2 256
+tc_conf_dtmf_hvg_009_20241112-130255.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_udp_hvg_002_20241022-152814.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_009_20241104-155805.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mtg_003_20241016-144719.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_dtmf_hvg_011_20240730-143832.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_018_20241012-165658.log,ABORT,ABORT,"Script Error - can't read ""::ptp_delay_req_interval"": no such variable"
+tc_conf_ptp-oc_smg_009_20241105-121553.log,PASS,PASS,No Error
+tc_conf_v6bgp4_mbgp_001_20241016-140818.log,ABORT,ABORT,Could not configure DUT for Testsetup 1         #
+tc_conf_ptp-bc_beg_001_20241010-170734.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_ptp-oc_pcg_012_20241105-120955.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-bc_pcg_003_20241016-144423.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_ptp-oc_smg_019_20241104-163045.log,ABORT,ABORT,DUT PTP port P1 is not in FAULTY state.
+tc_conf_ptp-oc_smg_001_20241107-085645.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-bc_mtg_001_20241013-182723.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_006_20241105-115445.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-bc_beg_001_20250108-113118.log,FAIL,ABORT,16:09:07.974 # TEST CASE ABORTED : User registration could not be completed at DUT.
+tc_conf_ptp-bc_mtg_019_20241013-182325.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_dtmf_hvg_009_20241106-152613.log,FAIL,FAIL,"Marker bit is set as ""True"" for segments other than first segment."
+tc_conf_ptp-tc_mtg_001_20241017-134401.log,PASS,PASS,No Error
+tc_conf_udp_hvg_002_20241022-151228.log,ABORT,ABORT,Could not start the SIP User Agent Server on TEE.
+tc_conf_ptp-oc_mfg_017_20241107-190417.log,ABORT,ABORT,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.
+tc_conf_ptp-oc_mfg_018_20241108-121244.log,FAIL,FAIL,DUT does not transmits Signalling ANNOUNCE      #
+tc_conf_ptp-tc_pcg_004_20241015-190226.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_ptp-bc_beg_001_20250108-220903.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_001_20241016-193853.log,ABORT,ABORT,DUT does not transmit pdelay request message on port 0/0
+tc_conf_ptp-oc_mfg_018_20241108-150444.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-tc_mhg_002_20241014-133437.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_014_20241206-142503.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_023_20241014-152903.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-bc_mhg_019_20241015-165233.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_dtmf_hvg_011_20241205-134020.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_016_20241015-163103.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_beg_001_20241021-150133.log,ABORT,ABORT,"Script Error - can't read ""::ptp_oc_type"": no such variable"
+tc_conf_dtmf_pvg_005_20241118-132528.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_001_20241104-134753.log,ABORT,ABORT,This test case is only applicable for Slave Only Ordinary Clock
+tc_conf_ptp-bc_mfg_018_20241015-154509.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_mfg_015_20241012-181944.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on port P1 1/5 with expected parameters
+tc_conf_ptp-bc_smg_014_20241015-150953.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241121-190846.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_pcg_005_20241012-174645.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_012_20240926-185805.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_004_20241104-143929.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241030-124732.log,ABORT,ABORT,Could not enable SIP at the DUT.
+tc_conf_ptp-tc_mfg_003_20241014-144345.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-oc_pcg_001_20241021-124649.log,FAIL,FAIL,DUT allows to enable PTP on more than one port  #
+tc_conf_sctp_pmg_002_20241127-192055.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_015_20241104-142327.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on port P1 1/5 with expected parameters
+tc_conf_ptp-bc_mhg_022_20241014-150249.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_pcg_014_20241104-161725.log,FAIL,FAIL,for command: ptp v2bc announce-interval 32
+tc_conf_dtmf_pvg_008_20241113-105539.log,ABORT,ABORT,User registration could not be completed at DUT.#
+tc_conf_ptp-tc_pcg_001_20241017-123621.log,FAIL,FAIL,for command: ptp v2tc primary-domain 256
+tc_conf_ptp-bc_beg_016_20241014-153201.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_v6bgp4_mbgp_003_20241016-155008.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_015_20241014-154620.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_003_20241017-134846.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_014_20241015-180545.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_014_20241014-154527.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_010_20241107-085712.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_pcg_001_20241012-164628.log,FAIL,FAIL,DUT allows to enable PTP on more than one port  #
+tc_conf_ptp-bc_smg_004_20241015-161831.log,PASS,PASS,No Error
+tc_conf_ptp-bc_lfg_002_20241015-162832.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-tc_mhg_011_20241014-143641.log,ABORT,ABORT,This test case is only applicable for Two Step End to End Clock
+tc_conf_ptp-oc_smg_013_20241012-180058.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_018_20240906-145857.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241107-154904.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ipv4_ihg_022_20240727-143011.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_011_20241015-150804.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_017_20241021-130503.log,ABORT,ABORT,This test case is only applicable for Unicast Mode
+tc_conf_ptp-oc_pcg_008_20241021-124433.log,FAIL,FAIL,when the expected PDU is#
+tc_conf_ipv4_ifg_005_20240729-143210.log,ABORT,ABORT,Testcase Stopped By User
+tc_conf_ptp-oc_mfg_018_20241108-145810.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_dtmf_pvg_005_20241203-160507.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-tc_mtg_002_20241016-153354.log,ABORT,ABORT,DUT does not transmit PDELAY_REQ message on port P1 1/5
+tc_conf_ptp-oc_smg_007_20241021-130411.log,ABORT,ABORT,This test case is only applicable for Slave Only Ordinary Clock
+tc_conf_rtp_hvg_009_20240911-133034.log,ABORT,ABORT,Could not establish the call with the user 101. #
+tc_conf_ptp-oc_mfg_018_20241106-170502.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mfg_018_20241107-153355.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mtg_009_20241021-124234.log,PASS,PASS,No Error
+tc_conf_rtp_hvg_018_20240911-133903.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_003_20241014-153301.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_012_20241015-162147.log,FAIL,FAIL,for command: ptp v2bc priority2 256
+tc_conf_ptp-oc_mhg_005_20241012-183545.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_009_20241017-152525.log,FAIL,FAIL,DUT does not transmit Announce message on port P2 1/6
+tc_conf_ptp-bc_mhg_003_20241015-154217.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_001_20241104-155147.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_025_20241016-151830.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-tc_mhg_003_20241014-144646.log,ABORT,ABORT,This test case is only applicable for End to End Transparent Clock
+tc_conf_ptp-bc_mhg_007_20241016-151031.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_021_20241015-144917.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_mhg_010_20241101-172712.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mfg_023_20241013-180037.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_dtmf_hvg_009_20241112-191008.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-tc_pcg_004_20241017-134926.log,FAIL,FAIL,DUT transmits PDELAY REQ messages with two step #
+tc_conf_dtmf_pvg_008_20241205-211618.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_008_20241107-085251.log,PASS,PASS,No Error
+tc_conf_sctp_tdg_001_20241120-121915.log,ABORT,ABORT,"DUT has not sent DATA Chunk (SIP INVITE request) to SCTP peer at TEE, when the peer has buffer to receive."
+tc_conf_ptp-oc_pcg_011_20241104-134350.log,FAIL,FAIL,DUT has not configured with priority1 value as 0#
+tc_conf_ipv6-host_S1-G1_001_20241128-235116.log,ABORT,ABORT,Could not configure NUT for Testsetup 1
+tc_conf_ptp-bc_mtg_003_20241015-171929.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241021-172546.log,ABORT,ABORT,Testcase Stopped By User
+tc_conf_ptp-oc_pcg_006_20241101-174432.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_002_20241021-131943.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock
+tc_conf_dtmf_dtg_002_20240924-182938.log,FAIL,FAIL,"to shutdown socket 5, errno = 107 (Transport endpoint is not connected)2024-09-24	18:30:02.250858	1727182802.250858: Error on TCP connection, remote peer probably closed the socket: Connection refused]0;root@localhost:~[root@localhost ~]# .     Could not send REGISTER request from the SIP User Agent Client."
+tc_conf_ptp-bc_smg_015_20241013-183929.log,FAIL,FAIL,DUT Port P1 in SLAVE state does not move to FAULTY state when a fault is detected.
+tc_conf_ptp-bc_mtg_001_20241014-150307.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_019_20241021-182511.log,FAIL,FAIL,18:23:46.324 CLI: Stopping PTP: Failed
+tc_conf_ptp-bc_mhg_009_20241015-180206.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_015_20241021-183356.log,FAIL,FAIL,DUT transmits SYNC message with Sync Interval   #
+tc_conf_sip_dtg_003_20250610-173702.log,ABORT,ABORT,Could not enable SIP at the DUT.
+tc_conf_ptp-oc_mhg_010_20241105-115714.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_010_20241021-185733.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_004_20241021-155137.log,FAIL,FAIL,DUT does not elect master based on the variance #
+tc_conf_ptp-oc_mfg_011_20241105-114753.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_010_20241015-172745.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_010_20241104-132525.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_011_20241101-172800.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_002_20241013-185604.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_004_20241017-172756.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_014_20241014-151504.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_015_20241015-162426.log,FAIL,FAIL,DUT does not transmit SYNC message on port P1 1/5
+tc_conf_ptp-bc_beg_002_20241010-175117.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_007_20241104-133337.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241017-172021.log,FAIL,FAIL,for command: ptp v2tc primary-domain 256
+tc_conf_dtmf_hvg_009_20241112-171413.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mhg_005_20241105-115402.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_006_20241107-175534.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_dtg_002_20240926-192934.log,ABORT,ABORT,User registration could not be completed at TEE.
+tc_conf_ptp-oc_pcg_018_20241012-180922.log,PASS,PASS,No Error
+tc_conf_ptp-bc_beg_011_20241014-153602.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_mhg_006_20241105-115445.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241121-185034.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_beg_005_20241014-153448.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_015_20241015-180647.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_008_20241030-141853.log,PASS,PASS,No Error
+tc_conf_sctp_hvg_003_20241127-182400.log,ABORT,ABORT,*
+tc_conf_ptp-bc_beg_004_20241015-163256.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_001_20241121-160253.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_007_20241122-150022.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_009_20241104-161529.log,ABORT,ABORT,This test case is only applicable for Two Step Clock with Non Slave only ordinary clock
+tc_conf_dtmf_hvg_011_20240926-181026.log,PASS,PASS,No Error
+tc_conf_sip_dtg_003_20250610-155411.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_006_20241013-174831.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_009_20241014-154219.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_005_20241105-115402.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_mfg_018_20241106-110826.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_dtg_002_20240924-183132.log,ABORT,ABORT,User registration could not be completed at DUT.
+tc_conf_ptp-bc_beg_007_20250108-140138.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_beg_003_20241101-171007.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_015_20241030-141917.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_013_20241015-180449.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_001_20241016-144317.log,FAIL,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_dtmf_hvg_011_20240925-123732.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mtg_002_20241104-143807.log,PASS,PASS,No Error
+tc_conf_ptp-oc_pcg_009_20241021-173238.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241106-154112.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ipv4_ifg_005_20240729-130147.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_005_20241021-184605.log,PASS,PASS,No Error
+tc_conf_sctp_hvg_003_20241127-182400.log,ABORT,ABORT,Chunk sent by DUT at TEE. #
+tc_conf_ptp-tc_mfg_004_20241017-173308.log,ABORT,ABORT,This test case is only applicable for Transport type UDP/IPv4
+tc_conf_ptp-tc_mhg_002_20241018-130912.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-oc_mfg_012_20241105-114839.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-oc_beg_001_20241101-154112.log,FAIL,FAIL,15:09:07.900 # TEST CASE FAILED :DUT does not transmit DELAY_REQ message on port P1 as DUT has not elected the MASTER based on priority1
+tc_conf_ptp-bc_mtg_010_20241016-143014.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_dtmf_hvg_009_20241112-185118.log,PASS,PASS,No Error
+tc_conf_ptp-bc_pcg_005_20241016-144430.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ipv4_ifg_005_20240729-125538.log,FAIL,FAIL,to the remote host.
+tc_conf_sctp_asg_003_20241120-110420.log,ABORT,ABORT,DUT has not sent the INIT Chunk to TEE          #
+tc_conf_ipv6-host_S1-G1_001_20241129-000851.log,ABORT,ABORT,Could not configure NUT for Testsetup 1
+tc_conf_dtmf_hvg_012_20240730-133830.log,ABORT,ABORT,Could not configure SIP User Agent Client on    #
+tc_conf_dtmf_pvg_005_20241206-184446.log,PASS,PASS,No Error
+tc_conf_tcp_hvg_003_20240927-161917.log,FAIL,FAIL,DUT has not sent the expected TCP SIP packets   #
+tc_conf_ptp-bc_pcg_005_20241014-150058.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241121-150720.log,PASS,PASS,No Error
+tc_conf_ptp-bc_smg_004_20241015-173556.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241128-103400.log,ABORT,ABORT,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.
+tc_conf_ptp-oc_mfg_018_20241106-180834.log,FAIL,FAIL,DUT does not transmits Signalling ANNOUNCE request message on Port P1.
+tc_conf_udp_hvg_003_20241001-155840.log,PASS,PASS,No Error
+tc_conf_ipv4_ihg_022_20240725-104351.log,ABORT,ABORT,Could not start FTP server at TEE-Linux.        #
+tc_conf_dtmf_dtg_002_20240923-111616.log,ABORT,ABORT,Could not configure and enable SIP at the DUT.
+tc_conf_ptp-oc_smg_004_20241104-172809.log,ABORT,ABORT,Initialization of DUT for TestSetup 1 is failed
+tc_conf_sctp_dfg_001_20241127-081950.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241030-171118.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mhg_003_20241104-131920.log,FAIL,FAIL,DUT accepts different Domain Number DN2 sent in #
+tc_conf_sctp_pmg_002_20241127-193037.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_007_20240730-132932.log,PASS,PASS,No Error
+tc_conf_ptp-bc_mhg_022_20241015-171728.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_ptp-oc_mfg_012_20241021-190139.log,FAIL,FAIL,19:01:13.720 CLI: Stopping PTP: Failed
+tc_conf_ptp-oc_mfg_001_20241030-141420.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-tc_mtg_001_20241016-153308.log,ABORT,ABORT,DUT does not transmit pdelay request message on #
+tc_conf_ptp-oc_beg_006_20241105-155238.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_pcg_019_20241015-174356.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_sctp_pmg_002_20241121-161035.log,ABORT,ABORT,DUT has not sent SCTP DATA chunk (SIP INVITE    #
+tc_conf_ptp-oc_pcg_011_20241104-145341.log,FAIL,FAIL,DUT has not configured with priority1 value as 0#
+tc_conf_dtmf_hvg_009_20241106-112137.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_mfg_003_20241021-191925.log,ABORT,ABORT,This test case is only applicable for two step clock configured for transport type UDP/IPv4 with Non Slave Only Ordinary Clock
+tc_conf_ptp-oc_mfg_012_20241104-154951.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241112-120701.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_010_20241104-131347.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_009_20241014-135319.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_011_20240926-182249.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_001_20241120-130500.log,PASS,PASS,No Error
+tc_conf_ptp-tc_pcg_001_20241017-172021.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_014_20241111-125129.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_004_20241104-134907.log,PASS,PASS,No Error
+tc_conf_udp_hvg_002_20241022-152240.log,FAIL,FAIL,DUT has not sent the SIP packets with expected UDP  header fields in call establishment phase.
+tc_conf_ptp-oc_beg_006_20241108-102505.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mfg_017_20241107-125357.log,FAIL,FAIL,DUT does not transmit delay request message on  #
+tc_conf_ptp-oc_mfg_018_20241107-174715.log,FAIL,FAIL,DUT does not transmits Signalling ANNOUNCE request message on Port P1.
+tc_conf_sctp_hvg_003_20241127-174733.log,ABORT,ABORT,#
+tc_conf_dtmf_hvg_009_20241112-173326.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_pcg_008_20241012-174811.log,ABORT,ABORT,instead #
+tc_conf_ptp-oc_mfg_016_20241021-131550.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_sctp_hvg_002_20241121-191006.log,FAIL,FAIL,DUT has not sent the SCTP HEARTBEAT Chunk       #
+tc_conf_ptp-oc_mhg_014_20241107-085311.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_pcg_015_20241101-174952.log,FAIL,FAIL,DUT transmits SYNC message with Sync Interval set as -2
+tc_conf_ptp-oc_mfg_018_20241106-193801.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_dtmf_hvg_009_20241112-173147.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ipv4_ihg_022_20240723-151655.log,FAIL,ABORT,Could not GET ftppackets.txt file from FTP server.
+tc_conf_ptp-oc_mhg_014_20241012-182556.log,ABORT,ABORT,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock
+tc_conf_ptp-oc_smg_018_20241021-182249.log,FAIL,FAIL,13:00:32.950 # TEST CASE FAILED :DUT Port P1 in SLAVE state does not move to FAULTY state when a fault is detected.
+tc_conf_dtmf_pvg_006_20241112-104717.log,PASS,PASS,No Error
+tc_conf_ptp-oc_smg_015_20241030-142322.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_smg_021_20241104-151122.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_018_20241106-110432.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mhg_010_20241104-155852.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mfg_003_20241015-183925.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_dtmf_hvg_001_20241120-152509.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-bc_mhg_024_20241015-145659.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.2/Y.1369.2
+tc_conf_dtmf_hvg_010_20241204-174608.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-oc_mfg_008_20241104-141832.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_001_20241017-151709.log,ABORT,ABORT,DUT does not transmit pdelay request message on #
+tc_conf_ptp-tc_mtg_003_20241016-194016.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_012_20241104-143459.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_003_20241016-194926.log,ABORT,ABORT,This test case is only applicable for End to End Transparent Clock
+tc_conf_dtmf_hvg_010_20241030-112103.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_004_20241017-135405.log,ABORT,ABORT,This test case is only applicable for End to End Transparent Clock
+tc_conf_dtmf_pvg_008_20241113-110738.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_udp_hvg_002_20241022-154313.log,FAIL,FAIL,to establish and end the call. INVITE 180 200 ACK
+tc_conf_ptp-bc_mfg_015_20241015-154422.log,FAIL,FAIL,DUT does not transmit PDELAY_REQ message on     #
+tc_conf_ptp-oc_pcg_002_20241021-173949.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_dtmf_hvg_012_20240730-124332.log,ABORT,ABORT,User registration could not be completed at DUT.#
+tc_conf_ptp-bc_beg_006_20241014-153544.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-oc_mhg_007_20241104-155548.log,PASS,PASS,No Error
+tc_conf_sctp_hvg_002_20241128-113243.log,ABORT,ABORT,"Chunk {T1,D1}>             |                              |   #"
+tc_conf_rtp_hvg_018_20240911-145300.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241112-120853.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241118-125852.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_016_20241021-190943.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-oc_mhg_008_20241105-115530.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_005_20241014-135841.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241126-162102.log,ABORT,ABORT,Could not enable SIP at the DUT.
+tc_conf_ptp-oc_mhg_015_20241012-182602.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_003_20241017-175309.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_sctp_asg_002_20241127-182423.log,FAIL,FAIL,packets:            0    Truncated packets:         0
+tc_conf_ptp-bc_mfg_014_20241016-151659.log,ABORT,ABORT,DUT does not transmit Announce message on port P1 1/5
+tc_conf_ptp-oc_mfg_018_20241107-123728.log,FAIL,FAIL,DUT does not transmits Signalling ANNOUNCE      #
+tc_conf_dtmf_hvg_009_20241112-173731.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_smg_021_20241021-130850.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mfg_005_20241013-161411.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5 with expected parameters
+tc_conf_ptp-tc_mfg_002_20241014-135409.log,ABORT,ABORT,This test case is only applicable for transport type UDP/IPv4
+tc_conf_ptp-bc_mhg_005_20241016-150921.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_dtmf_dtg_002_20241122-131622.log,PASS,PASS,No Error
+tc_conf_dtmf_pvg_005_20241121-184912.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-oc_pcg_014_20241021-180152.log,FAIL,ABORT,DUT does not transmit Announce message on port P1 wri1
+tc_conf_dtmf_dtg_001_20241121-125718.log,ABORT,ABORT,Could not configure user details on DUT.        #
+tc_conf_dtmf_hvg_008_20241122-120452.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_dtmf_hvg_010_20241030-120607.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_005_20241014-113450.log,PASS,PASS,No Error
+tc_conf_sctp_dfg_001_20241202-165759.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mfg_005_20241016-192430.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on    #
+tc_conf_sctp_pmg_001_20241120-124034.log,ABORT,ABORT,Dependency packages are not installed at        #
+tc_conf_dtmf_pvg_005_20241205-122006.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_sctp_pmg_001_20241128-100238.log,ABORT,ABORT,Could not enable the specified DUT interfaces   #
+tc_conf_dtmf_dtg_002_20240925-122416.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_010_20241112-102337.log,ABORT,ABORT,Testcase Stopped By User
+tc_conf_ptp-oc_mtg_011_20241104-133604.log,PASS,PASS,No Error
+tc_conf_dtmf_hvg_008_20241104-120621.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_010_20241017-173206.log,PASS,PASS,No Error
+tc_conf_sctp_pmg_002_20241121-172332.log,ABORT,ABORT,DUT has not sent SCTP DATA chunk (SIP INVITE    #
+tc_conf_ptp-oc_mtg_014_20241105-120156.log,FAIL,FAIL,or test result may be in correct.
+tc_conf_ptp-bc_mfg_008_20241015-162947.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mhg_003_20241014-123753.log,PASS,PASS,No Error
+tc_conf_ptp-tc_mtg_007_20241015-185913.log,ABORT,ABORT,This test case is only applicable for One Step clock
+tc_conf_dtmf_hvg_012_20241029-185944.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE##                .                                               #
+tc_conf_ptp-tc_mtg_006_20241017-172914.log,FAIL,FAIL,DUT does not transmit PDELAY_RESP message on port P1 1/5
+tc_conf_dtmf_hvg_012_20241029-185944.log,ABORT,ABORT,DTMF RTP session packets are not received on TEE.
+tc_conf_ptp-bc_beg_001_20241010-162245.log,ABORT,ABORT,DUT does not transmit Announce message on port  #
+tc_conf_ptp-oc_mfg_018_20241106-154112.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-oc_mtg_004_20241030-141930.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_beg_001_20241010-153228.log,FAIL,FAIL,DUT does not transmit DELAY_REQ message on port #
+tc_conf_dtmf_pvg_009_20241210-170426.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mhg_006_20241030-141846.log,PASS,PASS,No Error
+tc_conf_ptp-oc_mfg_017_20241106-142704.log,FAIL,FAIL,with error - Capture id does not exist
+tc_conf_ptp-bc_smg_020_20241016-145655.log,ABORT,ABORT,This test case is only applicable for Telecom Profile ITU-T G.8275.1/Y.1369.1
+tc_conf_ptp-tc_mhg_002_20241018-131114.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to        #
+tc_conf_ptp-oc_mtg_018_20241108-101248.log,ABORT,ABORT,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.
+tc_conf_sctp_pmg_002_20241127-110043.log,PASS,PASS,No Error
+tc_conf_ptp-oc_beg_001_20241101-151004.log,FAIL,FAIL,DUT does not transmit DELAY_REQ message on port P1 as DUT has not elected the MASTER based on priority1
+tc_conf_ptp-oc_mfg_010_20241030-141651.log,ABORT,ABORT,This test case is only applicable for Default Profile
+tc_conf_ptp-oc_mfg_018_20241106-110826.log,ABORT,ABORT,Unicast Pre Requisite Failed - Unable to resolve ARP
+tc_conf_ptp-tc_pcg_005_20241016-192843.log,ABORT,ABORT,This test case is only applicable for One Step Transparent Clock
+tc_conf_ptp-tc_mhg_009_20241014-112853.log,PASS,PASS,No Error
