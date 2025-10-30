@@ -1,0 +1,370 @@
+LogID,MessageSnippet,AnomalyScore
+898,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+918,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+919,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+920,This test case is only applicable for two step clock configured for transport type UDP/IPv4 with Non Slave Only Ordinary,-0.025308723551874746
+921,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+922,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+923,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+924,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+941,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+976,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+1042,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+1043,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+1080,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+1081,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+1092,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+1098,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+1105,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+1106,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+1201,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1202,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1203,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1204,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1205,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+1206,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+1207,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1208,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1209,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1210,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1211,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1212,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1213,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+1214,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+1235,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1554,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1557,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1603,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1604,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1605,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+1606,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1607,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1608,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1609,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+1626,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1815,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1816,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1817,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1818,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1819,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1820,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1821,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1822,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1823,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1824,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1825,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1826,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1827,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+1828,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+1829,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+1830,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+1831,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+1832,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+1931,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1932,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1933,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1934,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1935,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1936,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1937,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1938,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1939,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1940,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+1941,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2203,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2204,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2207,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2208,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2211,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+2212,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+2215,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2216,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2219,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2220,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2223,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2224,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2227,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+2228,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+2269,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2270,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2810,This test case is not supported for Multicast mode in UDP/IPv4 Transport type,-0.008410977306744671
+2813,This test case is not supported for Multicast mode in UDP/IPv4 Transport type,-0.008410977306744671
+2816,This test case is not supported for Multicast mode in UDP/IPv4 Transport type,-0.008410977306744671
+2831,This test case is not supported for Multicast mode in UDP/IPv4 Transport type,-0.008410977306744671
+2834,This test case is not supported for Multicast mode in UDP/IPv4 Transport type,-0.008410977306744671
+2839,This test case is not supported for Multicast mode in UDP/IPv4 Transport type,-0.008410977306744671
+2848,13:52:12.833 # Result: ABORTED  Unicast Pre Requisite Failed - Unable to        #,-0.00905898186154952
+2958,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2959,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2960,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+2961,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2962,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2963,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+2964,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+2981,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3201,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3202,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3203,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3204,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3205,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3206,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3207,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+3208,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+3209,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+3249,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3250,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3251,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3423,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3424,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3427,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3430,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3431,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3434,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3437,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+3438,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+3445,This test case is only applicable for Transport type UDP/IPv4,-0.006296734686030314
+3494,DUT does not forward DELAY REQ message on port P2 1/6,-0.013717397587831193
+3497,DUT does not forward DELAY REQ message on port P2 1/6,-0.013717397587831193
+3499,DUT does not forward DELAY REQ message on port P2 1/6,-0.013717397587831193
+3503,DUT does not forward DELAY REQ message on port P2 1/6,-0.013717397587831193
+3505,This test case is not supported for Multicast mode in UDP/IPv4 Transport type,-0.008410977306744671
+3507,18:11:17.291 # TEST CASE FAILED :DUT does not forward DELAY REQ message on port P2 1/6,-0.02086268950178527
+3510,DUT does not forward DELAY REQ message on port P2 1/6,-0.013717397587831193
+3513,DUT does not forward DELAY REQ message on port P2 1/6,-0.013717397587831193
+3539,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3540,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3543,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3753,15:17:44.062 # TEST CASE ABORTED : Unicast Pre Requisite Failed - Unable to resolve ARP,-0.012951636623306284
+3764,12:15:30.956 # TEST CASE ABORTED: Initialization of TEE failed,-0.004755592372200079
+3854,"15:48:05.458 # TEST CASE FAILED :DUT does not elect master based on the clockClass value, when an Announce message with ",-0.0065407488880420694
+3890,"15:12:10.085 # TEST CASE ABORTED: Script Error - can't read ""::ptp_oc_type"": no such variable",-0.0050628460981010925
+3892,"15:12:10.085 # TEST CASE ABORTED: Script Error - can't read ""::ptp_oc_type"": no such variable",-0.0050628460981010925
+3896,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+3897,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+3898,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+3899,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+3900,This test case is only applicable for two step clock configured for transport type UDP/IPv4 with Non Slave Only Ordinary,-0.025308723551874746
+3901,This test case is only applicable for two step clock configured for transport type UDP/IPv4 with Non Slave Only Ordinary,-0.025308723551874746
+3902,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3903,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3904,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+3905,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+3906,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3907,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3908,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+3909,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+3912,13:20:01.621 # TEST CASE ABORTED: This test case is only applicable for transport type UDP/IPv4,-0.013617168428999737
+3915,19:09:54.129 # TEST CASE ABORTED: This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordi,-0.011267450656114342
+3919,19:09:47.063 # TEST CASE ABORTED: This test case is only applicable for two step clock configured for transport type UDP,-0.01579455723911638
+3959,13:14:35.475 # TEST CASE FAILED :DUT does not transmit PDELAY_RESP message on port P1 1/5 with expected parameters,-0.013292406440209625
+3960,13:14:35.475 # TEST CASE FAILED :DUT does not transmit PDELAY_RESP message on port P1 1/5 with expected parameters,-0.013292406440209625
+3973,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3974,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+3982,13:15:51.015 # TEST CASE ABORTED: This test case is only applicable for transport type UDP/IPv4,-0.020518488977335825
+3983,13:15:51.015 # TEST CASE ABORTED: This test case is only applicable for transport type UDP/IPv4,-0.020518488977335825
+3984,19:09:43.544 # TEST CASE ABORTED: This test case is only applicable for transport type UDP/IPv4,-0.003327820572474549
+4014,13:28:12.979 # TEST CASE PASSED :DUT ignores delay request message received on the port from which it was issued and doe,-0.02209606996727609
+4015,13:28:12.979 # TEST CASE PASSED :DUT ignores delay request message received on the port from which it was issued and doe,-0.02209606996727609
+4016,13:28:12.979 # TEST CASE PASSED :DUT ignores delay request message received on the port from which it was issued and doe,-0.02209606996727609
+4017,13:28:12.979 # TEST CASE PASSED :DUT ignores delay request message received on the port from which it was issued and doe,-0.02209606996727609
+4019,13:28:12.979 # TEST CASE PASSED :DUT ignores delay request message received on the port from which it was issued and doe,-0.02209606996727609
+4020,13:28:12.979 # TEST CASE PASSED :DUT ignores delay request message received on the port from which it was issued and doe,-0.02209606996727609
+4031,13:27:23.962 # TEST CASE PASSED :DUT ignores the received PDELAY_REQ message (from which it was issue) and does not tran,-0.0012433330881109206
+4035,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+4036,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+4116,12:13:58.498 # TEST CASE FAILED :DUT does not transmit PdelayReq message for every Pdelay request interval,-0.025045411294771946
+4191,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+4192,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+4193,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+4254,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+4255,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+4260,18:00:56.027 # TEST CASE FAILED :DUT has not configured with  priority2 value  as 0,-9.30852999408982e-05
+4264,12:53:28.202 # TEST CASE ABORTED: This test case is only applicable for Slave Only Ordinary Clock,-0.0025927736335322193
+4266,12:54:14.236 CLI ERROR: Configuration failed for command: ptp v2bc announce-interval 0.5,-0.005734993008269462
+4277,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+4278,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+4287,13:05:00.395 # TEST CASE ABORTED: This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0010222169792656888
+4294,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+4295,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+4303,13:05:53.016 # TEST CASE ABORTED: This test case is only applicable for Slave Only Ordinary Clock,-0.004654925266816767
+4324,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+4325,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+4326,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+4327,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+4373,18:13:12.650 CLI: Stopping PTP: Failed,-0.005324255301686065
+4400,13:00:35.284 # Result: FAILED  DUT Port P1 in SLAVE state does not move to     #,-0.00034391181440712737
+4408,13:01:18.752 # Result: FAILED  DUT Port P1 in MASTER state does not move to    #,-0.015408292898592024
+4428,18:28:53.984 # TEST CASE ABORTED : DUT PTP port P1 is not in FAULTY state.,-0.008641348911479663
+4628,14:13:58.192 # TEST CASE ABORTED: This test case is only applicable for Default Profile,-0.004648651910728496
+4804,This test case is only applicable for transport type IEEE 802.3 with Non Slave Only Ordinary Clock,-0.007222787502250583
+4805,This test case is only applicable for transport type IEEE 802.3 with Non Slave Only Ordinary Clock,-0.007222787502250583
+4806,This test case is only applicable for two step clock configured for transport type IEEE 802.3 with Non Slave Only Ordina,-0.013679086422682563
+4848,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+4891,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+4910,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+4917,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+4923,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+4930,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+4931,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5025,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5053,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5054,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5055,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5056,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5057,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5058,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5059,This test case is only applicable for two step clock configured for transport type UDP/IPv4 with Non Slave Only Ordinary,-0.025308723551874746
+5060,This test case is only applicable for two step clock configured for transport type UDP/IPv4 with Non Slave Only Ordinary,-0.025308723551874746
+5061,This test case is only applicable for two step clock configured for transport type UDP/IPv4 with Non Slave Only Ordinary,-0.025308723551874746
+5062,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5063,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5064,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5065,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5066,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5067,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5068,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5069,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5070,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5071,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+5072,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+5073,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+5090,This test case is only applicable for two step clock configured for transport type IEEE 802.3 with Non Slave Only Ordina,-0.013679086422682563
+5121,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5122,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5123,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5233,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+5234,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+5235,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+5360,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+5361,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+5362,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+5417,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5418,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5419,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5438,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+5439,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+5440,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+5456,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5457,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5458,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5466,13:47:53.877 # TEST CASE ABORTED: This test case is only applicable for Slave Only Ordinary Clock,-0.00512211603490248
+5487,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5488,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5489,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5490,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5491,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5492,This test case is only applicable for Slave Only Ordinary Clock,-0.003603638885292415
+5658,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5659,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5660,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5661,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5662,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5663,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5664,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5665,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5666,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5667,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5674,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5675,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5676,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5677,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5678,This test case is only applicable for two step clock configured for transport type UDP/IPv4 with Non Slave Only Ordinary,-0.025308723551874746
+5679,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5680,This test case is only applicable for transport type UDP/IPv4 with Non Slave Only Ordinary Clock,-0.026543529412619837
+5681,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5682,This test case is only applicable for two step clock configured for transport type UDP/IPv4,-0.013060949700633206
+5683,This test case is only applicable for transport type IEEE 802.3 with Non Slave Only Ordinary Clock,-0.007222787502250583
+5684,This test case is only applicable for transport type IEEE 802.3 with Non Slave Only Ordinary Clock,-0.007222787502250583
+5685,This test case is only applicable for two step clock configured for transport type IEEE 802.3 with Non Slave Only Ordina,-0.013679086422682563
+5711,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
+5820,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5848,This test case is only applicable for Multicast Mode with Non Slave only ordinary clock,-0.002516992233130677
+5868,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5874,This test case is only applicable for Multicast Mode with Non Slave only ordinary clock,-0.002516992233130677
+5875,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+5887,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5888,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5899,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5900,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5901,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5907,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5909,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+5962,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+5965,This test case is only applicable for Multicast Mode with Non Slave only ordinary clock,-0.002516992233130677
+6084,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+6085,This test case is only applicable for Multicast Mode with Non Slave only ordinary clock,-0.002516992233130677
+6086,This test case is only applicable for Unicast Mode with Non Slave only ordinary clock,-0.0006177865275810435
+6115,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+6136,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+6162,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+6168,This test case is only applicable for Non Slave Only Ordinary Clock,-0.008106998676079835
+6321,This test case is only applicable for Transport Type = UDP/IPv4 and Communication Model = Unicast.,-0.017222677866811198
+6428,This test case is only applicable for Transport Type = UDP/IPv4 and Communication Model = Unicast.,-0.017222677866811198
+6429,This test case is only applicable for Transport Type = UDP/IPv4 and Communication Model = Unicast.,-0.017222677866811198
+6430,This test case is only applicable for Transport Type = UDP/IPv4 and Communication Model = Unicast.,-0.017222677866811198
+6557,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6558,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6559,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6560,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6567,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6744,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6758,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6759,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6772,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6773,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6785,This test case is only applicable for Transport Type = UDP/IPv4 and Communication Model = Unicast.,-0.017222677866811198
+6825,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6826,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6827,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6834,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6835,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+6836,This test case is only applicable for Transport Type = IEEE 802.3 and Communication Model = Multicast.,-0.00735595922728538
+7248,14:50:19.444 # TEST CASE ABORTED : DTMF RTP session packets are not received on TEE.,-0.003595946578187792
+7250,14:50:19.444 # TEST CASE ABORTED : DTMF RTP session packets are not received on TEE.,-0.003595946578187792
+7500,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7502,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7506,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7520,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7522,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7524,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7529,DUT has not sent the SCTP HEARTBEAT Chunk packet with expected values.,-0.006232214385544499
+7532,DUT has not sent the SCTP HEARTBEAT Chunk packet with expected values.,-0.006232214385544499
+7536,DUT has not sent the SCTP HEARTBEAT Chunk packet with expected values.,-0.006232214385544499
+7539,DUT has not sent the SCTP HEARTBEAT Chunk packet with expected values.,-0.006232214385544499
+7568,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7573,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7577,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7579,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7581,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7591,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7595,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7597,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7599,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7601,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7603,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7607,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7611,DUT has not sent SCTP DATA chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7824,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7838,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7948,SCTP DATA Chunk (SIP INVITE request) is not sent by TEE to DUT.,-0.003274356779567611
+7952,SCTP DATA Chunk (SIP INVITE request) is not sent by TEE to DUT.,-0.003274356779567611
+7971,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7973,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7975,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7981,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7985,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7987,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7989,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7991,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7993,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7995,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7997,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+7999,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+8005,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+8007,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+8011,DUT has not sent SCTP DATA Chunk (SIP INVITE Request) to TEE interface T1.,-0.0024825546266350473
+8026,DUT has not sent the SCTP HEARTBEAT Chunk packet with expected values.,-0.006232214385544499
+8029,DUT has not sent the SCTP HEARTBEAT Chunk packet with expected values.,-0.006232214385544499
+8496,DUT has not sent the SCTP INIT Chunk packet with expected values.,-0.0037142845984368122
+8514,16:13:37.571 # TEST CASE ABORTED : DTMF RTP session packets are not received on TEE.,-0.0013151789724602514
+8563,This test case is only applicable for transport type UDP/IPv4,-0.006296734686030314
