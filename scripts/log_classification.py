@@ -9,9 +9,9 @@ Input:
 
 Output:
     data/outputs/model_rf/
-        ├── classification_report.csv
-        ├── confusion_matrix.png
-        ├── classified_logs.csv
+        classification_report.csv
+        confusion_matrix.png
+        classified_logs.csv
 """
 
 import os
@@ -28,6 +28,7 @@ from sklearn.metrics import (
 TRAIN_FILE = "data/train_dataset.csv"
 TEST_FILE = "data/test_dataset.csv"
 OUTPUT_DIR = "data/outputs/model_rf"
+CONF_THRESHOLD = 0.6  # threshold for low confidence
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Load data
@@ -46,7 +47,7 @@ X_test = test_df[TEXT_COL].astype(str)
 y_test = test_df[LABEL_COL].astype(str)
 
 # TF-IDF Vectorization
-print(" Vectorizing text logs with TF-IDF...")
+print("Vectorizing text logs with TF-IDF...")
 vectorizer = TfidfVectorizer(max_features=5000, stop_words='english', ngram_range=(1, 2))
 X_train_vec = vectorizer.fit_transform(X_train)
 X_test_vec = vectorizer.transform(X_test)
@@ -70,14 +71,13 @@ y_prob = rf.predict_proba(X_test_vec)
 accuracy = accuracy_score(y_test, y_pred)
 f1 = f1_score(y_test, y_pred, average="weighted")
 
-print(f" Accuracy: {accuracy:.4f}")
+print(f"\nAccuracy: {accuracy:.4f}")
 print(f"Weighted F1-score: {f1:.4f}")
 
 # Detailed classification report
 report_df = pd.DataFrame(classification_report(y_test, y_pred, output_dict=True)).transpose()
 report_df.to_csv(os.path.join(OUTPUT_DIR, "classification_report.csv"), index=True)
-print("\nDetailed Classification Report:")
-print(report_df)
+print("\nDetailed Classification Report saved.")
 
 # Confusion Matrix
 cm = confusion_matrix(y_test, y_pred, labels=rf.classes_)
@@ -92,13 +92,21 @@ plt.savefig(os.path.join(OUTPUT_DIR, "confusion_matrix.png"))
 plt.close()
 
 # Save Classified Logs
+confidence_scores = y_prob.max(axis=1)
+low_conf_flags = (confidence_scores < CONF_THRESHOLD).astype(int)
+
 classified_df = pd.DataFrame({
     "TestCase": test_df.get("test_case_id", ["N/A"] * len(y_test)),
     "PredictedLabel": y_pred,
     "ActualStatus": y_test,
-    "Confidence": y_prob.max(axis=1)
+    "Confidence": confidence_scores,
+    "LowConfidenceFlag": low_conf_flags
 })
+
 classified_df.to_csv(os.path.join(OUTPUT_DIR, "classified_logs.csv"), index=False)
 
+# Summary
+low_conf_count = low_conf_flags.sum()
 print(f"\nSaved all outputs in → {OUTPUT_DIR}")
-print("Random Forest Log Classification completed successfully.")
+print(f"Random Forest Log Classification completed successfully.")
+print(f"Low-confidence predictions (<{CONF_THRESHOLD}): {low_conf_count}/{len(y_test)}")
