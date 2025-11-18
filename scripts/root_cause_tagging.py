@@ -2,54 +2,63 @@ import os
 import pandas as pd
 from collections import Counter
 
-#Configuration
+# Configuration
 INPUT_FILE = "data/cluster/failure_clusters.csv"
 OUTPUT_FILE = "data/failure_patterns_labeled_human.csv"
 OUTPUT_EXAMPLES = "data/outputs/root_cause_examples_human.csv"
 
 os.makedirs("data/outputs", exist_ok=True)
 
-#Load Data
+# Load Data
 df = pd.read_csv(INPUT_FILE)
 if "cluster" not in df.columns or "error_msg" not in df.columns:
     raise KeyError("Input CSV must contain 'cluster' and 'error_msg' columns")
 
-df = df[df["cluster"] != -1]
 df["error_msg"] = df["error_msg"].fillna("No Error")
 
-#Extract keywords per cluster
+
+# Extract keywords per cluster (ignore -1 for now)
 def extract_keywords(df, top_n=5):
     cluster_keywords = {}
-    for cid, subset in df.groupby("cluster"):
-        words = " ".join(subset["error_msg"].astype(str)).lower().split()
-        stop_words = {"the","and","for","to","in","of","on","with","is","a","at"}
-        filtered = [w for w in words if w not in stop_words]
-        common = [w for w,_ in Counter(filtered).most_common(top_n)]
-        cluster_keywords[cid] = common
+    for cid, subset in df[df["cluster"] != -1].groupby("cluster"):
+        text = " ".join(subset["error_msg"].astype(str)).lower()
+        words = [w.strip(".,:;#") for w in text.split()]
+        stop_words = {"the", "and", "for", "to", "in", "of", "on", "with", "is", "a", "at", "no", "error"}
+        filtered = [w for w in words if w not in stop_words and len(w) > 2]
+        common = [w for w, _ in Counter(filtered).most_common(top_n)]
+        cluster_keywords[cid] = common if common else ["<no_keywords>"]
     return cluster_keywords
 
 cluster_keywords = extract_keywords(df)
 
-#Map clusters to human-readable root causes
+print(f"Extracted keywords for {len(cluster_keywords)} clusters")
+
+
+# Map clusters to human-readable root causes
 HUMAN_LABELS = {
-    0: "Interface / Port Mismatch",               # p1, port, transmit, message, parameters
-    1: "Capture / ID Handling Error",             # capture, id, exist, error, does
-    2: "CLI / Command Execution Failure",         # cli, stopping, failed, ptp, 18
-    3: "Test Result / Validation Issue",          # correct, result, test, wri1, 51
-    4: "PTP Transmission / PDELAY_RESP Failure",  # transmit, message, dut, does, pdelay_resp
-    5: "Bit / Marker Configuration Error",        # bit, marker, segments, true, set
-    6: "DUT Configuration Value Error",           # configured, value, dut, priority2, priority1
-    7: "DUT Port / State Mismatch",               # dut, port, state, does, message
-    8: "Announce / SIP Transmission Error",       # announce, dut, sent, sip, port
-    9: "PTP Command / Domain Configuration Error" # command, ptp, v2bc, domain, v2tc
+    0: "Interface / Port Mismatch",
+    1: "Capture / ID Handling Error",
+    2: "CLI / Command Execution Failure",
+    3: "Test Result / Validation Issue",
+    4: "PTP Transmission / PDELAY_RESP Failure",
+    5: "Bit / Marker Configuration Error",
+    6: "DUT Configuration Value Error",
+    7: "DUT Port / State Mismatch",
+    8: "Announce / SIP Transmission Error",
+    9: "PTP Command / Domain Configuration Error"
 }
 
-df["root_cause_label"] = df["cluster"].map(lambda c: HUMAN_LABELS.get(c, "Uncategorized"))
-df["keywords"] = df["cluster"].map(lambda c: ", ".join(cluster_keywords.get(c, [])))
+df["root_cause_label"] = df["cluster"].map(HUMAN_LABELS)
+df["root_cause_label"] = df["root_cause_label"].fillna("Normal")
 
-#Build representative examples 
+
+# Assign keywords (normal logs → “No keywords”)
+df["keywords"] = df["cluster"].map(lambda c: ", ".join(cluster_keywords.get(c, [])))
+df.loc[df["cluster"] == -1, "keywords"] = "No keywords"
+
+# Representative examples (for failure clusters only)
 examples = []
-for cid, subset in df.groupby("cluster"):
+for cid, subset in df[df["cluster"] != -1].groupby("cluster"):
     label = subset["root_cause_label"].mode().iat[0]
     example_msgs = subset["error_msg"].head(3).tolist()
     examples.append({
@@ -61,9 +70,11 @@ for cid, subset in df.groupby("cluster"):
 
 examples_df = pd.DataFrame(examples)
 
-#Save results 
+# Save Results
 df.to_csv(OUTPUT_FILE, index=False)
 examples_df.to_csv(OUTPUT_EXAMPLES, index=False)
 
-print(f"Human-readable root cause labeling complete → {OUTPUT_FILE}")
-print(f"Representative examples saved → {OUTPUT_EXAMPLES}")
+print(f" Root cause labeling complete → {OUTPUT_FILE}")
+print(f" Representative examples saved → {OUTPUT_EXAMPLES}")
+print("\n Root cause label counts:")
+print(df["root_cause_label"].value_counts())

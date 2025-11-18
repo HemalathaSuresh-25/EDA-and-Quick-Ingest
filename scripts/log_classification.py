@@ -3,18 +3,21 @@ Goal:
 Predict log status/category (PASS / FAIL / ABORT)
 from textual error messages using TF-IDF + Random Forest.
 
-Input:
-    data/train_dataset.csv
-    data/test_dataset.csv
+Final Output:
+    data/outputs/model_rf/classified_logs.csv  
+    → Contains ALL LOGS (train + test = 8605 rows)
 
-Output:
-    data/outputs/model_rf/
-        classification_report.csv
-        confusion_matrix.png
-        classified_logs.csv
-    models/
-        rf_model.pkl
-        tfidf_vectorizer.pkl
+Columns:
+    test_case_id
+    filename
+    dut
+    suite
+    cluster_label
+    predictedlabel
+    actualstatus
+    confidence
+    lowconfidenceflag
+    errormsg
 """
 
 import os
@@ -28,19 +31,21 @@ from sklearn.metrics import (
     accuracy_score, f1_score, classification_report, confusion_matrix
 )
 
+# ---------------------------- CONFIG ----------------------------
 TRAIN_FILE = "data/train_dataset.csv"
 TEST_FILE = "data/test_dataset.csv"
 
 OUTPUT_DIR = "data/outputs/model_rf"
 MODEL_DIR = "models"
 
-TEXT_COL = "error_msg"         
-LABEL_COL = "label"            
-CONF_THRESHOLD = 0.6           
+TEXT_COL = "error_msg"
+LABEL_COL = "label"
+CONF_THRESHOLD = 0.6
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(MODEL_DIR, exist_ok=True)
 
+# ---------------------------- LOAD DATA ----------------------------
 print("Loading data...")
 train_df = pd.read_csv(TRAIN_FILE)
 test_df = pd.read_csv(TEST_FILE)
@@ -48,17 +53,15 @@ test_df = pd.read_csv(TEST_FILE)
 print(f"Train shape: {train_df.shape}")
 print(f"Test shape:  {test_df.shape}")
 
-if TEXT_COL not in train_df.columns or LABEL_COL not in train_df.columns:
-    raise KeyError(f"Dataset must include '{TEXT_COL}' and '{LABEL_COL}' columns.")
-
-
+# ---------------------------- MODEL INPUT ----------------------------
 X_train = train_df[TEXT_COL].astype(str)
 y_train = train_df[LABEL_COL].astype(str)
 
 X_test = test_df[TEXT_COL].astype(str)
 y_test = test_df[LABEL_COL].astype(str)
 
-print("\n Vectorizing logs using TF-IDF...")
+# ---------------------------- TF-IDF ----------------------------
+print("\nVectorizing logs using TF-IDF...")
 vectorizer = TfidfVectorizer(
     max_features=5000,
     stop_words='english',
@@ -68,8 +71,9 @@ vectorizer = TfidfVectorizer(
 X_train_vec = vectorizer.fit_transform(X_train)
 X_test_vec = vectorizer.transform(X_test)
 
-print(" TF-IDF shape:", X_train_vec.shape)
+print("TF-IDF shape:", X_train_vec.shape)
 
+# ---------------------------- MODEL TRAIN ----------------------------
 print("\nTraining Random Forest Model...")
 rf = RandomForestClassifier(
     n_estimators=300,
@@ -80,7 +84,8 @@ rf = RandomForestClassifier(
 
 rf.fit(X_train_vec, y_train)
 
-print("\n Evaluating model...")
+# ---------------------------- EVALUATE ----------------------------
+print("\nEvaluating model...")
 y_pred = rf.predict(X_test_vec)
 y_prob = rf.predict_proba(X_test_vec)
 
@@ -90,23 +95,22 @@ f1 = f1_score(y_test, y_pred, average="weighted")
 print(f"✔ Accuracy: {accuracy:.4f}")
 print(f"✔ Weighted F1-score: {f1:.4f}")
 
+# Save classification report
 report = classification_report(y_test, y_pred, output_dict=True)
-report_df = pd.DataFrame(report).transpose()
-report_df.to_csv(os.path.join(OUTPUT_DIR, "classification_report.csv"), index=True)
-print("✔ Classification report saved.")
+pd.DataFrame(report).transpose().to_csv(
+    os.path.join(OUTPUT_DIR, "classification_report.csv"),
+    index=True
+)
 
-print(" Saving confusion matrix...")
+# ---------------------------- CONFUSION MATRIX ----------------------------
+print("Saving confusion matrix...")
 
 cm = confusion_matrix(y_test, y_pred, labels=rf.classes_)
 
 plt.figure(figsize=(6, 5))
 sns.heatmap(
-    cm,
-    annot=True,
-    fmt='d',
-    cmap="Blues",
-    xticklabels=rf.classes_,
-    yticklabels=rf.classes_
+    cm, annot=True, fmt='d', cmap="Blues",
+    xticklabels=rf.classes_, yticklabels=rf.classes_
 )
 plt.title("Confusion Matrix - Random Forest")
 plt.xlabel("Predicted Label")
@@ -115,32 +119,61 @@ plt.tight_layout()
 plt.savefig(os.path.join(OUTPUT_DIR, "confusion_matrix.png"))
 plt.close()
 
-print(" Saving prediction results...")
+# ---------------------------- BUILD TEST OUTPUT ----------------------------
+print("Building test predictions...")
 
 confidence_scores = y_prob.max(axis=1)
 low_conf_flags = (confidence_scores < CONF_THRESHOLD).astype(int)
 
-classified_df = pd.DataFrame({
-    "TestCase": test_df.get("test_case_id", ["N/A"] * len(y_test)),
-    "DUT": test_df.get("dut", ["N/A"] * len(y_test)),
-    "Suite": test_df.get("suite", ["N/A"] * len(y_test)),
-    "PredictedLabel": y_pred,
-    "ActualStatus": y_test,
-    "Confidence": confidence_scores,
-    "LowConfidenceFlag": low_conf_flags,
-    "ErrorMsg": X_test,
+test_out = pd.DataFrame({
+    "test_case_id": test_df.get("test_case_id", ["N/A"] * len(test_df)),
+    "filename": test_df.get("filename", ["N/A"] * len(test_df)),
+    "dut": test_df.get("dut", ["N/A"] * len(test_df)),
+    "suite": test_df.get("suite", ["N/A"] * len(test_df)),
+    "cluster_label": test_df.get("cluster", ["N/A"] * len(test_df)),
+
+    "predictedlabel": y_pred,
+    "actualstatus": y_test,
+    "confidence": confidence_scores,
+    "lowconfidenceflag": low_conf_flags,
+
+    "errormsg": X_test
 })
 
-classified_df.to_csv(os.path.join(OUTPUT_DIR, "classified_logs.csv"), index=False)
+# ---------------------------- BUILD TRAIN OUTPUT ----------------------------
+print("Building train predictions...")
 
-low_conf_count = low_conf_flags.sum()
+train_pred = rf.predict(X_train_vec)
+train_prob = rf.predict_proba(X_train_vec)
+train_conf = train_prob.max(axis=1)
+train_low_flag = (train_conf < CONF_THRESHOLD).astype(int)
 
-print("\n Saving model and vectorizer...")
+train_out = pd.DataFrame({
+    "test_case_id": train_df.get("test_case_id", ["N/A"] * len(train_df)),
+    "filename": train_df.get("filename", ["N/A"] * len(train_df)),
+    "dut": train_df.get("dut", ["N/A"] * len(train_df)),
+    "suite": train_df.get("suite", ["N/A"] * len(train_df)),
+    "cluster_label": train_df.get("cluster", ["N/A"] * len(train_df)),
+
+    "predictedlabel": train_pred,
+    "actualstatus": y_train,
+    "confidence": train_conf,
+    "lowconfidenceflag": train_low_flag,
+
+    "errormsg": X_train
+})
+
+# ---------------------------- MERGE TRAIN + TEST ----------------------------
+final_df = pd.concat([train_out, test_out], ignore_index=True)
+
+print(f"\nFinal output rows: {final_df.shape[0]} (expected ~8605)")
+
+final_df.to_csv(os.path.join(OUTPUT_DIR, "classified_logs.csv"), index=False)
+
+# ---------------------------- SAVE MODEL ----------------------------
+print("\nSaving model and vectorizer...")
 joblib.dump(rf, os.path.join(MODEL_DIR, "rf_model.pkl"))
 joblib.dump(vectorizer, os.path.join(MODEL_DIR, "tfidf_vectorizer.pkl"))
 
-print("Random Forest Log Classification Completed")
-print(f"Outputs saved to: {OUTPUT_DIR}")
-print(f"Models saved to:  {MODEL_DIR}")
-print(f"Low-confidence predictions (< {CONF_THRESHOLD}): {low_conf_count}/{len(y_test)}")
-
+print("\nRandom Forest Log Classification Completed ✔")
+print(f"Final classified logs saved → {OUTPUT_DIR}/classified_logs.csv")

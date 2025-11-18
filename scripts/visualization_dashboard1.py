@@ -9,23 +9,16 @@ from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-# ---------------------------------------------------------------
-# File Paths
-# ---------------------------------------------------------------
 CLASSIFIED = "data/outputs/model_rf/classified_logs.csv"
 ANOMALY = "data/outputs/anomaly_reports/anomaly_full_scores.csv"
 OUTPUT_DIR = "data/outputs/visuals"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# ---------------------------------------------------------------
 # Load Data
-# ---------------------------------------------------------------
 df_class = pd.read_csv(CLASSIFIED)
 df_anom = pd.read_csv(ANOMALY)
 
-# ---------------------------------------------------------------
-# 1️⃣ CONFUSION MATRIX
-# ---------------------------------------------------------------
+# CONFUSION MATRIX
 plt.figure(figsize=(7, 6))
 cm = confusion_matrix(df_class["ActualStatus"], df_class["PredictedLabel"])
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
@@ -36,9 +29,7 @@ plt.tight_layout()
 plt.savefig(f"{OUTPUT_DIR}/confusion_matrix.png", dpi=300)
 plt.show()
 
-# ---------------------------------------------------------------
-# 2️⃣ ANOMALY SCORE HISTOGRAM
-# ---------------------------------------------------------------
+#  ANOMALY SCORE HISTOGRAM
 plt.figure(figsize=(8, 5))
 sns.histplot(df_anom["anomaly_score"], bins=40, kde=True)
 plt.title("Anomaly Score Distribution")
@@ -48,13 +39,12 @@ plt.tight_layout()
 plt.savefig(f"{OUTPUT_DIR}/anomaly_score_histogram.png", dpi=300)
 plt.show()
 
-# ---------------------------------------------------------------
-# 3️⃣ TF-IDF EMBEDDINGS (MessageSnippet)
-# ---------------------------------------------------------------
+#  TF-IDF EMBEDDINGS (MessageSnippet)
+
 TEXT_COLUMN = "MessageSnippet"
 
 if TEXT_COLUMN not in df_anom.columns:
-    raise ValueError(f"❌ Column `{TEXT_COLUMN}` not found in anomaly file!")
+    raise ValueError(f" Column `{TEXT_COLUMN}` not found in anomaly file!")
 
 print("Generating TF-IDF embeddings from:", TEXT_COLUMN)
 
@@ -71,9 +61,8 @@ print("TF-IDF shape:", X.shape)
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-# ---------------------------------------------------------------
-# 4️⃣ PCA VISUALIZATION
-# ---------------------------------------------------------------
+#  PCA VISUALIZATION
+
 pca = PCA(n_components=2, random_state=42)
 pca_result = pca.fit_transform(X_scaled)
 
@@ -93,9 +82,9 @@ plt.title("PCA Scatter Plot Highlighting Anomalies")
 plt.savefig(f"{OUTPUT_DIR}/pca_scatter.png", dpi=300)
 plt.show()
 
-# ---------------------------------------------------------------
-# 5️⃣ t-SNE VISUALIZATION
-# ---------------------------------------------------------------
+
+#  t-SNE VISUALIZATION
+
 print("Running t-SNE... (takes 1–2 minutes)")
 
 tsne = TSNE(
@@ -124,9 +113,7 @@ plt.title("t-SNE Scatter Plot Highlighting Anomalies")
 plt.savefig(f"{OUTPUT_DIR}/tsne_scatter.png", dpi=300)
 plt.show()
 
-# ---------------------------------------------------------------
-# 6️⃣ PCA WITH METADATA LABELS
-# ---------------------------------------------------------------
+#  PCA WITH METADATA LABELS
 df_anoms = df_anom[df_anom["is_anomaly"] == 1]
 
 plt.figure(figsize=(10, 8))

@@ -17,7 +17,7 @@ BERT_MODEL = "all-MiniLM-L6-v2"
 
 #Clustering Function 
 def cluster_failures_bert():
-    print("🔹 Loading dataset...")
+    print(" Loading dataset...")
     df = pd.read_csv(INPUT_FILE)
     print(f"Loaded dataset: {df.shape[0]} rows, {df.shape[1]} columns")
 
@@ -54,7 +54,7 @@ def cluster_failures_bert():
     # Assign clusters back to full dataframe
     df["cluster"] = -1  # default for non-fail logs
     df.loc[df_failures.index, "cluster"] = cluster_labels
-
+    
     # Extract top keywords per cluster using TF-IDF
     print("Extracting top keywords per cluster using TF-IDF...")
     vectorizer = TfidfVectorizer(max_features=3000, stop_words="english")

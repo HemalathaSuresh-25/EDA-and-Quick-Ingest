@@ -52,3 +52,6 @@ keywords_df.to_csv(os.path.join(OUTPUT_DIR, "top_keywords_per_root_cause.csv"), 
 #Print Summary
 print("Charts and reports generated in:", OUTPUT_DIR)
 print("\nTop 5 Root Cause Frequency:\n", root_cause_counts.head())
+
+
+
