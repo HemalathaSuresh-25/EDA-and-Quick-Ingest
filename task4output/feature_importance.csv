@@ -1,0 +1,13 @@
+feature,importance
+cluster_label_te,0.83054143
+failure_rate,0.04970097
+test_case_te,0.04515753
+time_since_last_failure,0.037276957
+dut_te,0.017998219
+dut_fail_rate,0.008529826
+anomaly_score,0.00523706
+schedule_cycle_te,0.0022241462
+regression_group_te,0.0017143965
+execution_duration,0.0012438229
+suite_fail_rate,0.00037563665
+suite_te,0.0
