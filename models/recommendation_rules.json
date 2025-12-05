@@ -1,0 +1,13 @@
+{
+    "timeout": "Increase timeout value / verify network latency / add retry mechanism.",
+    "retry": "Enable retry logic or increase wait interval between commands.",
+    "authentication": "Validate credentials, certificates or tokens used in session.",
+    "configuration": "Check DUT configuration parameters / port mapping / VLAN setup.",
+    "protocol": "Inspect protocol handshake, packet formatting & header encoding.",
+    "interface": "Verify physical link status / port negotiation / driver compatibility.",
+    "memory": "Check memory leaks / increase buffer size / optimize payload handling.",
+    "state mismatch": "Reset DUT state / resynchronize PTP or SIP session.",
+    "command failure": "Verify CLI commands, syntax and privileges.",
+    "packet drop": "Check switch load, buffering and congestion handling.",
+    "unknown": "No automated fix available — manual debugging required."
+}
