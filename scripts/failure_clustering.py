@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import numpy as np
+import joblib
 from sklearn.cluster import KMeans
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sentence_transformers import SentenceTransformer
@@ -76,6 +77,13 @@ def cluster_failures_bert():
     # Save results
     df.to_csv(OUTPUT_FILE, index=False)
     print(f"\n Failure clusters (BERT) saved → {OUTPUT_FILE}")
+
+    # Save both models
+    joblib.dump(kmeans, "models/cluster_model.pkl")
+    joblib.dump(model, "models/bert_encoder.pkl")
+
+    print(" Clustering model saved as → models/cluster_model.pkl")
+    print(" BERT encoder saved as     → models/bert_encoder.pkl")
 
     return df, top_keywords_per_cluster
 

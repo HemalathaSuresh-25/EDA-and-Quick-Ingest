@@ -1,115 +1,180 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import os
-import json
-import joblib
+import re, sys, os
+from joblib import load
+from scipy.sparse import hstack
 import numpy as np
-import pandas as pd
-import xgboost as xgb
-from sklearn.preprocessing import normalize
 
-# ================================================================
-#                   LOAD TRAINED MODELS
-# ================================================================
+# CONFIG
 
-cluster_model = joblib.load("models/cluster_model.pkl")
-bert_encoder = joblib.load("models/bert_encoder.pkl")
-xgb_model = xgb.Booster()
-xgb_model.load_model("models/xgb_model.json")
-model_features = joblib.load("models/model_features.joblib")  # feature list
+CONFIDENCE_THRESHOLD = 0.60
+PASS_OVERRIDE_RATIO  = 0.60  
 
-# ================================================================
-#          LOAD FAILURE → RECOMMENDATION KNOWLEDGE BASE
-# ================================================================
+# LOAD MODELS
 
-with open("models/recommendation_rules.json") as f:
-    recommendations = json.load(f)
+status_model     = load("models/status_classifier_xgb.joblib")
+vectorizer_word  = load("models/tfidf_vectorizer_word.pkl")
+vectorizer_char  = load("models/tfidf_vectorizer_char.pkl")
+label_encoder    = load("models/label_encoder.joblib")
 
-# ================================================================
-#                 HUMAN LABELS FOR CLUSTER IDS
-# ================================================================
+# CLEANING FUNCTION
 
-HUMAN_LABELS = {
-    0: "Interface / Port Mismatch",
-    1: "Capture / ID Handling Error",
-    2: "CLI / Command Execution Failure",
-    3: "Test Result / Validation Issue",
-    4: "PTP Transmission / PDELAY_RESP Failure",
-    5: "BIT / Marker Configuration Error",
-    6: "DUT Configuration Value Error",
-    7: "Port State / Port Mismatch",
-    8: "Announce / SIP Transmission Error",
-    9: "PTP Command / Domain Configuration Error"
+def clean_for_model(text):
+    text = re.sub(r"\d{2}:\d{2}:\d{2}\.\d{3}", " ", text)
+    text = re.sub(r"[^\w\s\-:]", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+# EXPLICIT STATUS EXTRACTION
+
+def extract_explicit_status(text):
+    txt = text.lower()
+    abort = len(re.findall(r"\babort(?:ed|s)?\b", txt))
+    fail  = len(re.findall(r"\bfail(?:ed|ure|s)?\b", txt))
+    pas   = len(re.findall(r"\bpass(?:ed|es)?\b", txt))
+
+    if abort > 0:
+        return "ABORT"
+    if fail > 0 and pas == 0:
+        return "FAIL"
+    if pas > 0 and fail == 0:
+        return "PASS"
+
+    return None
+
+# PATTERN-BASED FAILURE DETECTION
+
+failure_patterns = {
+    r"timeout|timed out|no response" :
+        ("Timeout / No Response", "Increase timeout & verify DUT responsiveness"),
+
+    r"disconnect|link down|connection lost|peer lost" :
+        ("Link Failure", "Check cable, port state & network reachability"),
+
+    r"segfault|core dump|crash|panic|fatal" :
+        ("Software Crash", "Review crash logs / memory utilization"),
+
+    r"config fail|invalid config|invalid parameter|bad parameter|mismatch" :
+        ("Configuration Error", "Correct configuration fields & re-run"),
+
+    r"packet drop|rx miss|tx miss|lost packet|no packet" :
+        ("Packet Drop", "Check MTU, traffic load & interface queues"),
+
+    r"crc error|checksum failed|frame error" :
+        ("Data Integrity Error", "Inspect signal quality / cables / SFP"),
+
+    r"ptp sync fail|timestamp mismatch|offset too high|sync lost" :
+        ("PTP Synchronization Loss", "Verify GM source, delay & clock domain"),
+
+    r"SCTP INIT|SCTP chunk|init chunk fail" :
+        ("SCTP INIT Packet Missing", "Check SCTP negotiation / chunk exchange"),
+
+    r"capture.txt is empty|no packets captured" :
+        ("No Packet Capture", "Verify traffic generator or capture interface"),
 }
-#          LOAD FEATURE CSV
 
-features_csv_path = "C:/Users/hemalatha/Desktop/attest-eda/data/task4output/prioritized_testcases_xgb.csv"
-features_df = pd.read_csv(features_csv_path)
+# Generic reason-to-recommendation mapping for last failure line
 
-# Create missing features if required
-for f in model_features:
-    if f not in features_df.columns:
-        base = f.replace("_te", "")
-        if base in features_df.columns:
-            features_df[f] = features_df.groupby(base)["isFail"].transform("mean").fillna(0)
+generic_reason_map = {
+    "link": "Check network connectivity & ports",
+    "timeout": "Increase timeout or check DUT responsiveness",
+    "crash": "Investigate logs, memory & core dumps",
+    "segfault": "Review software stability & environment",
+    "config": "Validate configuration parameters",
+    "packet": "Check network traffic, MTU & interfaces",
+    "ptp": "Verify PTP sync, GM source & delay",
+    "sctp": "Check SCTP negotiation & chunk exchange",
+    "capture": "Verify capture interface or traffic generator",
+    "announce": "Check DUT announcement message transmission",
+}
+
+# FAILURE REASON DETECTION
+
+def detect_failure_reason(log):
+    # Check for "# Result: FAILED ..." line first (single line only)
+    m = re.search(r"#\s*result\s*:\s*failed\s*(.+)", log, re.IGNORECASE)
+    if m:
+        reason = m.group(1).strip()               # Strip leading/trailing spaces
+        reason = re.sub(r"\s*#+\s*$", "", reason)  # Remove trailing # if any
+        reco = "Verify DUT activity & test conditions"
+        for key, rec in generic_reason_map.items():
+            if key in reason.lower():
+                reco = rec
+                break
+        return reason, reco
+
+    # Check predefined failure patterns
+    text = log.lower()
+    for pattern,(reason,reco) in failure_patterns.items():
+        if re.search(pattern, text):
+            return reason, reco
+
+    # Check last "test case failed..." line
+    m2 = re.findall(r"test case failed.*", text, re.IGNORECASE)
+    if m2:
+        reason = m2[-1].strip()
+        reco = "Verify DUT activity & test conditions"
+        for key, rec in generic_reason_map.items():
+            if key in reason.lower():
+                reco = rec
+                break
+        return reason, reco
+
+    # Nothing detected
+    return None, None
+
+def analyze_log_file(logfile):
+
+    raw = open(logfile,"r",errors="ignore").read()
+
+    # Explicit PASS/FAIL/ABORT (Strongest condition)
+    explicit = extract_explicit_status(raw)
+
+    if explicit:
+        final = explicit
+    else:
+        # Model-Based Predict
+        cleaned = clean_for_model(raw)
+        X = hstack([vectorizer_word.transform([cleaned]),
+                    vectorizer_char.transform([cleaned])])
+
+        proba = status_model.predict_proba(X)[0]
+        classes = label_encoder.classes_
+        final = classes[np.argmax(proba)]
+        conf  = max(proba)
+
+        if conf < CONFIDENCE_THRESHOLD:
+            final = "UNCERTAIN"
+
+        # If FAIL – but many PASS tokens exist → flip to PASS
+        if final=="FAIL":
+            pc = len(re.findall(r"\bpass", raw, re.I))
+            fc = len(re.findall(r"\bfail", raw, re.I))
+            if pc+fc > 0 and pc/(pc+fc) >= PASS_OVERRIDE_RATIO:
+                final="PASS"
+
+    print("\n========== LOG RESULT ==========")
+    print(f"FILE        : {os.path.basename(logfile)}")
+    print(f"PREDICTED   : {final}")
+
+    # FAILURE REASON + RECOMMENDATION
+    if final=="FAIL":
+        reason,reco = detect_failure_reason(raw)
+
+        print("\n--- FAILURE DETAILS ---")
+        if reason:
+            print(f"REASON         : {reason}")
+            print(f"RECOMMENDATION : {reco}")
         else:
-            features_df[f] = 0.0  # default
+            print("REASON         : No failure pattern recognized ❗")
+            print("RECOMMENDATION : Add custom pattern based on logs")
 
-#   MAIN ANALYZER FUNCTION
-
-def analyze_log(log_path):
-
-    print(f"\nAnalyzing Log File:\n{log_path}\n")
-
-    if not os.path.exists(log_path):
-        print(" ERROR: File not found")
-        return
-    
-    raw = open(log_path, "r", errors="ignore").read().lower()
-    log_name = os.path.basename(log_path)
-
-    if log_name not in features_df['filename'].values:
-        print(" No features available for this log in CSV")
-        return
-
-    row = features_df[features_df["filename"] == log_name].iloc[0]
-    xgb_input = row[model_features].to_numpy().reshape(1, -1)
-    pred = float(xgb_model.predict(xgb.DMatrix(xgb_input, feature_names=model_features))[0])
-
-    # 3-CLASS DECISION
-    if any(x in raw for x in ["abort", "terminated", "stopped", "exit"]):
-        status = "ABORT"
-        status_conf = round(1 - pred, 3)
-
-    else:
-        status = "FAIL" if pred >= 0.50 else "PASS"
-        status_conf = pred if status=="FAIL" else round(1-pred,3)
-
-    # FAIL ONLY — Cluster + Reason + Fix
-    if status == "FAIL":
-        x_bert = normalize(bert_encoder.encode([raw]))
-        cluster = int(cluster_model.predict(x_bert)[0])
-        cluster_name = HUMAN_LABELS.get(cluster,"Unknown Cluster")
-
-        detected = next((k for k in recommendations if k in raw), "unknown")
-        fix = recommendations.get(detected,"No recommended fix available")
-
-
-    print("=========== RESULT ===========")
-    print(f"Status Prediction        : {status}")
-    print(f"Model Confidence         : {status_conf}")
-
-    if status == "FAIL":
-        print(f"Failure Probability      : {round(pred,3)}")
-        print(f"Cluster                  : {cluster_name}")
-        print(f"Detected Reason          : {detected}")
-        print(f"Recommendation           : {fix}")
-    else:
-        print("No reason analysis or fix shown for PASS / ABORT logs.")
-
-    print("====================================\n")
+    print("================================\n")
 
 if __name__ == "__main__":
+    if len(sys.argv)<2:
+        print("Usage: python run_log_analyzer.py <logfile>")
+        sys.exit(0)
 
-    analyze_log(r"C:\Users\hemalatha\Desktop\attest-eda\data\standardized\2024-12-09\generic_dut\dtmf\tc_conf_dtmf_pvg_005_20241209-210619.log")
+    analyze_log_file(sys.argv[1])
