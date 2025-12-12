@@ -1,79 +1,125 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
+import os
 import pandas as pd
-import re
-from sentence_transformers import SentenceTransformer
+import numpy as np
+import joblib
 from sklearn.cluster import KMeans
-from sklearn.preprocessing import StandardScaler
-import matplotlib.pyplot as plt
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics import silhouette_score
+from sentence_transformers import SentenceTransformer
 
-# =========================
-# 1. LOAD YOUR DATA
-# =========================
-DF_FILE = "C:/Users/hemalatha/Desktop/attest-eda/data/feature_engineered_testcases.csv"
 
-df = pd.read_csv(DF_FILE)
-df_abort = df[df["AB"] == "ABORT"].copy()
+INPUT_FILE = "C:/Users/hemalatha/Desktop/attest-eda/data/features/failure_features.csv"
+OUTPUT_DIR = "C:/Users/hemalatha/Desktop/attest-eda/data/cluster"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+OUTPUT_FILE = os.path.join(OUTPUT_DIR, "abort_clusters.csv")
 
-print("Total abort logs:", len(df_abort))
 
-# =========================
-# 2. CLEAN ABORT MESSAGE
-# =========================
-def clean_text(t):
-    t = str(t).lower()
-    t = re.sub(r"\d{2}:\d{2}:\d{2}\.\d+", " ", t)  # remove timestamps
-    t = re.sub(r"[^a-z0-9\s]", " ", t)
-    t = re.sub(r"\s+", " ", t)
-    return t.strip()
+TOP_KEYWORDS = 5
+KMEANS_CLUSTERS = 8  # Optional: you can tune for abort
+BERT_MODEL = "all-MiniLM-L6-v2"
 
-df_abort["clean_msg"] = df_abort["Y"].apply(clean_text)
 
-# =========================
-# 3. EMBEDDINGS (MiniLM)
-# =========================
-print("Generating embeddings...")
-model = SentenceTransformer("all-mpnet-base-v2")
-embeddings = model.encode(df_abort["clean_msg"].tolist(), show_progress_bar=True)
+def cluster_abort_logs_bert():
+    print("Loading dataset for ABORT clustering...")
+    df = pd.read_csv(INPUT_FILE)
+    print(f"Loaded dataset: {df.shape[0]} rows, {df.shape[1]} columns")
 
-# =========================
-# 4. FIND BEST NUMBER OF CLUSTERS (KNEE PLOT)
-# =========================
-print("Finding best number of clusters...")
+    # Validate presence of necessary columns
+    required_cols = ["status", "error_msg"]
+    for col in required_cols:
+        if col not in df.columns:
+            raise ValueError(f"Column '{col}' not found in dataset.")
 
-distortions = []
-K_range = range(2, 12)
+    # Filter only ABORT logs
+    df["status"] = df["status"].astype(str).str.strip().str.upper()
+    df_abort = df[df["status"] == "ABORT"].copy()
 
-for K in K_range:
-    kmeans = KMeans(n_clusters=K, random_state=42)
-    kmeans.fit(embeddings)
-    distortions.append(kmeans.inertia_)
+    if df_abort.empty:
+        raise ValueError("No 'ABORT' logs found for clustering!")
 
-plt.plot(K_range, distortions, marker="o")
-plt.title("KMeans Elbow Curve")
-plt.xlabel("K (clusters)")
-plt.ylabel("Inertia")
-plt.grid()
-plt.savefig("abort_elbow_curve.png")
-print("Elbow curve saved as abort_elbow_curve.png")
+    df_abort["error_msg"] = df_abort["error_msg"].fillna("").astype(str)
+    print(f"Found {len(df_abort)} ABORT logs for clustering")
 
-# =========================
-# 5. CHOOSE K (OR MANUALLY DECIDE)
-# =========================
-BEST_K = 6         # adjust after seeing elbow curve!
+    # BERT Embeddings
+    print(f"Encoding {df_abort.shape[0]} abort messages using BERT model: {BERT_MODEL}...")
+    model = SentenceTransformer(BERT_MODEL)
+    embeddings = model.encode(
+        df_abort["error_msg"].tolist(),
+        show_progress_bar=True,
+        convert_to_numpy=True
+    )
 
-kmeans_final = KMeans(n_clusters=BEST_K, random_state=42)
-df_abort["cluster"] = kmeans_final.fit_predict(embeddings)
+    # KMeans clustering
+    print(f"Clustering abort embeddings with KMeans (k={KMEANS_CLUSTERS})...")
+    kmeans = KMeans(n_clusters=KMEANS_CLUSTERS, random_state=42, n_init=10)
+    cluster_labels = kmeans.fit_predict(embeddings)
 
-# =========================
-# 6. EXPORT FOR MANUAL LABELING
-# =========================
-OUT = "abort_cluster_output.csv"
+    # Calculate silhouette score for validation
+    sil_score = silhouette_score(embeddings, cluster_labels)
+    print(f"Silhouette score: {sil_score:.3f} (Higher is better, >0.4 is good)")
 
-df_abort[["filename", "Y", "clean_msg", "cluster"]].to_csv(OUT, index=False)
+    # Assign back to main df
+    df["abort_cluster"] = -1
+    df.loc[df_abort.index, "abort_cluster"] = cluster_labels
+    
+    # Keyword extraction
+    print("Extracting top keywords for each ABORT cluster...")
+    vectorizer = TfidfVectorizer(max_features=3000, stop_words="english")
+    X_tfidf = vectorizer.fit_transform(df_abort["error_msg"])
+    feature_names = np.array(vectorizer.get_feature_names_out())
 
-print("\n==============================")
-print("CLUSTERING COMPLETED!")
-print(f"Output saved to: {OUT}")
-print("==============================\n")
+    top_keywords_per_cluster = {}
+    cluster_sizes = {}
+    
+    print("\n=== ABORT CLUSTER SUMMARY ===")
+    for cluster_num in range(KMEANS_CLUSTERS):
+        cluster_indices = np.where(cluster_labels == cluster_num)[0]
+        cluster_sizes[cluster_num] = len(cluster_indices)
+        
+        if len(cluster_indices) == 0:
+            top_keywords_per_cluster[cluster_num] = []
+            print(f"Abort Cluster {cluster_num}: 0 logs (empty)")
+            continue
+
+        cluster_tfidf = X_tfidf[cluster_indices].mean(axis=0)
+        top_indices = np.asarray(cluster_tfidf).flatten().argsort()[::-1][:TOP_KEYWORDS]
+        keywords = feature_names[top_indices].tolist()
+        top_keywords_per_cluster[cluster_num] = keywords
+        
+        print(f"Abort Cluster {cluster_num}: {len(cluster_indices)} logs - {', '.join(keywords)}")
+
+    # Print cluster distribution summary
+    print("\n=== ABORT CLUSTER DISTRIBUTION ===")
+    cluster_dist = pd.Series(cluster_labels).value_counts().sort_index()
+    print(cluster_dist.to_dict())
+    print(f"Total clusters used: {len([s for s in cluster_sizes.values() if s > 0])}/{KMEANS_CLUSTERS}")
+
+    # Save results
+    df.to_csv(OUTPUT_FILE, index=False)
+    print(f"\nAbort clusters saved → {OUTPUT_FILE}")
+
+    # Create models directory and save models
+    os.makedirs("models", exist_ok=True)
+    joblib.dump(kmeans, "models/cluster_model_abort.pkl")
+    joblib.dump(model, "models/bert_encoder_abort.pkl")
+    joblib.dump(vectorizer, "models/tfidf_vectorizer_abort.pkl")
+
+    print("Models saved:")
+    print(" - models/cluster_model_abort.pkl")
+    print(" - models/bert_encoder_abort.pkl")
+    print(" - models/tfidf_vectorizer_abort.pkl")
+
+    # Save cluster summary as separate CSV for reporting
+    cluster_summary = pd.DataFrame({
+        'abort_cluster': list(range(KMEANS_CLUSTERS)),
+        'size': [cluster_sizes.get(i, 0) for i in range(KMEANS_CLUSTERS)],
+        'top_keywords': [', '.join(top_keywords_per_cluster.get(i, [])) for i in range(KMEANS_CLUSTERS)]
+    })
+    cluster_summary.to_csv(os.path.join(OUTPUT_DIR, "abort_cluster_summary.csv"), index=False)
+    print("Abort cluster summary saved →", os.path.join(OUTPUT_DIR, "abort_cluster_summary.csv"))
+
+    return df, top_keywords_per_cluster, cluster_sizes
+
+
+if __name__ == "__main__":
+    df, keywords, sizes = cluster_abort_logs_bert()
