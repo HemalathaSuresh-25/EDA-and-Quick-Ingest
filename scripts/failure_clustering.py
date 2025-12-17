@@ -61,8 +61,8 @@ def cluster_failures_bert():
     print(f"Silhouette score: {sil_score:.3f} (Higher is better, >0.4 is good)")
 
     # Assign clusters back to full dataframe
-    df["cluster"] = -1  # default for non-fail logs
-    df.loc[df_failures.index, "cluster"] = cluster_labels
+    df["fail_cluster"] = -1  # default for non-fail logs
+    df.loc[df_failures.index, "fail_cluster"] = cluster_labels
     
     # Extract top keywords per cluster using TF-IDF
     print("Extracting top keywords per cluster using TF-IDF...")
