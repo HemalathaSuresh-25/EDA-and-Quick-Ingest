@@ -1,148 +1,204 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
 import pandas as pd
 import random
 
+# ==========================
+# PATH CONFIG
+# ==========================
 INPUT_FILE = "C:/Users/hemalatha/Desktop/attest-eda/data/logs_preprocessed.csv"
 OUTPUT_DIR = "C:/Users/hemalatha/Desktop/attest-eda/data/features"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "failure_features.csv")
 
 
-# Feature Generation 
+# ==========================
+# FEATURE ENGINEERING
+# ==========================
 def generate_features():
     print("Starting feature engineering...")
 
+    # --------------------------
+    # Load data + row_id
+    # --------------------------
     df = pd.read_csv(INPUT_FILE, low_memory=False)
+    df["row_id"] = df.index  # 🔑 stable row identifier
     print(f"Loaded dataset: {df.shape[0]} rows, {df.shape[1]} columns")
 
-    # Normalize status column (correct Pandas string accessor .str.strip())
-    df["status"] = df["status"].astype(str).str.strip().str.upper()
-    df = df[df["status"].isin(["PASS", "FAIL", "ABORT"])]
+    # --------------------------
+    # Normalize status
+    # --------------------------
+    df["status"] = (
+        df["status"]
+        .astype(str)
+        .str.strip()
+        .str.upper()
+    )
 
+    df = df[df["status"].isin(["PASS", "FAIL", "ABORT"])].reset_index(drop=True)
+
+    # --------------------------
     # Parse timestamp
+    # --------------------------
     df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
 
-    # Sort so "time since last ..." is computed chronologically per DUT+test_case
-    df = df.sort_values(["dut", "test_case_id", "timestamp"]).reset_index(drop=False)
+    # Sort for temporal features
+    df = df.sort_values(
+        ["dut", "test_case_id", "timestamp"],
+        na_position="last"
+    ).reset_index(drop=True)
 
-    # ================================
-    # FAIL-based frequency features
-    # ================================
+    # ==========================
+    # FAIL frequency features
+    # ==========================
     fail_df = df[df["status"] == "FAIL"]
-    suite_fail_freq = fail_df.groupby("suite")["status"].count().rename("failure_freq_suite")
-    dut_fail_freq = fail_df.groupby("dut")["status"].count().rename("failure_freq_dut")
+
+    suite_fail_freq = (
+        fail_df.groupby("suite")
+        .size()
+        .rename("failure_freq_suite")
+    )
+
+    dut_fail_freq = (
+        fail_df.groupby("dut")
+        .size()
+        .rename("failure_freq_dut")
+    )
 
     df = df.merge(suite_fail_freq, on="suite", how="left")
     df = df.merge(dut_fail_freq, on="dut", how="left")
-    df["failure_freq_suite"].fillna(0, inplace=True)
-    df["failure_freq_dut"].fillna(0, inplace=True)
 
-    # ================================
-    # ABORT-based frequency features
-    # ================================
+    df["failure_freq_suite"] = df["failure_freq_suite"].fillna(0).astype(int)
+    df["failure_freq_dut"] = df["failure_freq_dut"].fillna(0).astype(int)
+
+    # ==========================
+    # ABORT frequency features
+    # ==========================
     abort_df = df[df["status"] == "ABORT"]
-    suite_abort_freq = abort_df.groupby("suite")["status"].count().rename("abort_freq_suite")
-    dut_abort_freq = abort_df.groupby("dut")["status"].count().rename("abort_freq_dut")
+
+    suite_abort_freq = (
+        abort_df.groupby("suite")
+        .size()
+        .rename("abort_freq_suite")
+    )
+
+    dut_abort_freq = (
+        abort_df.groupby("dut")
+        .size()
+        .rename("abort_freq_dut")
+    )
 
     df = df.merge(suite_abort_freq, on="suite", how="left")
     df = df.merge(dut_abort_freq, on="dut", how="left")
-    df["abort_freq_suite"].fillna(0, inplace=True)
-    df["abort_freq_dut"].fillna(0, inplace=True)
 
-    # Random execution duration
-    df["execution_duration"] = df.apply(lambda _: random.randint(10, 60), axis=1)
+    df["abort_freq_suite"] = df["abort_freq_suite"].fillna(0).astype(int)
+    df["abort_freq_dut"] = df["abort_freq_dut"].fillna(0).astype(int)
 
-    # ================================
-    # TIME SINCE LAST FAILURE
-    # ================================
+    # ==========================
+    # Execution duration (synthetic)
+    # ==========================
+    random.seed(42)
+    df["execution_duration"] = [random.randint(10, 60) for _ in range(len(df))]
+
+    # ==========================
+    # Time since last FAIL
+    # ==========================
     df["time_since_last_failure"] = 0.0
-    for (dut, tc), group in df.groupby(["dut", "test_case_id"], sort=False):
-        last_fail_time = None
-        times = []
-        for ts, status in zip(group["timestamp"], group["status"]):
-            if pd.isna(ts):
-                times.append(0.0)
-                continue
-            if status == "FAIL":
-                if last_fail_time is None:
-                    times.append(0.0)
-                else:
-                    times.append((ts - last_fail_time).total_seconds())
-                last_fail_time = ts
-            else:
-                times.append(0.0)
-        df.loc[group.index, "time_since_last_failure"] = times
 
-    # ================================
-    # TIME SINCE LAST ABORT
-    # ================================
+    for (dut, tc), group in df.groupby(["dut", "test_case_id"], sort=False):
+        last_fail_ts = None
+        deltas = []
+
+        for ts, status in zip(group["timestamp"], group["status"]):
+            if status == "FAIL" and pd.notna(ts):
+                if last_fail_ts is None:
+                    deltas.append(0.0)
+                else:
+                    deltas.append((ts - last_fail_ts).total_seconds())
+                last_fail_ts = ts
+            else:
+                deltas.append(0.0)
+
+        df.loc[group.index, "time_since_last_failure"] = deltas
+
+    # ==========================
+    # Time since last ABORT
+    # ==========================
     df["time_since_last_abort"] = 0.0
+
     for (dut, tc), group in df.groupby(["dut", "test_case_id"], sort=False):
-        last_abort_time = None
-        times = []
+        last_abort_ts = None
+        deltas = []
+
         for ts, status in zip(group["timestamp"], group["status"]):
-            if pd.isna(ts):
-                times.append(0.0)
-                continue
-            if status == "ABORT":
-                if last_abort_time is None:
-                    times.append(0.0)
+            if status == "ABORT" and pd.notna(ts):
+                if last_abort_ts is None:
+                    deltas.append(0.0)
                 else:
-                    times.append((ts - last_abort_time).total_seconds())
-                last_abort_time = ts
+                    deltas.append((ts - last_abort_ts).total_seconds())
+                last_abort_ts = ts
             else:
-                times.append(0.0)
-        df.loc[group.index, "time_since_last_abort"] = times
+                deltas.append(0.0)
 
-    # ================================
-    # Recent Flags
-    # FAIL → 1, ABORT → 2, PASS → 0
-    # ================================
-    df["recent_failure_flag"] = df["status"].apply(lambda x: 1 if x == "FAIL" else 0)
-    df["recent_abort_flag"] = df["status"].apply(lambda x: 2 if x == "ABORT" else 0)
+        df.loc[group.index, "time_since_last_abort"] = deltas
 
-    # Combined numeric status flag (optional)
-    def flag_status(s):
+    # ==========================
+    # Recent status flags
+    # ==========================
+    df["recent_failure_flag"] = (df["status"] == "FAIL").astype(int)
+    df["recent_abort_flag"] = (df["status"] == "ABORT").astype(int)
+
+    def status_flag(s):
         if s == "FAIL":
             return 1
         elif s == "ABORT":
             return 2
         return 0
 
-    df["recent_status_flag"] = df["status"].apply(flag_status)
+    df["recent_status_flag"] = df["status"].apply(status_flag)
 
-    # Encoding config/environment
-    # fillna before astype to avoid string "nan"
+    # ==========================
+    # Config / environment encoding
+    # ==========================
     if "dut_version" in df.columns:
         df["dut_version"] = df["dut_version"].fillna("Unknown").astype(str)
     else:
         df["dut_version"] = "Unknown"
 
     if "config" in df.columns:
-        df["config_hash"] = df["config"].astype(str).apply(lambda x: abs(hash(x)) % (10 ** 8))
+        df["config_hash"] = (
+            df["config"]
+            .fillna("Unknown")
+            .astype(str)
+            .apply(lambda x: abs(hash(x)) % (10**8))
+        )
     else:
         df["config_hash"] = 0
 
+    # ==========================
     # Error message handling
+    # ==========================
     if "error_msg" in df.columns:
-        df["error_msg"] = df.apply(
-            lambda row: "No Error" if row["status"] == "PASS" else row["error_msg"],
-            axis=1
-        )
         df["error_msg"] = df["error_msg"].fillna("No Error")
+        df.loc[df["status"] == "PASS", "error_msg"] = "No Error"
     else:
         df["error_msg"] = "No Error"
 
-    # Save (use original index column name 'index' if you want to keep it, or drop it)
-    # remove the temporary 'index' column created by reset_index if you don't need it
-    if "index" in df.columns:
-        df = df.drop(columns=["index"])
-
+    # ==========================
+    # Save output
+    # ==========================
     df.to_csv(OUTPUT_FILE, index=False)
     print(f"Features saved → {OUTPUT_FILE}")
+    print(f"Final shape: {df.shape[0]} rows, {df.shape[1]} columns")
     print("Feature engineering complete!\n")
+
     return df
 
 
+# ==========================
+# ENTRY POINT
+# ==========================
 if __name__ == "__main__":
     generate_features()

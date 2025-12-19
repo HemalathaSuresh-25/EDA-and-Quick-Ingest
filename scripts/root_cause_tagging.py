@@ -16,10 +16,10 @@ FAIL_ROOT_CAUSE_MAP = {
     1: "Missing Resource / Identifier",
     2: "Packet Transmission Failure",
     3: "Port / Interface Mismatch",
-    4: "Incorrect Test Result / Assertion Failure",
-    5: "CLI Command Failure",
+    4: "Incorrect Te",
     6: "PTP Protocol Failure",
-    7: "General DUT Communication Failure",
+    7: "General DUT Communist Result / Assertion Failure",
+    5: "CLI Command Failurecation Failure",
     8: "Bit / Field Validation Error",
     9: "Clock / Timing Type Mismatch",
 }

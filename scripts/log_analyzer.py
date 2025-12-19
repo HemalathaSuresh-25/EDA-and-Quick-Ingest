@@ -1,156 +1,198 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 import os
 import sys
 import re
 import joblib
-import pickle
-import pandas as pd
-from datetime import datetime
+import numpy as np
 
-# =========================
-# CONFIG
-# =========================
-MODEL_DIR = "C:/Users/hemalatha/Desktop/attest-eda/models_1"
+MODEL_DIR = r"C:\Users\hemalatha\Desktop\attest-eda\models_1"
 
-STATUS_MODEL_FILE = os.path.join(MODEL_DIR, "status_classifier_rf.pkl")
-STATUS_FEATURES_FILE = os.path.join(MODEL_DIR, "status_features.pkl")
+FAIL_MODEL  = os.path.join(MODEL_DIR, "rootcause_fail_classifier.pkl")
+ABORT_MODEL = os.path.join(MODEL_DIR, "rootcause_abort_classifier.pkl")
 
-FAIL_MODEL_FILE  = os.path.join(MODEL_DIR, "rootcause_fail_classifier.pkl")
-TFIDF_FAIL_FILE  = os.path.join(MODEL_DIR, "tfidf_rootcause_fail.pkl")
+TFIDF_FAIL  = os.path.join(MODEL_DIR, "tfidf_rootcause_fail.pkl")
+TFIDF_ABORT = os.path.join(MODEL_DIR, "tfidf_rootcause_abort.pkl")
 
-ABORT_MODEL_FILE = os.path.join(MODEL_DIR, "rootcause_abort_classifier.pkl")
-TFIDF_ABORT_FILE = os.path.join(MODEL_DIR, "tfidf_rootcause_abort.pkl")
+print(" Loading ML models...")
 
-# =========================
-# LOAD MODELS
-# =========================
-print("🔄 Loading ML models...")
+fail_model  = joblib.load(FAIL_MODEL)
+abort_model = joblib.load(ABORT_MODEL)
 
-status_model = joblib.load(STATUS_MODEL_FILE)
-
-with open(STATUS_FEATURES_FILE, "rb") as f:
-    status_features = pickle.load(f)
-
-fail_model  = joblib.load(FAIL_MODEL_FILE)
-tfidf_fail  = joblib.load(TFIDF_FAIL_FILE)
-
-abort_model = joblib.load(ABORT_MODEL_FILE)
-tfidf_abort = joblib.load(TFIDF_ABORT_FILE)
+tfidf_fail  = joblib.load(TFIDF_FAIL)
+tfidf_abort = joblib.load(TFIDF_ABORT)
 
 print("✔ Models loaded\n")
+
+
+# =========================
+# ROOT CAUSE → RECOMMENDATION
+# =========================
+
+FAIL_RECOMMENDATION_MAP = {
+    "Configuration Mismatch":
+        "Verify DUT configuration parameters and reapply the correct configuration.",
+
+    "Missing Resource / Identifier":
+        "Ensure all required resources (IDs, profiles, sessions) are created before execution.",
+
+    "Packet Transmission Failure":
+        "Check packet flow, network connectivity, and DUT transmit counters.",
+
+    "Port / Interface Mismatch":
+        "Validate the interface/port mapping between DUT and test configuration.",
+
+    "Incorrect Test":
+        "Review test logic and expected behavior for correctness.",
+
+    "PTP Protocol Failure":
+        "Validate PTP profile, domain, clock type, and message exchange.",
+
+    "General DUT Communist Result / Assertion Failure":
+        "Inspect DUT logs for assertion failures or unexpected responses.",
+
+    "CLI Command Failurecation Failure":
+        "Verify CLI command syntax, permissions, and DUT state.",
+
+    "Bit / Field Validation Error":
+        "Check protocol field values and bit-level correctness.",
+
+    "Clock / Timing Type Mismatch":
+        "Ensure clock type and timing profile match DUT capability."
+}
+
+ABORT_RECOMMENDATION_MAP = {
+    "Media Stream Not Established":
+        "Ensure required media streams are initialized before test execution.",
+
+    "Profile / Standard Not Supported":
+        "Verify DUT firmware supports the selected profile or standard.",
+
+    "Transport / Messaging Failure":
+        "Check communication channel and message delivery between test system and DUT.",
+
+    "Test Not Applicable":
+        "Confirm the test is applicable for the current DUT mode and configuration.",
+
+    "Precondition / Setup Failure":
+        "Verify all preconditions and setup steps are completed successfully.",
+
+    "Invalid Test Configuration":
+        "Review and correct invalid or unsupported test parameters.",
+
+    "Transport Protocol Mismatch":
+        "Ensure transport protocol (IPv4/IPv6, UDP/TCP) matches DUT settings.",
+
+    "User / Registration Incomplete":
+        "Ensure user/device registration completes before starting the test."
+}
+
 
 # =========================
 # HELPERS
 # =========================
-def read_log(path):
-    with open(path, "r", errors="ignore") as f:
-        return f.read()
 
-def detect_pass(log):
-    return bool(re.search(r"Result:\s*PASSED", log, re.IGNORECASE))
+def pad_features(X, expected):
+    """Pad or trim TF-IDF features to match model expectation"""
+    current = X.shape[1]
+    if current == expected:
+        return X
+    elif current < expected:
+        pad = expected - current
+        return np.hstack([X.toarray(), np.zeros((1, pad))])
+    else:
+        return X[:, :expected]
 
-def extract_error_text(log):
-    return " ".join(
-        l for l in log.splitlines()
-        if re.search(r'error|fail|abort|timeout|exception', l, re.IGNORECASE)
-    ) or "No Error"
 
-# =========================
-# FEATURE BUILDER (MATCH TRAINING)
-# =========================
-def build_feature_row(log_path, log_text):
-    now = datetime.now()
+def extract_status(log_text):
+    tail = "\n".join(log_text.splitlines()[-50:])
 
-    return {
-        "filename": os.path.basename(log_path),
-        "dut": "generic_dut",
-        "dut_version": "unknown",
-        "os_version": "unknown",
-        "config": "default",
-        "test_case_id": os.path.basename(log_path).split("_")[0],
-        "line_number": len(log_text.splitlines()),
-        "timestamp": now.strftime("%H:%M:%S"),
-        "run_date": now.strftime("%Y-%m-%d"),
-        "suite": "ptp",
-        "raw_line": extract_error_text(log_text),
-        "row_id": 0,
+    if re.search(r"Result:\s*PASSED", tail, re.I):
+        return "PASS", "Testcase Passed"
 
-        "failure_freq_suite": log_text.lower().count("fail"),
-        "failure_freq_dut": log_text.lower().count("fail"),
-        "abort_freq_suite": log_text.lower().count("abort"),
-        "abort_freq_dut": log_text.lower().count("abort"),
+    m = re.search(r"Aborted\s*:\s*(.+)", tail, re.I)
+    if m:
+        return "ABORT", m.group(1).strip()
 
-        "execution_duration": 0,
-        "time_since_last_failure": 9999,
-        "time_since_last_abort": 9999,
+    if re.search(r"\bfail(ed)?\b", tail, re.I):
+        return "FAIL", "Testcase Failed"
 
-        "recent_failure_flag": int("fail" in log_text.lower()),
-        "recent_abort_flag": int("abort" in log_text.lower()),
-        "recent_status_flag": 0,
+    return "UNKNOWN", "Unknown Status"
 
-        "config_hash": hash("default") % 100000,
-        "fail_cluster": -1,
-        "abort_cluster": -1
-    }
 
-def recommendation(reason):
-    mapping = {
-        "Timeout Error": "Check DUT connectivity and retry",
-        "Protocol Failure": "Verify protocol configuration",
-        "Invalid Configuration": "Validate test setup",
-        "Precondition Failure": "Check DUT preconditions"
-    }
-    return mapping.get(reason, "Inspect log manually")
+def extract_error_text(log_text):
+    lines = log_text.splitlines()
+    errors = [
+        l.strip() for l in lines
+        if re.search(
+            r"(error|fail|failed|timeout|abort|mismatch|exception|not supported|invalid|does not|unable)",
+            l, re.I
+        )
+    ]
+    return " ".join(errors[-30:]) if errors else "No error found"
+
+
+def recommendation(status, root_cause):
+    if status == "FAIL":
+        return FAIL_RECOMMENDATION_MAP.get(
+            root_cause, "Analyze DUT logs and test configuration."
+        )
+    if status == "ABORT":
+        return ABORT_RECOMMENDATION_MAP.get(
+            root_cause, "Verify test setup and execution conditions."
+        )
+    return "No action required"
+
 
 # =========================
 # MAIN
 # =========================
-def analyze_log(log_path):
-    print(f"📂 Analyzing log file: {log_path}\n")
-    log_text = read_log(log_path)
 
-    # ---------- PASS OVERRIDE ----------
-    if detect_pass(log_text):
-        print("✅ Analysis Result")
+def analyze_log(log_path):
+    print(f" Analyzing log file:\n{log_path}\n")
+
+    with open(log_path, "r", errors="ignore") as f:
+        text = f.read()
+
+    status, reason = extract_status(text)
+
+    if status == "PASS":
+        print(" Result")
         print("Status        : PASS")
-        print("Reason        : Result: PASSED found in log")
+        print("Reason        : Testcase Passed")
         print("Recommendation: No action required")
         return
 
-    # ---------- STATUS ML ----------
-    row = build_feature_row(log_path, log_text)
-    df = pd.DataFrame([row])[status_features]
+    if status == "ABORT" and "Stopped By User" in reason:
+        print(" Result")
+        print("Status        : ABORT")
+        print(f"Reason        : {reason}")
+        print("Recommendation: No action required")
+        return
 
-    status_pred = status_model.predict(df)[0]
-    status_map = {0: "PASS", 1: "FAIL", 2: "ABORT"}
-    status = status_map.get(status_pred, "FAIL")
-
-    # ---------- ROOT CAUSE ----------
-    error_text = row["raw_line"]
-    reason = "Unknown"
-    rec = "Inspect log manually"
+    error_text = extract_error_text(text)
 
     if status == "FAIL":
         vec = tfidf_fail.transform([error_text])
-        reason = fail_model.predict(vec)[0]
-        rec = recommendation(reason)
+        vec = pad_features(vec, fail_model.n_features_in_)
+        root = fail_model.predict(vec)[0]
 
     elif status == "ABORT":
         vec = tfidf_abort.transform([error_text])
-        reason = abort_model.predict(vec)[0]
-        rec = recommendation(reason)
+        vec = pad_features(vec, abort_model.n_features_in_)
+        root = abort_model.predict(vec)[0]
 
-    # ---------- OUTPUT ----------
-    print("✅ Analysis Result")
+    else:
+        root = "Unknown"
+
+    print(" Result")
     print(f"Status        : {status}")
-    print(f"Reason        : {reason}")
-    print(f"Recommendation: {rec}")
+    print(f"Reason        : {root}")
+    print(f"Recommendation: {recommendation(status, root)}")
+
 
 # =========================
 # CLI
 # =========================
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python log_analyzer.py <log_file.log>")
