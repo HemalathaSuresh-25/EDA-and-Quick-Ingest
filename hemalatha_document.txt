@@ -1,0 +1,224 @@
+
+Automated Test Log Analysis Using Machine Learning
+
+Abstract :
+With the increasing complexity of modern software systems, automated testing generates massive volumes of execution logs that are difficult to analyze manually. Efficient identification of test outcomes, failure patterns, and root causes has therefore become a critical challenge. This project presents an intelligent, end-to-end framework for automated test log analysis using machine learning and natural language processing techniques. The system ingests raw test logs, transforms them into structured representations, and applies preprocessing and feature engineering to extract meaningful patterns. Failed and aborted test cases are analyzed independently through clustering techniques to uncover recurring behavioral trends, and the resulting clusters are combined to enable consistent root cause tagging. Supervised machine learning models are then trained to classify test execution status and to predict root causes for both failure and abort scenarios. By automating the complete analysis pipeline from raw logs to actionable insights, the proposed solution significantly reduces manual debugging effort, improves diagnostic accuracy, and enhances the overall efficiency and reliability of the software testing process.
+
+Introduction :
+In modern software development, automated testing is widely used to ensure the quality, reliability, and correctness of complex software systems. As testing scales across multiple configurations, devices, and continuous integration environments, a large volume of test execution logs is generated for every test cycle. These logs contain critical information related to test behavior, execution status, failures, and system conditions. However, analyzing such logs manually is a time-consuming and error-prone process that requires significant domain expertise.
+Traditional approaches to log analysis primarily rely on manual inspection or rule-based scripts, which are limited in scalability and adaptability. As test environments evolve, new failure patterns emerge, making it difficult to maintain static rules and consistently identify root causes. This often results in delayed debugging, increased test cycle time, and reduced overall productivity.
+To overcome these challenges, this project proposes an automated test log analysis framework that leverages machine learning and natural language processing techniques. The system processes raw test logs, extracts relevant information, and transforms unstructured log data into meaningful features. Using a combination of clustering techniques and supervised learning models, the framework classifies test execution status, identifies recurring failure and abort patterns, and predicts root causes with associated recommendations.
+The proposed solution aims to minimize manual debugging effort by providing structured insights into test results. By automating failure detection, pattern identification, and root cause analysis, the system improves the efficiency, accuracy, and consistency of the software testing process. This project demonstrates how intelligent log analysis can significantly enhance test diagnostics and support faster decision-making in modern testing environments.
+
+Problem Statement :
+Manual analysis of test execution logs is time-consuming and requires significant human effort. With large volumes of unstructured and verbose log data, identifying test outcomes and recurring failure patterns becomes difficult and error-prone. Detecting root causes often depends heavily on domain expertise and manual debugging, which delays issue resolution and increases test cycle time. Moreover, there is no automated mechanism to provide actionable recommendations for failures or aborted test cases, making the process inefficient and prone to inconsistencies.
+
+Objectives :
+The main objectives of the project are:
+1. Automate Log Analysis :
+Efficiently process large volumes of test execution logs from multiple test runs and configurations.
+Reduce manual inspection effort and minimize errors caused by human oversight.
+2. Classify Test Outcomes :
+Automatically determine the execution status of test cases as PASS, FAIL, or ABORT.
+Handle complex and unstructured log formats to ensure accurate classification.
+3. Feature Extraction and Engineering :
+Extract meaningful numerical and textual features from raw logs to support machine learning models.
+Create features such as failure frequency, execution duration, configuration flags, and error-specific text.
+4. Detect Recurring Patterns :
+Identify clusters of similar failures and aborted test cases using natural language processing and clustering algorithms.
+Discover recurring issues, which helps in understanding trends and prioritizing debugging efforts.
+5. Predict Root Causes :
+Train machine learning models to predict the most likely root causes for failures and aborted test cases.
+Provide interpretable results that testers and engineers can trust for decision-making.
+6. Provide Actionable Recommendations :
+Map predicted root causes to meaningful corrective actions or recommendations.
+Help testers quickly resolve failures or environmental issues that cause aborted tests.
+7. Support ABORT Analysis :
+Analyze aborted test cases separately to account for environment, configuration, or setup issues.
+Enable accurate detection and diagnosis of issues unrelated to functional failures.
+8. Improve Testing Efficiency : 
+Reduce the time spent on manual debugging and log inspection.
+Enhance the overall productivity and reliability of the software testing process.
+9. Ensure Scalability and Reusability :
+Design the system to handle increasing log volumes and evolving test environments.
+Allow easy integration with new test setups or additional machine learning models in the future.
+10. Provide Structured Outputs :
+Generate clear, structured reports that summarize test outcomes, failure clusters, root causes, and recommended actions.
+Make outputs easy to interpret for developers, testers, and managers.
+
+System Architecture
+The system architecture of the project is designed as a modular and sequential pipeline that automates the analysis of test execution logs and provides actionable insights using machine learning and rule-based techniques. The architecture transforms raw, unstructured logs into structured outputs such as test status, root cause, and recommendations.
+1. Log Input Layer
+Accepts raw test execution log files generated from automated testing systems.
+ Supports multiple test runs and large log volumes.
+Acts as the entry point for the analysis pipeline.
+2. Log Extraction Module (`extract_logs`)
+Extracts log files from compressed archives or directories.
+Organizes logs based on execution metadata such as date and test configuration.
+Ensures availability of raw logs for processing.
+3. Log Conversion Module (`convert_to_csv`)
+Converts raw log files into structured CSV format.
+Extracts essential fields such as timestamps, test case names, execution status, and log messages.
+Enables efficient storage and downstream processing.
+4. Log Preprocessing Module (`preprocess_logs`)
+Cleans and filters log data by removing noise and irrelevant entries.
+Handles missing values and extracts meaningful error-related messages.
+Prepares both textual and numerical data for feature generation.
+5. Feature Engineering Module (`feature_engineering`)
+Generates relevant features from preprocessed logs.
+Includes statistical features, time-based features, and text-based representations.
+Produces model-ready inputs for clustering and classification tasks.
+6. Failure Clustering Module (`failure_clustering`)
+Groups failed test cases based on similarity in log error patterns.
+Uses natural language processing and clustering techniques to identify recurring failures.
+Helps uncover common functional issues across test runs.
+7. Abort Clustering Module (`abort_clustering`)
+Analyzes aborted test cases separately due to their distinct nature.
+Identifies clusters related to environment, setup, or configuration issues.
+ Improves interpretability and accuracy for abort scenarios.
+8. Cluster Merging Module
+Merges failure and abort clusters into a unified clustering structure.
+Enables consistent processing of all non-passing test cases.
+Simplifies subsequent root cause tagging.
+9. Root Cause Tagging Module (`root_cause_tagging`)
+Assigns meaningful root cause labels to each merged cluster.
+Uses historical knowledge, labeled data, and clustering outputs.
+Converts technical patterns into human-readable failure reasons.
+10. Train–Test Split Module (`create_train_test_split`)
+Splits the labeled dataset into training and testing subsets.
+Ensures reliable model evaluation and prevents overfitting.
+ Prepares data for supervised learning.
+11. Status Classification Model Training (`train_status_model.py`)
+Trains a supervised machine learning model to classify test outcomes as PASS, FAIL, or ABORT.
+Uses engineered features extracted from logs.
+Acts as the primary decision model during inference.
+12. Preprocessing Freeze Module (`freeze_status_preprocessing`)
+Saves and freezes preprocessing steps used during training.
+Ensures consistent data transformation during runtime predictions.
+Maintains model reliability and reproducibility.
+13. Failure Root Cause Model (`train_rootcause_fail_model`)
+Trains a dedicated machine learning model to predict root causes for failed test cases.
+Uses NLP-based features extracted from failure logs.
+Improves diagnostic accuracy for functional failures.
+14. Abort Root Cause Model (`train_rootcause_abort_model`)
+Trains a separate model to predict root causes for aborted test cases.
+Focuses on environment, setup, and configuration-related issues.
+Enhances clarity in abort analysis.
+15. Inference Engine with Recommendation Generation
+Applies frozen preprocessing and trained models to new log files.
+Determines test execution status.
+Predicts root causes for FAIL and ABORT cases using respective ML models.
+Generates actionable recommendations using rule-based root cause-to-recommendation mapping.
+Handles special cases such as user-initiated aborts.
+16. Output & Reporting Module
+Generates structured outputs displaying:
+ Test status
+ Root cause
+ Recommended action
+Outputs results in console and CSV formats.
+Supports integration with automation pipelines and reporting tools.
+
+Technologies Used
+The project uses a combination of programming languages, machine learning libraries, natural language processing techniques, and system tools to automate test log analysis and root cause identification.
+1. Programming Language
+Python - Used as the core language for implementing log extraction, preprocessing, feature engineering, machine learning models, and inference logic due to its rich ecosystem and ease of integration.
+2. Machine Learning & NLP Libraries
+NumPy - Used for numerical computations and array operations.
+Pandas - Used for data manipulation, cleaning, and CSV handling.
+Scikit-learn – Used for training and evaluating machine learning models for status classification and root cause prediction.
+Joblib – Used for saving and loading trained models and preprocessing objects.
+TF-IDF Vectorizer – Used to convert unstructured log text into numerical feature representations.
+BERT/Sentence Transformers – Used for generating embeddings during failure and abort clustering.
+3. Clustering Techniques
+K-Means / Similarity-based Clustering - Used to group similar failure and abort log patterns to identify recurring issues.
+4. Training Techniques
+Random Forest–Based Model Training - Used to train supervised machine learning models for test status classification and root cause prediction. Random Forest was chosen for its ability to handle high-dimensional TF-IDF features, reduce overfitting through ensemble learning, and provide stable performance on large volumes of log data.
+5. Scripting & Automation
+Bash / Shell Scripting - Used to automate end-to-end pipeline execution and integrate multiple modules.
+6. Data Storage & Formats
+CSV (Comma-Separated Values) - Used for storing structured logs, features, clustering outputs, and final results.
+7. Development & Execution Tools
+Command Line Interface (CLI) - Used for running scripts and analyzing log files.
+VS Code / Terminal - Used for development, debugging, and execution.
+8. Approach & Methodologies
+Machine Learning-based Classification - Used for predicting test status and root causes.
+Rule-Based Logic - Used for recommendation mapping and handling specific abort scenarios.
+
+Data Description
+The data used in this project consists of automated test execution log files generated during system and protocol validation. These logs are unstructured text files containing detailed information about test cases, execution steps, timestamps, protocol messages, errors, warnings, and final test results such as PASS, FAIL, or ABORT.
+The raw log data is processed to extract relevant fields including test case name, device under test (DUT), configuration details, execution timestamps, status, and error messages. Error-related lines such as failures, mismatches, timeouts, and abort reasons are identified and used as primary inputs for analysis. The extracted information is converted into structured CSV format to support preprocessing, feature engineering, and model training.
+For machine learning tasks, the textual error content is transformed into numerical representations using TF-IDF vectorization. Labeled datasets are created for status classification and root cause prediction, and the data is split into training and testing sets to evaluate model performance. Overall, the dataset represents large-scale, real-world test logs with varying formats and failure patterns, enabling robust training and validation of the automated log analysis system.
+
+Feature Engineering
+Feature engineering is performed to transform preprocessed log data into structured and meaningful numerical features suitable for machine learning models. The process begins by loading the preprocessed log dataset and assigning a stable row identifier to each record. Test execution status values are normalized and filtered to include only valid outcomes such as PASS, FAIL, and ABORT. Timestamps are parsed and sorted by device under test (DUT), test case, and execution time to enable time-based feature generation.
+Frequency-based features are generated to capture recurring failure and abort patterns. These include the number of failures and aborts per test suite and per DUT, helping the model identify unstable components and frequently failing environments. Temporal features are derived by calculating the time elapsed since the last failure and the last abort for each test case, providing historical context about repeated issues. Synthetic execution duration values are also added to simulate test runtime behavior.
+Recent execution behavior is represented using status indicator flags, including binary flags for recent failures and aborts, as well as a consolidated status flag encoding PASS, FAIL, and ABORT states. Configuration-related information is encoded by hashing configuration values into numerical representations, ensuring compatibility with machine learning models while preserving uniqueness. Missing or unavailable environment details are handled gracefully using default values.
+Error message fields are standardized to ensure consistency, with non-error executions explicitly marked to avoid noise during training. Finally, the engineered features are stored in a structured CSV file, forming the final dataset used for clustering, model training, and inference. This comprehensive feature set enables accurate prediction of test status and root cause classification.
+
+Machine Learning Models
+This project utilizes both unsupervised and supervised machine learning models to automate test log analysis and root cause identification.
+Failure and Abort Clustering Models
+Unsupervised clustering models are used to group similar failure and abort log messages based on textual similarity. Log error messages are converted into numerical representations using embedding techniques, and similarity-based clustering is applied to identify recurring patterns. These clusters help in discovering common failure and abort categories and form the basis for root cause labeling.
+Status Classification Model
+A supervised Random Forest classifier is used to predict the execution status of test cases as PASS, FAIL, or ABORT. The model is trained using engineered numerical and contextual features derived from log data. Random Forest is chosen for its ensemble learning approach, robustness to noise, and strong performance on complex datasets.
+Root Cause Prediction Models
+Separate supervised Random Forest models are trained for predicting root causes of failed and aborted test cases. These models use TF-IDF–based text features extracted from error messages along with contextual features. By maintaining independent models for FAIL and ABORT cases, the system achieves more accurate and interpretable root cause predictions.
+
+ABORT / FAIL Case Handling
+The system handles FAIL and ABORT test cases separately to ensure accurate analysis and meaningful root cause identification. When a test execution is marked as FAIL, the system extracts relevant error messages from the log file and applies a trained failure root cause prediction model. These failures typically indicate functional or protocol-related issues, and the predicted root cause is mapped to a predefined recommendation to guide corrective action.
+In the case of ABORTed test executions, the system applies a different handling strategy. Abort scenarios usually occur due to environmental issues, unmet preconditions, unsupported configurations, or user intervention. If an abort is caused by explicit user action, such as a manual stop, the system skips root cause prediction and no recommendation is generated. For all other abort cases, error messages are analyzed using a dedicated abort root cause prediction model. The predicted root cause is then mapped to an appropriate recommendation.
+By separating FAIL and ABORT handling, the system improves prediction accuracy and ensures that recommendations are context-aware and actionable. This approach avoids misclassification and allows the system to respond appropriately to different types of test execution failures.
+
+Execution Steps
+Log Input
+The process begins with collecting raw log files generated by the Device Under Test (DUT) during automated testing.
+These logs contain detailed execution information including timestamps, test case IDs, configurations, protocol messages, errors, warnings, and results such as PASS, FAIL, or ABORT.
+Preprocessing
+Raw logs are often unstructured and contain noise. Preprocessing involves cleaning the logs, removing irrelevant lines, normalizing status values, and handling missing or inconsistent entries.
+Relevant information such as test case identifiers, DUT details, timestamps, and error messages are extracted and structured for further analysis.
+Feature Engineering
+Structured features are created to capture important aspects of test executions:
+Frequency-based features: Number of failures or aborts per suite and DUT.
+Temporal features: Time since the last failure or abort for each test case.
+Execution duration: Synthetic runtime of test cases.
+Status flags: Indicators for recent failures, aborts, or PASS.
+Configuration encoding: Converts DUT configuration details into numerical representations.
+Error messages: Standardized text features for use in ML models.
+Clustering (Failure & Abort Logs)
+Unsupervised clustering groups similar log messages for failures and aborts separately.
+This step identifies recurring patterns and common issues, which helps in understanding the behavior of the system under test.
+Clusters are then merged for consistent root cause labeling.
+Root Cause Tagging
+Each cluster of log messages is assigned a meaningful root cause label, either for a FAIL or ABORT case.
+This provides labeled data that serves as input for supervised learning models.
+Train–Test Split
+The labeled dataset is split into training and testing sets to allow proper evaluation of machine learning models.
+This ensures the models are validated on unseen data for accurate performance measurement.
+Model Training
+Status Classification Model: Random Forest classifier trained to predict PASS, FAIL, or ABORT.
+FAIL Root Cause Model: Random Forest classifier trained to predict specific root causes for failed test cases.
+ABORT Root Cause Model: Random Forest classifier trained for predicting root causes of aborted test cases.
+Random Forest is chosen for its robustness, ability to handle high-dimensional features, and resistance to overfitting.
+Preprocessing Freeze
+All preprocessing steps used during training (such as TF-IDF vectorization, feature scaling, and encoding) are saved.
+This ensures consistency during inference and prevents discrepancies between training and testing data.
+Inference and Recommendation Generation
+New log files are processed using the frozen preprocessing steps.
+Status is predicted using the trained status model, and root cause is predicted using the corresponding root cause model (FAIL or ABORT).
+Rule-based mappings are applied to generate actionable recommendations based on the predicted root cause.
+Special handling is applied for user-initiated ABORTs, where recommendations are not needed.
+Results
+The automated log analysis system produces a structured and user-friendly output for each analyzed test execution log. The results include the test status, the predicted root cause (for FAIL or ABORT cases), and actionable recommendations based on predefined mappings.
+Result
+Status        : PASS
+Reason        : Testcase Passed
+Recommendation: No action required
+======================================
+ANALYSIS COMPLETED
+======================================
+Key Points:
+Status: Indicates the execution result of the test case: PASS, FAIL, or ABORT.
+Reason / Root Cause: For FAIL and ABORT cases, the system predicts the root cause using trained Random Forest models.
+For PASS cases, the reason is displayed as "Testcase Passed".
+Recommendation: Provides actionable guidance based on the predicted root cause using a rule-based mapping.
+For PASS cases or user-initiated aborts, the recommendation is "No action required".

@@ -1,0 +1,300 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil Times New Roman;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\ri-924\sa200\sl276\slmult1\qc\f0\fs24\lang9\par
+\b\fs36 Automated Test Log Analysis Using Machine Learning\fs32\par
+
+\pard\ri-924\sa200\sl276\slmult1\fs24\par
+\fs32 Abstract :\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b0\fs28 With the increasing complexity of modern software systems, automated testing generates massive volumes of execution logs that are difficult to analyze manually. Efficient identification of test outcomes, failure patterns, and root causes has therefore become a critical challenge. This project presents an intelligent, end-to-end framework for automated test log analysis using machine learning and natural language processing techniques. The system ingests raw test logs, transforms them into structured representations, and applies preprocessing and feature engineering to extract meaningful patterns. Failed and aborted test cases are analyzed independently through clustering techniques to uncover recurring behavioral trends, and the resulting clusters are combined to enable consistent root cause tagging. Supervised machine learning models are then trained to classify test execution status and to predict root causes for both failure and abort scenarios. By automating the complete analysis pipeline from raw logs to actionable insights, the proposed solution significantly reduces manual debugging effort, improves diagnostic accuracy, and enhances the overall efficiency and reliability of the software testing process.\par
+\line\b\fs32 Introduction :\b0\fs28\line In modern software development, automated testing is widely used to ensure the quality, reliability, and correctness of complex software systems. As testing scales across multiple configurations, devices, and continuous integration environments, a large volume of test execution logs is generated for every test cycle. These logs contain critical information related to test behavior, execution status, failures, and system conditions. However, analyzing such logs manually is a time-consuming and error-prone process that requires significant domain expertise.\par
+Traditional approaches to log analysis primarily rely on manual inspection or rule-based scripts, which are limited in scalability and adaptability. As test environments evolve, new failure patterns emerge, making it difficult to maintain static rules and consistently identify root causes. This often results in delayed debugging, increased test cycle time, and reduced overall productivity.\par
+To overcome these challenges, this project proposes an automated test log analysis framework that leverages machine learning and natural language processing techniques. The system processes raw test logs, extracts relevant information, and transforms unstructured log data into meaningful features. Using a combination of clustering techniques and supervised learning models, the framework classifies test execution status, identifies recurring failure and abort patterns, and predicts root causes with associated recommendations.\par
+The proposed solution aims to minimize manual debugging effort by providing structured insights into test results. By automating failure detection, pattern identification, and root cause analysis, the system improves the efficiency, accuracy, and consistency of the software testing process. This project demonstrates how intelligent log analysis can significantly enhance test diagnostics and support faster decision-making in modern testing environments.\par
+\par
+\b\fs32 Problem Statement :\b0\fs28\line Manual analysis of test execution logs is time-consuming and requires significant human effort. With large volumes of unstructured and verbose log data, identifying test outcomes and recurring failure patterns becomes difficult and error-prone. Detecting root causes often depends heavily on domain expertise and manual debugging, which delays issue resolution and increases test cycle time. Moreover, there is no automated mechanism to provide actionable recommendations for failures or aborted test cases, making the process inefficient and prone to inconsistencies.\par
+\par
+\b\fs32 Objectives :\b0\fs28\line The main objectives of the project are:\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 1. Automate Log Analysis :\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Efficiently process large volumes of test execution logs from multiple test runs and configurations.\par
+{\pntext\f2\'B7\tab}Reduce manual inspection effort and minimize errors caused by human oversight.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 2. Classify Test Outcomes :\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Automatically determine the execution status of test cases as PASS, FAIL, or ABORT.\par
+{\pntext\f2\'B7\tab}Handle complex and unstructured log formats to ensure accurate classification.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 3. Feature Extraction and Engineering :\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Extract meaningful numerical and textual features from raw logs to support machine learning models.\par
+{\pntext\f2\'B7\tab}Create features such as failure frequency, execution duration, configuration flags, and error-specific text.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 4. Detect Recurring Patterns :\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Identify clusters of similar failures and aborted test cases using natural language processing and clustering algorithms.\par
+{\pntext\f2\'B7\tab}Discover recurring issues, which helps in understanding trends and prioritizing debugging efforts.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 5. Predict Root Causes :\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Train machine learning models to predict the most likely root causes for failures and aborted test cases.\par
+{\pntext\f2\'B7\tab}Provide interpretable results that testers and engineers can trust for decision-making.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 6. Provide Actionable Recommendations :\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Map predicted root causes to meaningful corrective actions or recommendations.\par
+{\pntext\f2\'B7\tab}Help testers quickly resolve failures or environmental issues that cause aborted tests.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 7. Support ABORT Analysis :\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Analyze aborted test cases separately to account for environment, configuration, or setup issues.\par
+{\pntext\f2\'B7\tab}Enable accurate detection and diagnosis of issues unrelated to functional failures.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 8. Improve Testing Efficiency : \b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Reduce the time spent on manual debugging and log inspection.\par
+{\pntext\f2\'B7\tab}Enhance the overall productivity and reliability of the software testing process.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 9. Ensure Scalability and Reusability :\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Design the system to handle increasing log volumes and evolving test environments.\par
+{\pntext\f2\'B7\tab}Allow easy integration with new test setups or additional machine learning models in the future.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 10. Provide Structured Outputs :\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Generate clear, structured reports that summarize test outcomes, failure clusters, root causes, and recommended actions.\par
+{\pntext\f2\'B7\tab}Make outputs easy to interpret for developers, testers, and managers.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\par
+\b\fs32 System Architecture\b0\fs28\par
+The system architecture of the project is designed as a modular and sequential pipeline that automates the analysis of test execution logs and provides actionable insights using machine learning and rule-based techniques. The architecture transforms raw, unstructured logs into structured outputs such as test status, root cause, and recommendations.\par
+\b 1. Log Input Layer\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Accepts raw test execution log files generated from automated testing systems.\par
+{\pntext\f2\'B7\tab} Supports multiple test runs and large log volumes.\par
+{\pntext\f2\'B7\tab}Acts as the entry point for the analysis pipeline.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 2. Log Extraction Module (`extract_logs`)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Extracts log files from compressed archives or directories.\par
+{\pntext\f2\'B7\tab}Organizes logs based on execution metadata such as date and test configuration.\par
+{\pntext\f2\'B7\tab}Ensures availability of raw logs for processing.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 3. Log Conversion Module (`convert_to_csv`)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Converts raw log files into structured CSV format.\par
+{\pntext\f2\'B7\tab}Extracts essential fields such as timestamps, test case names, execution status, and log messages.\par
+{\pntext\f2\'B7\tab}Enables efficient storage and downstream processing.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 4. Log Preprocessing Module (`preprocess_logs`)\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Cleans and filters log data by removing noise and irrelevant entries.\par
+{\pntext\f2\'B7\tab}Handles missing values and extracts meaningful error-related messages.\par
+{\pntext\f2\'B7\tab}Prepares both textual and numerical data for feature generation.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 5. Feature Engineering Module (`feature_engineering`)\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Generates relevant features from preprocessed logs.\par
+{\pntext\f2\'B7\tab}Includes statistical features, time-based features, and text-based representations.\par
+{\pntext\f2\'B7\tab}Produces model-ready inputs for clustering and classification tasks.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 6. Failure Clustering Module (`failure_clustering`)\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Groups failed test cases based on similarity in log error patterns.\par
+{\pntext\f2\'B7\tab}Uses natural language processing and clustering techniques to identify recurring failures.\par
+{\pntext\f2\'B7\tab}Helps uncover common functional issues across test runs.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 7. Abort Clustering Module (`abort_clustering`)\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Analyzes aborted test cases separately due to their distinct nature.\par
+{\pntext\f2\'B7\tab}Identifies clusters related to environment, setup, or configuration issues.\par
+{\pntext\f2\'B7\tab} Improves interpretability and accuracy for abort scenarios.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 8. Cluster Merging Module\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Merges failure and abort clusters into a unified clustering structure.\par
+{\pntext\f2\'B7\tab}Enables consistent processing of all non-passing test cases.\par
+{\pntext\f2\'B7\tab}Simplifies subsequent root cause tagging.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 9. Root Cause Tagging Module (`root_cause_tagging`)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Assigns meaningful root cause labels to each merged cluster.\par
+{\pntext\f2\'B7\tab}Uses historical knowledge, labeled data, and clustering outputs.\par
+{\pntext\f2\'B7\tab}Converts technical patterns into human-readable failure reasons.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 10. Train\f1\endash Test Split Module (`create_train_test_split`)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Splits the labeled dataset into training and testing subsets.\par
+{\pntext\f2\'B7\tab}Ensures reliable model evaluation and prevents overfitting.\par
+{\pntext\f2\'B7\tab} Prepares data for supervised learning.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 11. Status Classification Model Training (`train_status_model.py`)\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Trains a supervised machine learning model to classify test outcomes as PASS, FAIL, or ABORT.\par
+{\pntext\f2\'B7\tab}Uses engineered features extracted from logs.\par
+{\pntext\f2\'B7\tab}Acts as the primary decision model during inference.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 12. Preprocessing Freeze Module (`freeze_status_preprocessing`)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Saves and freezes preprocessing steps used during training.\par
+{\pntext\f2\'B7\tab}Ensures consistent data transformation during runtime predictions.\par
+{\pntext\f2\'B7\tab}Maintains model reliability and reproducibility.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b\f0\lang16393 13. \f1\lang9 Failure Root\f0\lang16393  C\f1\lang9 ause Model (`train_rootcause_fail_model`)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Trains a dedicated machine learning model to predict root causes for failed test cases.\par
+{\pntext\f2\'B7\tab}Uses NLP-based features extracted from failure logs.\par
+{\pntext\f2\'B7\tab}Improves diagnostic accuracy for functional failures.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 14. Abort Root Cause Model (`train_rootcause_abort_model`)\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj Trains a separate model to predict root causes for aborted test cases.\par
+{\pntext\f2\'B7\tab}Focuses on environment, setup, and configuration-related issues.\par
+{\pntext\f2\'B7\tab}Enhances clarity in abort analysis.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b\f0\lang16393 15. \f1\lang9 Inference Engine with Recommendation Generation\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Applies frozen preprocessing and trained models to new log files.\par
+{\pntext\f2\'B7\tab}Determines test execution status.\par
+{\pntext\f2\'B7\tab}Predicts root causes for FAIL and ABORT cases using respective ML models.\par
+{\pntext\f2\'B7\tab}Generates actionable recommendations using rule-based root cause-to-recommendation mapping.\par
+{\pntext\f2\'B7\tab}Handles special cases such as user-initiated aborts.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b 1\f0\lang16393 6\f1\lang9 . Output & Reporting Module\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj\b0 Generates structured outputs displaying:\line  Test status\line  Root cause\line\f0\lang16393  \f1\lang9 Recommended action\par
+{\pntext\f2\'B7\tab}Outputs results in console and CSV formats.\par
+{\pntext\f2\'B7\tab}Supports integration with automation pipelines and reporting tools.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b\fs32 Technologies Used\b0\fs28\par
+The project uses a combination of programming languages, machine learning libraries, natural language processing techniques, and system tools to automate test log analysis and root cause identification.\par
+\b\f0\lang16393 1. \f1\lang9 Programming Language\par
+Python\b0\f0\lang16393  - \f1\lang9 Used as the core language for implementing log extraction, preprocessing, feature engineering, machine learning models, and inference logic due to its rich ecosystem and ease of integration.\par
+\b\f0\lang16393 2. \f1\lang9 Machine Learning & NLP Libraries\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl360\slmult1\qj NumPy\b0  \f0\lang16393 -\f1\lang9  Used for numerical computations and array operations.\par
+{\pntext\f2\'B7\tab}\b Pandas\b0\f0\lang16393  -\f1\lang9  Used for data manipulation, cleaning, and CSV handling.\par
+{\pntext\f2\'B7\tab}\b Scikit-learn\b0  \endash  Used for training and evaluating machine learning models for status classification and root cause prediction.\par
+{\pntext\f2\'B7\tab}\b Joblib\b0  \endash  Used for saving and loading trained models and preprocessing objects.\par
+{\pntext\f2\'B7\tab}\b TF-IDF Vectorizer \b0\endash  Used to convert unstructured log text into numerical feature representations.\par
+{\pntext\f2\'B7\tab}\b BERT/Sentence Transformers \b0\endash  Used for generating embeddings during failure and abort clustering.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b\f0\lang16393 3. \f1\lang9 Clustering Techniques\b0\par
+\b K-Means / Similarity-based Clustering\f0\lang16393  \b0 - \f1\lang9 Used to group similar failure and abort log patterns to identify recurring issues.\par
+\b\f0\lang16393 4. \f1\lang9 Training Techniques\b0\par
+\b Random Forest\endash Based Model Training\f0\lang16393  - \b0\f1\lang9 Used to train supervised machine learning models for test status classification and root cause prediction. Random Forest was chosen for its ability to handle high-dimensional TF-IDF features, reduce overfitting through ensemble learning, and provide stable performance on large volumes of log data.\par
+\b\f0\lang16393 5. \f1\lang9 Scripting & Automation\b0\par
+\b Bash / Shell Scripting\f0\lang16393  \b0 - \f1\lang9 Used to automate end-to-end pipeline execution and integrate multiple modules.\par
+\b\f0\lang16393 6. \f1\lang9 Data Storage & Formats\b0\par
+\b CSV (Comma-Separated Values)\b0\f0\lang16393  - \f1\lang9 Used for storing structured logs, features, clustering outputs, and final results.\par
+\b\f0\lang16393 7. \f1\lang9 Development & Execution Tools\par
+Command Line Interface (CLI)\b0\f0\lang16393  - \f1\lang9 Used for running scripts and analyzing log files.\par
+\b VS Code / Terminal\f0\lang16393  \b0 - \f1\lang9 Used for development, debugging, and execution.\par
+\b\f0\lang16393 8. \f1\lang9 Approach & Methodologies\b0\par
+\b Machine Learning-based Classification\f0\lang16393  \b0 - \f1\lang9 Used for predicting test status and root causes.\par
+\b Rule-Based Logic\b0\f0\lang16393  - \f1\lang9 Used for recommendation mapping and handling specific abort scenarios.\par
+\par
+\b\fs32 Data Description\b0\fs28\par
+The data used in this project consists of automated test execution log files generated during system and protocol validation. These logs are unstructured text files containing detailed information about test cases, execution steps, timestamps, protocol messages, errors, warnings, and final test results such as PASS, FAIL, or ABORT.\par
+The raw log data is processed to extract relevant fields including test case name, device under test (DUT), configuration details, execution timestamps, status, and error messages. Error-related lines such as failures, mismatches, timeouts, and abort reasons are identified and used as primary inputs for analysis. The extracted information is converted into structured CSV format to support preprocessing, feature engineering, and model training.\par
+For machine learning tasks, the textual error content is transformed into numerical representations using TF-IDF vectorization. Labeled datasets are created for status classification and root cause prediction, and the data is split into training and testing sets to evaluate model performance. Overall, the dataset represents large-scale, real-world test logs with varying formats and failure patterns, enabling robust training and validation of the automated log analysis system.\par
+\b\fs32\par
+Feature Engineering\b0\fs28\par
+Feature engineering is performed to transform preprocessed log data into structured and meaningful numerical features suitable for machine learning models. The process begins by loading the preprocessed log dataset and assigning a stable row identifier to each record. Test execution status values are normalized and filtered to include only valid outcomes such as PASS, FAIL, and ABORT. Timestamps are parsed and sorted by device under test (DUT), test case, and execution time to enable time-based feature generation.\par
+Frequency-based features are generated to capture recurring failure and abort patterns. These include the number of failures and aborts per test suite and per DUT, helping the model identify unstable components and frequently failing environments. Temporal features are derived by calculating the time elapsed since the last failure and the last abort for each test case, providing historical context about repeated issues. Synthetic execution duration values are also added to simulate test runtime behavior.\par
+Recent execution behavior is represented using status indicator flags, including binary flags for recent failures and aborts, as well as a consolidated status flag encoding PASS, FAIL, and ABORT states. Configuration-related information is encoded by hashing configuration values into numerical representations, ensuring compatibility with machine learning models while preserving uniqueness. Missing or unavailable environment details are handled gracefully using default values.\par
+Error message fields are standardized to ensure consistency, with non-error executions explicitly marked to avoid noise during training. Finally, the engineered features are stored in a structured CSV file, forming the final dataset used for clustering, model training, and inference. This comprehensive feature set enables accurate prediction of test status and root cause classification.\f0\par
+
+\pard\ri-924\sa200\sl276\slmult1\qj\par
+\b\fs32 Machine Learning Models\b0\fs28\par
+This project utilizes both unsupervised and supervised machine learning models to automate test log analysis and root cause identification.\par
+\b Failure and Abort Clustering Models\par
+\b0 Unsupervised clustering models are used to group similar failure and abort log messages based on textual similarity. Log error messages are converted into numerical representations using embedding techniques, and similarity-based clustering is applied to identify recurring patterns. These clusters help in discovering common failure and abort categories and form the basis for root cause labeling.\par
+\b Status Classification Model\par
+\b0 A supervised Random Forest classifier is used to predict the execution status of test cases as PASS, FAIL, or ABORT. The model is trained using engineered numerical and contextual features derived from log data. Random Forest is chosen for its ensemble learning approach, robustness to noise, and strong performance on complex datasets.\par
+\b Root Cause Prediction Models\par
+\b0 Separate supervised Random Forest models are trained for predicting root causes of failed and aborted test cases. These models use TF-IDF\f1\endash based text features extracted from error messages along with contextual features. By maintaining independent models for FAIL and ABORT cases, the system achieves more accurate and interpretable root cause predictions.\par
+\par
+\b\fs32 ABORT / FAIL Case Handling\par
+\b0\fs28 The system handles FAIL and ABORT test cases separately to ensure accurate analysis and meaningful root cause identification. When a test execution is marked as FAIL, the system extracts relevant error messages from the log file and applies a trained failure root cause prediction model. These failures typically indicate functional or protocol-related issues, and the predicted root cause is mapped to a predefined recommendation to guide corrective action.\par
+In the case of ABORTed test executions, the system applies a different handling strategy. Abort scenarios usually occur due to environmental issues, unmet preconditions, unsupported configurations, or user intervention. If an abort is caused by explicit user action, such as a manual stop, the system skips root cause prediction and no recommendation is generated. For all other abort cases, error messages are analyzed using a dedicated abort root cause prediction model. The predicted root cause is then mapped to an appropriate recommendation.\par
+By separating FAIL and ABORT handling, the system improves prediction accuracy and ensures that recommendations are context-aware and actionable. This approach avoids misclassification and allows the system to respond appropriately to different types of test execution failures.\par
+\b\fs32\par
+Execution Steps\par
+\fs28 Log Input\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl276\slmult1\qj The process begins with collecting raw log files generated by the Device Under Test (DUT) during automated testing.\par
+{\pntext\f2\'B7\tab}These logs contain detailed execution information including timestamps, test case IDs, configurations, protocol messages, errors, warnings, and results such as PASS, FAIL, or ABORT.\par
+
+\pard\ri-924\sa200\sl276\slmult1\qj\b Preprocessing\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl276\slmult1\qj Raw logs are often unstructured and contain noise. Preprocessing involves cleaning the logs, removing irrelevant lines, normalizing status values, and handling missing or inconsistent entries.\par
+{\pntext\f2\'B7\tab}Relevant information such as test case identifiers, DUT details, timestamps, and error messages are extracted and structured for further analysis.\par
+
+\pard\ri-924\sa200\sl276\slmult1\qj\b Feature Engineering\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl276\slmult1\qj\b0 Structured features are created to capture important aspects of test executions:\par
+{\pntext\f2\'B7\tab}Frequency-based features: Number of failures or aborts per suite and DUT.\par
+{\pntext\f2\'B7\tab}Temporal features: Time since the last failure or abort for each test case.\par
+{\pntext\f2\'B7\tab}Execution duration: Synthetic runtime of test cases.\par
+{\pntext\f2\'B7\tab}Status flags: Indicators for recent failures, aborts, or PASS.\par
+{\pntext\f2\'B7\tab}Configuration encoding: Converts DUT configuration details into numerical representations.\par
+{\pntext\f2\'B7\tab}Error messages: Standardized text features for use in ML models.\par
+
+\pard\ri-924\sa200\sl276\slmult1\qj\b Clustering (Failure & Abort Logs)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl276\slmult1\qj\b0 Unsupervised clustering groups similar log messages for failures and aborts separately.\par
+{\pntext\f2\'B7\tab}This step identifies recurring patterns and common issues, which helps in understanding the behavior of the system under test.\par
+{\pntext\f2\'B7\tab}Clusters are then merged for consistent root cause labeling.\par
+
+\pard\ri-924\sa200\sl276\slmult1\qj\b Root Cause Tagging\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl276\slmult1\qj Each cluster of log messages is assigned a meaningful root cause label, either for a FAIL or ABORT case.\par
+{\pntext\f2\'B7\tab}This provides labeled data that serves as input for supervised learning models.\par
+
+\pard\ri-924\sa200\sl276\slmult1\qj\b Train\endash Test Split\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl276\slmult1\qj\b0 The labeled dataset is split into training and testing sets to allow proper evaluation of machine learning models.\par
+{\pntext\f2\'B7\tab}This ensures the models are validated on unseen data for accurate performance measurement.\par
+
+\pard\ri-924\sa200\sl276\slmult1\qj\b Model Training\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl276\slmult1\qj\b0 Status Classification Model: Random Forest classifier trained to predict PASS, FAIL, or ABORT.\par
+{\pntext\f2\'B7\tab}FAIL Root Cause Model: Random Forest classifier trained to predict specific root causes for failed test cases.\par
+{\pntext\f2\'B7\tab}ABORT Root Cause Model: Random Forest classifier trained for predicting root causes of aborted test cases.\par
+{\pntext\f2\'B7\tab}Random Forest is chosen for its robustness, ability to handle high-dimensional features, and resistance to overfitting.\par
+
+\pard\ri-924\sa200\sl276\slmult1\qj\b Preprocessing Freeze\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl276\slmult1\qj All preprocessing steps used during training (such as TF-IDF vectorization, feature scaling, and encoding) are saved.\par
+{\pntext\f2\'B7\tab}This ensures consistency during inference and prevents discrepancies between training and testing data.\par
+
+\pard\ri-924\sa200\sl276\slmult1\qj\b Inference and Recommendation Generation\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-924\sa200\sl276\slmult1\qj New log files are processed using the frozen preprocessing steps.\par
+{\pntext\f2\'B7\tab}Status is predicted using the trained status model, and root cause is predicted using the corresponding root cause model (FAIL or ABORT).\par
+{\pntext\f2\'B7\tab}Rule-based mappings are applied to generate actionable recommendations based on the predicted root cause.\par
+{\pntext\f2\'B7\tab}Special handling is applied for user-initiated ABORTs, where recommendations are not needed.\par
+
+\pard\ri-924\sa200\sl360\slmult1\qj\b Results\b0\par
+The automated log analysis system produces a structured and user-friendly output for each analyzed test execution log. The results include the test status, the predicted root cause (for FAIL or ABORT cases), and actionable recommendations based on predefined mappings.\par
+Result\par
+Status        : PASS\par
+Reason        : Testcase Passed\par
+Recommendation: No action required\par
+======================================\par
+ANALYSIS COMPLETED\par
+======================================\par
+Key Points:\par
+Status:\f0\lang16393  \f1\lang9 Indicates the execution result of the test case: PASS, FAIL, or ABORT.\par
+Reason / Root Cause:\f0\lang16393  \f1\lang9 For FAIL and ABORT cases, the system predicts the root cause using trained Random Forest models.\par
+For PASS cases, the reason is displayed as "Testcase Passed".\par
+Recommendation:\f0\lang16393  \f1\lang9 Provides actionable guidance based on the predicted root cause using a rule-based mapping.\par
+For PASS cases or user-initiated aborts, the recommendation is "No action required".\b\f0\fs24\par
+
+\pard\ri-924\sa200\sl276\slmult1\par
+}
+ 
